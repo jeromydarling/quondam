@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://quondam.app/schemas/catalog.schema.json",
+  "title": "Quondam Catalog",
+  "type": "object",
+  "required": ["version", "generatedAt", "stories"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": "1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "stories": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/story" }
+    }
+  },
+  "$defs": {
+    "story": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "author",
+        "source",
+        "durationSec",
+        "lengthBucket",
+        "ageBand",
+        "mood",
+        "loudness",
+        "safety"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(librivox|archive)-[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Stable slug: {provider}-{author-slug}-{title-slug}. Used for resume/favorites — never change once published."
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "author": { "type": "string", "minLength": 1 },
+        "narrator": { "type": "string" },
+        "summary": { "type": "string" },
+        "source": {
+          "type": "object",
+          "required": ["provider", "pageUrl", "audioUrl", "license", "attribution"],
+          "additionalProperties": false,
+          "properties": {
+            "provider": { "enum": ["librivox", "archive"] },
+            "pageUrl": { "type": "string", "format": "uri" },
+            "audioUrl": { "type": "string", "format": "uri" },
+            "license": { "type": "string", "minLength": 1 },
+            "attribution": { "type": "string", "minLength": 1 }
+          }
+        },
+        "durationSec": { "type": "integer", "minimum": 1 },
+        "lengthBucket": { "enum": ["short", "medium", "long"] },
+        "ageBand": { "enum": ["0-3", "3-6", "6-9", "9-12"] },
+        "mood": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "calming",
+              "adventurous",
+              "funny",
+              "fairy-tale",
+              "nature",
+              "classic"
+            ]
+          }
+        },
+        "loudness": {
+          "type": "object",
+          "required": ["integratedLufs", "truePeakDbtp", "targetLufs"],
+          "additionalProperties": false,
+          "properties": {
+            "integratedLufs": { "type": "number", "minimum": -70, "maximum": 0 },
+            "truePeakDbtp": { "type": "number", "minimum": -70, "maximum": 6 },
+            "targetLufs": { "type": "number", "minimum": -30, "maximum": -10 }
+          }
+        },
+        "safety": {
+          "type": "object",
+          "required": ["reviewed", "reviewer", "flags"],
+          "additionalProperties": false,
+          "properties": {
+            "reviewed": { "type": "boolean" },
+            "reviewer": { "type": "string", "minLength": 1 },
+            "flags": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "restoration": {
+          "type": "object",
+          "required": ["hissLevel", "suggestDenoise"],
+          "additionalProperties": false,
+          "properties": {
+            "hissLevel": { "enum": ["none", "low", "high"] },
+            "suggestDenoise": { "type": "boolean" }
+          }
+        }
+      }
+    }
+  }
+}

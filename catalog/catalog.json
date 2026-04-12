@@ -1,0 +1,94 @@
+{
+  "version": "1",
+  "generatedAt": "2026-04-12T00:00:00Z",
+  "stories": [
+    {
+      "id": "librivox-aesop-the-fox-and-the-grapes",
+      "title": "The Fox and the Grapes",
+      "author": "Aesop",
+      "narrator": "LibriVox Volunteers",
+      "summary": "A short fable about a fox who decides the grapes he cannot reach must be sour anyway.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/aesops-fables-volume-1-by-aesop/",
+        "audioUrl": "https://archive.org/download/aesops_fables_v1_librivox/aesopsfables_001_aesop.mp3",
+        "license": "public-domain",
+        "attribution": "LibriVox volunteers"
+      },
+      "durationSec": 184,
+      "lengthBucket": "short",
+      "ageBand": "3-6",
+      "mood": ["calming", "fairy-tale", "classic"],
+      "loudness": {
+        "integratedLufs": -22.4,
+        "truePeakDbtp": -1.2,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      }
+    },
+    {
+      "id": "librivox-beatrix-potter-the-tale-of-peter-rabbit",
+      "title": "The Tale of Peter Rabbit",
+      "author": "Beatrix Potter",
+      "narrator": "Karen Savage",
+      "summary": "A mischievous young rabbit slips into Mr. McGregor's garden and learns why his mother told him not to.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-tale-of-peter-rabbit-by-beatrix-potter/",
+        "audioUrl": "https://archive.org/download/peter_rabbit_ks_librivox/peterrabbit_ks_64kb.mp3",
+        "license": "public-domain",
+        "attribution": "LibriVox · Karen Savage"
+      },
+      "durationSec": 612,
+      "lengthBucket": "medium",
+      "ageBand": "3-6",
+      "mood": ["adventurous", "fairy-tale", "classic"],
+      "loudness": {
+        "integratedLufs": -16.1,
+        "truePeakDbtp": -0.4,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": ["mild-peril"]
+      }
+    },
+    {
+      "id": "librivox-kenneth-grahame-the-wind-in-the-willows-ch1",
+      "title": "The Wind in the Willows — Chapter 1: The River Bank",
+      "author": "Kenneth Grahame",
+      "narrator": "Mark F. Smith",
+      "summary": "Mole abandons his spring cleaning, meets the Water Rat, and discovers the joys of the river.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-wind-in-the-willows-by-kenneth-grahame/",
+        "audioUrl": "https://archive.org/download/wind_willows_mfs_librivox/windinwillows_01_grahame_64kb.mp3",
+        "license": "public-domain",
+        "attribution": "LibriVox · Mark F. Smith"
+      },
+      "durationSec": 1980,
+      "lengthBucket": "long",
+      "ageBand": "6-9",
+      "mood": ["calming", "nature", "classic"],
+      "loudness": {
+        "integratedLufs": -19.7,
+        "truePeakDbtp": -2.1,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "restoration": {
+        "hissLevel": "high",
+        "suggestDenoise": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": "1",
+  "generatedAt": "2026-04-12T00:00:00Z",
+  "stories": [
+    {
+      "id": "librivox-frances-hodgson-burnett-the-secret-garden-ch1",
+      "title": "The Secret Garden — Chapter 1",
+      "author": "Frances Hodgson Burnett",
+      "narrator": "Karen Savage",
+      "summary": "Mary Lennox is sent from India to live with her uncle on the Yorkshire moors.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-secret-garden-by-frances-hodgson-burnett/",
+        "audioUrl": "https://archive.org/download/secretgarden_ks_librivox/secretgarden_01_burnett_64kb.mp3",
+        "license": "public-domain",
+        "attribution": "LibriVox · Karen Savage"
+      },
+      "durationSec": 1320,
+      "lengthBucket": "long",
+      "ageBand": "6-9",
+      "mood": ["calming", "classic", "nature"],
+      "loudness": {
+        "integratedLufs": -20.3,
+        "truePeakDbtp": -1.8,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      }
+    }
+  ]
+}

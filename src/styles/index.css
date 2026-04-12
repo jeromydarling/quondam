@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-night-950 text-cream-50 antialiased;
+    font-feature-settings: "ss01", "ss02";
+  }
+  /* Reduce blue-light intensity at the system level when supported. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center min-h-tap min-w-tap rounded-xl px-4 py-2 text-base font-medium
+           bg-night-700 text-cream-50 hover:bg-night-600 active:bg-night-800
+           transition-colors disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-accent {
+    @apply btn bg-accent text-night-950 hover:bg-cream-100;
+  }
+  .chip {
+    @apply inline-flex items-center min-h-tap rounded-full px-4 py-2 text-sm
+           bg-night-800 text-cream-100 border border-night-600
+           hover:bg-night-700 transition-colors;
+  }
+  .chip-on {
+    @apply chip bg-accent text-night-950 border-accent hover:bg-accent;
+  }
+}

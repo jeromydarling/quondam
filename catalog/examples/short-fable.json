@@ -1,0 +1,34 @@
+{
+  "version": "1",
+  "generatedAt": "2026-04-12T00:00:00Z",
+  "stories": [
+    {
+      "id": "librivox-aesop-the-tortoise-and-the-hare",
+      "title": "The Tortoise and the Hare",
+      "author": "Aesop",
+      "narrator": "LibriVox Volunteers",
+      "summary": "A boasting hare loses a race to a steady, plodding tortoise.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/aesops-fables-volume-1-by-aesop/",
+        "audioUrl": "https://archive.org/download/aesops_fables_v1_librivox/aesopsfables_002_aesop.mp3",
+        "license": "public-domain",
+        "attribution": "LibriVox volunteers"
+      },
+      "durationSec": 142,
+      "lengthBucket": "short",
+      "ageBand": "3-6",
+      "mood": ["funny", "classic"],
+      "loudness": {
+        "integratedLufs": -23.1,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      }
+    }
+  ]
+}
