@@ -6,7 +6,6 @@
       "id": "librivox-aesop-the-fox-and-the-grapes",
       "title": "The Fox and the Grapes",
       "author": "Aesop",
-      "narrator": "LibriVox Volunteers",
       "summary": "A short fable about a fox who decides the grapes he cannot reach must be sour anyway.",
       "description": "One of Aesop's shortest and most enduring fables. A hungry fox spies a bunch of ripe grapes hanging from a vine, leaps for them again and again, and finally walks away muttering that they were probably sour to begin with. From this little story we get the everyday phrase 'sour grapes' — the way we dismiss the things we cannot have.",
       "authorBio": "Aesop is the legendary author of the world's most famous collection of fables. Whether he was a real person — possibly a Greek storyteller and slave living in the 6th century BCE — or a name later attached to a tradition of folk wisdom, the fables themselves have shaped storytelling for more than two thousand years.",
@@ -17,7 +16,7 @@
         "pageUrl": "https://librivox.org/aesops-fables-volume-1-by-aesop/",
         "audioUrl": "https://archive.org/download/aesops_fables_v1_librivox/aesopsfables_001_aesop.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox volunteers · cover art Standard Ebooks (CC0)"
+        "attribution": "Public domain"
       },
       "durationSec": 184,
       "lengthBucket": "short",
@@ -38,7 +37,6 @@
       "id": "librivox-rudyard-kipling-how-the-whale-got-his-throat",
       "title": "How the Whale Got His Throat",
       "author": "Rudyard Kipling",
-      "narrator": "LibriVox Volunteers",
       "summary": "The first of the Just So Stories — how a clever sailor and a tiny grate gave the whale his peculiar throat.",
       "description": "The opening story of Kipling's Just So Stories, written for his daughter Josephine. A great whale eats every fish in the sea, then a single shipwrecked mariner — 'a man of infinite-resource-and-sagacity' — and once inside, he stomps and dances until the whale agrees to set him on the shore. The mariner leaves a small wooden grate behind in the whale's throat, which is why, to this day, whales eat only the very tiniest of fishes. Kipling's prose has the lilt of a story told aloud, with repeated phrases that beg to be read in a rhythm.",
       "authorBio": "Rudyard Kipling (1865–1936) was a British author and poet born in Bombay during the Raj. He wrote The Jungle Book, Kim, and Just So Stories, and in 1907 became the first English-language writer to win the Nobel Prize in Literature. His best work for children carries the warmth of stories invented at bedtime for his own family.",
@@ -49,7 +47,7 @@
         "pageUrl": "https://librivox.org/just-so-stories-by-rudyard-kipling/",
         "audioUrl": "https://archive.org/download/just_so_stories_librivox/justsostories_01_kipling.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox volunteers · cover art Standard Ebooks (CC0)"
+        "attribution": "Public domain"
       },
       "durationSec": 720,
       "lengthBucket": "medium",
@@ -88,7 +86,7 @@
         "pageUrl": "https://librivox.org/the-wind-in-the-willows-by-kenneth-grahame/",
         "audioUrl": "https://archive.org/download/wind_willows_mfs_librivox/windinwillows_01_grahame_64kb.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox · Mark F. Smith · cover art Standard Ebooks (CC0)"
+        "attribution": "Public domain"
       },
       "durationSec": 1980,
       "lengthBucket": "long",
@@ -120,7 +118,6 @@
       "id": "librivox-lewis-carroll-alice-in-wonderland-ch1",
       "title": "Alice's Adventures in Wonderland",
       "author": "Lewis Carroll",
-      "narrator": "LibriVox Volunteers",
       "summary": "Alice follows a waistcoated rabbit down a hole and falls, and falls, and falls.",
       "description": "Chapter 1 — 'Down the Rabbit-Hole.' Alice is sitting on a riverbank with her sister, getting bored, when a White Rabbit in a waistcoat hurries past muttering 'Oh dear! Oh dear! I shall be late!' She follows him into a hole and finds herself falling down a long, slow tunnel, with time enough to pick a jar of orange marmalade off a passing shelf, wonder how many miles she has fallen, and worry about her cat Dinah. When she lands she finds a tiny door, a bottle labelled 'DRINK ME,' and the start of every strange and reasonable thing that follows.",
       "authorBio": "Lewis Carroll was the pen name of Charles Lutwidge Dodgson (1832–1898), an English mathematician, photographer, and Anglican deacon at Christ Church, Oxford. He invented the Wonderland stories on a boat trip up the Thames for the daughters of his friend, the dean — Alice Liddell among them. He wrote them down because Alice asked him to.",
@@ -131,7 +128,7 @@
         "pageUrl": "https://librivox.org/alices-adventures-in-wonderland-by-lewis-carroll/",
         "audioUrl": "https://archive.org/download/alice_in_wonderland_librivox/wonderland_01_carroll_64kb.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox · cover art Standard Ebooks (CC0)"
+        "attribution": "Public domain"
       },
       "durationSec": 900,
       "lengthBucket": "medium",
@@ -170,7 +167,7 @@
         "pageUrl": "https://librivox.org/the-jungle-book-by-rudyard-kipling/",
         "audioUrl": "https://archive.org/download/jungle_book_pc_librivox/junglebook_01_kipling_64kb.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox · Phil Chenevert · cover art Standard Ebooks (CC0)"
+        "attribution": "Public domain"
       },
       "durationSec": 1800,
       "lengthBucket": "long",
@@ -209,7 +206,7 @@
         "pageUrl": "https://librivox.org/the-secret-garden-by-frances-hodgson-burnett/",
         "audioUrl": "https://archive.org/download/secretgarden_ks_librivox/secretgarden_01_burnett_64kb.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox · Karen Savage · cover art Standard Ebooks (CC0)"
+        "attribution": "Public domain"
       },
       "durationSec": 1320,
       "lengthBucket": "long",

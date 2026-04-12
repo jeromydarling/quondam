@@ -45,9 +45,6 @@ export default function StoryCard({ story }: { story: Story }) {
           </Link>
           <div className="mt-1 text-sm text-cream-300 italic">
             by {story.author}
-            {story.narrator ? (
-              <span className="text-cream-400 not-italic"> · {story.narrator}</span>
-            ) : null}
           </div>
         </div>
         <button

@@ -101,12 +101,6 @@ export default function Player() {
           <h2 className="display-title text-balance">{story.title}</h2>
           <p className="font-serif text-lg italic text-cream-200">
             by {story.author}
-            {story.narrator && (
-              <span className="not-italic text-cream-400">
-                {" "}
-                · narrated by {story.narrator}
-              </span>
-            )}
           </p>
           {story.relevance && (
             <p className="font-serif text-base text-amber/90 italic max-w-prose">
@@ -265,18 +259,6 @@ export default function Player() {
         </div>
       )}
 
-      <p className="label-eyebrow opacity-70">
-        Source ·{" "}
-        <a
-          href={story.source.pageUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="underline hover:text-cream-200"
-        >
-          {story.source.attribution}
-        </a>{" "}
-        · {story.source.license}
-      </p>
     </section>
   );
 }

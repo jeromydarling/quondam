@@ -32,8 +32,16 @@ export default function App() {
         </Routes>
       </main>
 
-      <footer className="text-center label-eyebrow py-6 opacity-60">
-        Public-domain audio · archive.org & librivox.org
+      <footer className="text-center py-8">
+        <a
+          href="https://myschola.app"
+          target="_blank"
+          rel="noreferrer"
+          className="font-serif text-sm text-cream-300 italic hover:text-amber transition-colors"
+          style={{ fontVariationSettings: '"opsz" 14, "SOFT" 50, "wght" 400' }}
+        >
+          Brought to you by <span className="not-italic font-medium">CROS Schola</span>
+        </a>
       </footer>
     </div>
   );

@@ -19,10 +19,9 @@ export default function Library() {
         <p className="label-eyebrow">The library</p>
         <h2 className="display-title">A few stories for tonight.</h2>
         <p className="body-prose">
-          Curated public-domain audio from archive.org and librivox.org —
-          loudness-normalized so the volume doesn't change between tracks,
-          with a sleep timer and a gentle fade-out for the way bedtime
-          actually goes.
+          Hand-picked classic stories for bedtime — loudness-normalized so the
+          volume doesn't change between tracks, with a sleep timer and a
+          gentle fade-out for the way bedtime actually goes.
         </p>
       </header>
 
