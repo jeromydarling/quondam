@@ -6,17 +6,17 @@
       "id": "librivox-aesop-the-fox-and-the-grapes",
       "title": "The Fox and the Grapes",
       "author": "Aesop",
-      "narrator": "LibriVox Volunteers",
       "summary": "A short fable about a fox who decides the grapes he cannot reach must be sour anyway.",
       "description": "One of Aesop's shortest and most enduring fables. A hungry fox spies a bunch of ripe grapes hanging from a vine, leaps for them again and again, and finally walks away muttering that they were probably sour to begin with. From this little story we get the everyday phrase 'sour grapes' — the way we dismiss the things we cannot have.",
       "authorBio": "Aesop is the legendary author of the world's most famous collection of fables. Whether he was a real person — possibly a Greek storyteller and slave living in the 6th century BCE — or a name later attached to a tradition of folk wisdom, the fables themselves have shaped storytelling for more than two thousand years.",
       "relevance": "Aesop's fables are usually a child's first taste of stories that come with a quiet lesson tucked inside. They're short enough for a tired parent and a tireder child, and they leave room to talk afterward.",
+      "coverUrl": "https://raw.githubusercontent.com/standardebooks/aesop_fables_v-s-vernon-jones/master/images/cover.jpg",
       "source": {
         "provider": "librivox",
         "pageUrl": "https://librivox.org/aesops-fables-volume-1-by-aesop/",
         "audioUrl": "https://archive.org/download/aesops_fables_v1_librivox/aesopsfables_001_aesop.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox volunteers"
+        "attribution": "Public domain"
       },
       "durationSec": 184,
       "lengthBucket": "short",
@@ -34,34 +34,41 @@
       }
     },
     {
-      "id": "librivox-beatrix-potter-the-tale-of-peter-rabbit",
-      "title": "The Tale of Peter Rabbit",
-      "author": "Beatrix Potter",
-      "narrator": "Karen Savage",
-      "summary": "A mischievous young rabbit slips into Mr. McGregor's garden and learns why his mother told him not to.",
-      "description": "Beatrix Potter's first and most beloved book. Peter ignores his mother's warning, squeezes under the gate of Mr. McGregor's garden, and finds himself in a slow, panicky chase through lettuces and watering cans. He loses his little blue jacket and his shoes, comes home soaked and shivering, and is sent to bed with chamomile tea while his well-behaved sisters have bread, milk, and blackberries for supper. The book is gentle, exact, and entirely without moralizing — Potter trusts the child to draw their own conclusions.",
-      "authorBio": "Beatrix Potter (1866–1943) was an English author, illustrator, natural scientist and conservationist. She wrote and illustrated 23 small books featuring animal characters, beginning with The Tale of Peter Rabbit in 1902. Her royalties bought thousands of acres of farmland in the Lake District, which she left to the National Trust.",
-      "relevance": "A near-perfect picture book — short, exciting, and consoling. Children love that Peter is naughty and afraid, and that he comes home anyway.",
+      "id": "librivox-rudyard-kipling-how-the-whale-got-his-throat",
+      "title": "How the Whale Got His Throat",
+      "author": "Rudyard Kipling",
+      "summary": "The first of the Just So Stories — how a clever sailor and a tiny grate gave the whale his peculiar throat.",
+      "description": "The opening story of Kipling's Just So Stories, written for his daughter Josephine. A great whale eats every fish in the sea, then a single shipwrecked mariner — 'a man of infinite-resource-and-sagacity' — and once inside, he stomps and dances until the whale agrees to set him on the shore. The mariner leaves a small wooden grate behind in the whale's throat, which is why, to this day, whales eat only the very tiniest of fishes. Kipling's prose has the lilt of a story told aloud, with repeated phrases that beg to be read in a rhythm.",
+      "authorBio": "Rudyard Kipling (1865–1936) was a British author and poet born in Bombay during the Raj. He wrote The Jungle Book, Kim, and Just So Stories, and in 1907 became the first English-language writer to win the Nobel Prize in Literature. His best work for children carries the warmth of stories invented at bedtime for his own family.",
+      "relevance": "The Just So Stories were composed to be read aloud. The cadence, the made-up words, the asides to 'O Best Beloved' — all of it is built for a parent's voice. Reading them is genuinely good practice for everything else.",
+      "coverUrl": "https://raw.githubusercontent.com/standardebooks/rudyard-kipling_just-so-stories/master/images/cover.jpg",
       "source": {
         "provider": "librivox",
-        "pageUrl": "https://librivox.org/the-tale-of-peter-rabbit-by-beatrix-potter/",
-        "audioUrl": "https://archive.org/download/peter_rabbit_ks_librivox/peterrabbit_ks_64kb.mp3",
+        "pageUrl": "https://librivox.org/just-so-stories-by-rudyard-kipling/",
+        "audioUrl": "https://archive.org/download/just_so_stories_librivox/justsostories_01_kipling.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox · Karen Savage"
+        "attribution": "Public domain"
       },
-      "durationSec": 612,
+      "durationSec": 720,
       "lengthBucket": "medium",
       "ageBand": "3-6",
-      "mood": ["adventurous", "fairy-tale", "classic"],
+      "mood": ["funny", "fairy-tale", "classic"],
       "loudness": {
-        "integratedLufs": -16.1,
-        "truePeakDbtp": -0.4,
+        "integratedLufs": -19.8,
+        "truePeakDbtp": -1.0,
         "targetLufs": -18.0
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
-        "flags": ["mild-peril"]
+        "flags": []
+      },
+      "series": {
+        "id": "just-so-stories",
+        "name": "Just So Stories",
+        "order": 1,
+        "totalParts": 12,
+        "nextTeaser": "How the Camel Got His Hump — and what happens to creatures who say 'Humph!' when they should be working."
       }
     },
     {
@@ -73,12 +80,13 @@
       "description": "Chapter 1 — 'The River Bank.' On the first warm day of spring, Mole throws down his whitewash brush, runs out of his underground home and finds himself for the first time at the edge of a river. He meets Ratty, who introduces him to messing about in boats, packs a fat picnic basket, and the two of them drift through a slow golden afternoon while Ratty tells him about all the strange and brave creatures of the riverbank — including, in passing, a certain Mr Toad. It is one of the gentlest and most contented openings in English children's literature.",
       "authorBio": "Kenneth Grahame (1859–1932) was a Scottish writer who spent his working life as Secretary of the Bank of England. He wrote The Wind in the Willows for his young son Alastair, originally as bedtime stories and then as letters when Alastair was away. It was published in 1908 and rejected by several editors before becoming one of the most beloved books in the English language.",
       "relevance": "A book about friendship, the seasons, and the deep pleasure of small things — a riverbank, a picnic, a quiet afternoon. Perfect for the slow chapter-a-night pace bedtime asks for.",
+      "coverUrl": "https://raw.githubusercontent.com/standardebooks/kenneth-grahame_the-wind-in-the-willows/master/images/cover.jpg",
       "source": {
         "provider": "librivox",
         "pageUrl": "https://librivox.org/the-wind-in-the-willows-by-kenneth-grahame/",
         "audioUrl": "https://archive.org/download/wind_willows_mfs_librivox/windinwillows_01_grahame_64kb.mp3",
         "license": "public-domain",
-        "attribution": "LibriVox · Mark F. Smith"
+        "attribution": "Public domain"
       },
       "durationSec": 1980,
       "lengthBucket": "long",
@@ -104,6 +112,122 @@
         "order": 1,
         "totalParts": 12,
         "nextTeaser": "Mole and Ratty pay a visit to the boastful Mr Toad, who has discovered an entirely new and very expensive enthusiasm: the gypsy caravan."
+      }
+    },
+    {
+      "id": "librivox-lewis-carroll-alice-in-wonderland-ch1",
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "summary": "Alice follows a waistcoated rabbit down a hole and falls, and falls, and falls.",
+      "description": "Chapter 1 — 'Down the Rabbit-Hole.' Alice is sitting on a riverbank with her sister, getting bored, when a White Rabbit in a waistcoat hurries past muttering 'Oh dear! Oh dear! I shall be late!' She follows him into a hole and finds herself falling down a long, slow tunnel, with time enough to pick a jar of orange marmalade off a passing shelf, wonder how many miles she has fallen, and worry about her cat Dinah. When she lands she finds a tiny door, a bottle labelled 'DRINK ME,' and the start of every strange and reasonable thing that follows.",
+      "authorBio": "Lewis Carroll was the pen name of Charles Lutwidge Dodgson (1832–1898), an English mathematician, photographer, and Anglican deacon at Christ Church, Oxford. He invented the Wonderland stories on a boat trip up the Thames for the daughters of his friend, the dean — Alice Liddell among them. He wrote them down because Alice asked him to.",
+      "relevance": "Wonderland is one of those books that lives in the rhythm of the sentences. It rewards being read aloud slowly, with patience for the jokes that work on grown-ups too.",
+      "coverUrl": "https://raw.githubusercontent.com/standardebooks/lewis-carroll_alices-adventures-in-wonderland_john-tenniel/master/images/cover.jpg",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/alices-adventures-in-wonderland-by-lewis-carroll/",
+        "audioUrl": "https://archive.org/download/alice_in_wonderland_librivox/wonderland_01_carroll_64kb.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 900,
+      "lengthBucket": "medium",
+      "ageBand": "6-9",
+      "mood": ["funny", "fairy-tale", "classic"],
+      "loudness": {
+        "integratedLufs": -21.2,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "alices-adventures-in-wonderland",
+        "name": "Alice's Adventures in Wonderland",
+        "order": 1,
+        "totalParts": 12,
+        "nextTeaser": "Alice has cried herself a great pool of tears, met a startled mouse, and finds herself at the start of 'a Caucus-race and a Long Tale.'"
+      }
+    },
+    {
+      "id": "librivox-rudyard-kipling-the-jungle-book-mowglis-brothers",
+      "title": "The Jungle Book",
+      "author": "Rudyard Kipling",
+      "narrator": "Phil Chenevert",
+      "summary": "Mowgli's Brothers — a man-cub is taken in by a family of wolves on the night of a Council in the hills.",
+      "description": "Chapter 1 — 'Mowgli's Brothers.' Father Wolf is just waking up for his evening's hunting on the Seeonee hills when a small, naked, brown baby crawls into the cave, looks up at him, and laughs. Shere Khan the tiger comes prowling for the child, but Mother Wolf — Raksha, 'the Demon' — refuses to give him up. The story moves to the Council Rock, where the law of the pack must decide whether the man-cub may live among the wolves. It's a wild, formal, ceremonious chapter, full of names that ring like an incantation: Akela, Bagheera, Baloo.",
+      "authorBio": "Rudyard Kipling (1865–1936) was born in Bombay and spent his early childhood in India before being sent to England for school. He wrote The Jungle Book in Vermont in 1894, drawing on the India of his memory. The stories of Mowgli have shaped how generations have imagined the jungle, for better and for worse — they reward reading with a parent's eye.",
+      "relevance": "Kipling at his most cinematic. The chapter has clear stakes, fierce love between Mother Wolf and Mowgli, and a long ceremonial scene that reads beautifully aloud. Better for slightly older children — there is danger, and a tiger.",
+      "coverUrl": "https://raw.githubusercontent.com/standardebooks/rudyard-kipling_the-jungle-book/master/images/cover.jpg",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-jungle-book-by-rudyard-kipling/",
+        "audioUrl": "https://archive.org/download/jungle_book_pc_librivox/junglebook_01_kipling_64kb.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 1800,
+      "lengthBucket": "long",
+      "ageBand": "6-9",
+      "mood": ["adventurous", "nature", "classic"],
+      "loudness": {
+        "integratedLufs": -18.4,
+        "truePeakDbtp": -0.8,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": ["mild-peril"]
+      },
+      "series": {
+        "id": "the-jungle-book",
+        "name": "The Jungle Book",
+        "order": 1,
+        "totalParts": 7,
+        "nextTeaser": "Baloo the bear and Bagheera the panther begin teaching Mowgli the Law of the Jungle — and Mowgli is kidnapped by the Bandar-log."
+      }
+    },
+    {
+      "id": "librivox-frances-hodgson-burnett-the-secret-garden-ch1",
+      "title": "The Secret Garden",
+      "author": "Frances Hodgson Burnett",
+      "narrator": "Karen Savage",
+      "summary": "Mary Lennox, sour and lonely, is sent from India to live with her uncle on the Yorkshire moors.",
+      "description": "Chapter 1 — 'There Is No One Left.' A cholera outbreak in colonial India leaves nine-year-old Mary Lennox an orphan, alone in a great empty bungalow until soldiers come and find her hiding behind a curtain. The chapter is quiet and a little sad and very precise about her loneliness. She is dispatched across the world to a great, draughty house on the Yorkshire moors belonging to a hunchbacked uncle she has never met — and the rest of the book begins from there. One of the great quiet openings in children's literature.",
+      "authorBio": "Frances Hodgson Burnett (1849–1924) was an English-American novelist who also wrote A Little Princess and Little Lord Fauntleroy. She moved between England and the United States all her life, and the moors and walled gardens of her childhood Manchester thread through The Secret Garden, written in 1911.",
+      "relevance": "A long, slow, healing book — about gardens and weather and a child who is allowed to be cross. Pairs well with rainy nights and tea.",
+      "coverUrl": "https://raw.githubusercontent.com/standardebooks/frances-hodgson-burnett_the-secret-garden/master/images/cover.jpg",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-secret-garden-by-frances-hodgson-burnett/",
+        "audioUrl": "https://archive.org/download/secretgarden_ks_librivox/secretgarden_01_burnett_64kb.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 1320,
+      "lengthBucket": "long",
+      "ageBand": "6-9",
+      "mood": ["calming", "nature", "classic"],
+      "loudness": {
+        "integratedLufs": -20.3,
+        "truePeakDbtp": -1.8,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": ["sad-opening"]
+      },
+      "series": {
+        "id": "the-secret-garden",
+        "name": "The Secret Garden",
+        "order": 1,
+        "totalParts": 27,
+        "nextTeaser": "Mary arrives at Misselthwaite Manor and meets the brisk Mrs Medlock — and on her first morning, hears a strange sound she's been told is only the wind."
       }
     }
   ]
