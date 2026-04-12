@@ -50,7 +50,7 @@ export default function Library() {
           <p className="label-eyebrow">
             {filtered.length} of {catalog?.stories.length ?? 0} stories
           </p>
-          <div className="grid gap-5">
+          <div className="grid gap-5 sm:grid-cols-2">
             {filtered.map((s) => (
               <StoryCard key={s.id} story={s} />
             ))}
