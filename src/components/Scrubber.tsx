@@ -17,10 +17,10 @@ export default function Scrubber({ position, duration, onSeek }: Props) {
         step={1}
         value={Math.min(position, max)}
         onChange={(e) => onSeek(Number(e.target.value))}
-        className="w-full accent-accent"
+        className="w-full accent-amber"
         aria-label="Seek position"
       />
-      <div className="flex justify-between text-xs text-cream-500 tabular-nums">
+      <div className="flex justify-between text-xs text-cream-400 tabular-nums font-sans">
         <span>{formatDuration(position)}</span>
         <span>{formatDuration(max)}</span>
       </div>

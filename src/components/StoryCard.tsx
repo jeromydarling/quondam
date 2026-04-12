@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import type { Story } from "../catalog/types";
 import { formatDuration } from "../catalog/filter";
 import { useStore } from "../state/store";
+import BookCover from "./BookCover";
 
 export default function StoryCard({ story }: { story: Story }) {
   const isFav = useStore((s) => s.favorites.includes(story.id));
@@ -11,78 +12,86 @@ export default function StoryCard({ story }: { story: Story }) {
   const removeFromTonight = useStore((s) => s.removeFromTonight);
 
   return (
-    <article className="rounded-2xl bg-night-900 border border-night-800 p-4 flex flex-col gap-3">
-      <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0">
+    <article className="panel p-5 flex gap-5">
+      <Link
+        to={`/play/${encodeURIComponent(story.id)}`}
+        className="shrink-0 w-24 sm:w-28 group"
+        aria-label={`Play ${story.title}`}
+      >
+        <BookCover
+          story={story}
+          className="w-full transition-transform group-hover:scale-[1.02]"
+        />
+      </Link>
+
+      <div className="min-w-0 flex-1 flex flex-col">
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <Link
+              to={`/play/${encodeURIComponent(story.id)}`}
+              className="block hover:text-amber"
+            >
+              <h3
+                className="font-serif text-2xl text-cream-50 leading-tight tracking-tight text-balance"
+                style={{ fontVariationSettings: '"opsz" 144, "SOFT" 60, "wght" 500' }}
+                title={story.title}
+              >
+                {story.title}
+              </h3>
+            </Link>
+            <div className="mt-1 text-sm text-cream-300 italic">
+              {story.author}
+              {story.narrator ? (
+                <span className="text-cream-400 not-italic"> · {story.narrator}</span>
+              ) : null}
+            </div>
+          </div>
+          <button
+            type="button"
+            aria-pressed={isFav}
+            aria-label={isFav ? "Remove favorite" : "Add favorite"}
+            onClick={() => toggleFavorite(story.id)}
+            className="min-h-tap min-w-tap flex items-center justify-center text-2xl text-amber"
+            title={isFav ? "Favorited" : "Favorite"}
+          >
+            {isFav ? "♥" : "♡"}
+          </button>
+        </div>
+
+        {story.summary && (
+          <p className="mt-2 text-[15px] leading-snug text-cream-200/90 line-clamp-2 max-w-prose">
+            {story.summary}
+          </p>
+        )}
+
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 label-eyebrow opacity-90">
+          <span>Age {story.ageBand}</span>
+          <span>{formatDuration(story.durationSec)}</span>
+          <span>{story.mood.slice(0, 2).join(" · ")}</span>
+          {story.safety.flags.length > 0 && (
+            <span className="text-amber-dim normal-case tracking-normal">
+              ⚠ {story.safety.flags[0]}
+            </span>
+          )}
+        </div>
+
+        <div className="mt-auto pt-4 flex gap-2">
           <Link
             to={`/play/${encodeURIComponent(story.id)}`}
-            className="block text-lg font-medium hover:text-accent truncate"
-            title={story.title}
+            className="btn-accent flex-1"
           >
-            {story.title}
+            Play
           </Link>
-          <div className="text-sm text-cream-300 truncate">
-            {story.author}
-            {story.narrator ? ` · narrated by ${story.narrator}` : ""}
-          </div>
-        </div>
-        <button
-          type="button"
-          aria-pressed={isFav}
-          aria-label={isFav ? "Remove favorite" : "Add favorite"}
-          onClick={() => toggleFavorite(story.id)}
-          className="min-h-tap min-w-tap flex items-center justify-center text-2xl"
-          title={isFav ? "Favorited" : "Favorite"}
-        >
-          {isFav ? "♥" : "♡"}
-        </button>
-      </div>
-
-      {story.summary && (
-        <p className="text-sm text-cream-300 line-clamp-2">{story.summary}</p>
-      )}
-
-      <div className="flex flex-wrap gap-2 text-xs text-cream-500">
-        <span className="rounded-full bg-night-800 px-2 py-1">
-          Age {story.ageBand}
-        </span>
-        <span className="rounded-full bg-night-800 px-2 py-1">
-          {formatDuration(story.durationSec)}
-        </span>
-        {story.mood.map((m) => (
-          <span key={m} className="rounded-full bg-night-800 px-2 py-1">
-            {m}
-          </span>
-        ))}
-        {story.safety.flags.map((f) => (
-          <span
-            key={f}
-            className="rounded-full bg-night-800 text-accent-dim px-2 py-1"
-            title="Content note"
+          <button
+            type="button"
+            className={inTonight ? "btn bg-ink-700" : "btn-ghost"}
+            onClick={() =>
+              inTonight ? removeFromTonight(story.id) : addToTonight(story.id)
+            }
           >
-            ⚠ {f}
-          </span>
-        ))}
-      </div>
-
-      <div className="flex gap-2">
-        <Link
-          to={`/play/${encodeURIComponent(story.id)}`}
-          className="btn-accent flex-1"
-        >
-          ▶ Play
-        </Link>
-        <button
-          type="button"
-          className={inTonight ? "btn bg-night-600" : "btn"}
-          onClick={() =>
-            inTonight
-              ? removeFromTonight(story.id)
-              : addToTonight(story.id)
-          }
-        >
-          {inTonight ? "✓ Tonight" : "+ Tonight"}
-        </button>
+            {inTonight ? "✓ Tonight" : "+ Tonight"}
+          </button>
+        </div>
       </div>
     </article>
   );

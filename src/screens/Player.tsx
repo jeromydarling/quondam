@@ -4,6 +4,9 @@ import { useCatalog } from "../catalog/useCatalog";
 import { useStore } from "../state/store";
 import { useAudioEngine } from "../audio/useAudioEngine";
 import { formatDuration } from "../catalog/filter";
+import { computeNextTeaser } from "../lib/teaser";
+import BookCover from "../components/BookCover";
+import VuMeter from "../components/VuMeter";
 import Scrubber from "../components/Scrubber";
 import SleepTimerControl from "../components/SleepTimerControl";
 
@@ -24,12 +27,10 @@ export default function Player() {
   const denoiseOverride = useStore((s) => s.denoiseOverrides[decodedId]);
   const setDenoiseOverride = useStore((s) => s.setDenoiseOverride);
 
-  // Decision: do we honor the saved position on load? Yes by default; user
-  // can dismiss the resume banner before pressing play to start over.
   const [useSaved, setUseSaved] = useState(true);
   const [fadeSec, setFadeSec] = useState(30);
+  const [showAuthor, setShowAuthor] = useState(false);
 
-  // Effective denoise = user override if set, else catalog hint, else off.
   const denoiseEnabled =
     denoiseOverride ?? story?.restoration?.suggestDenoise ?? false;
 
@@ -48,6 +49,7 @@ export default function Player() {
     position,
     appliedGainDb,
     error,
+    analyser,
     togglePlay,
     seek,
     startSleepTimer,
@@ -60,11 +62,16 @@ export default function Player() {
     denoise: denoiseEnabled,
   });
 
+  const teaser = useMemo(
+    () => (story ? computeNextTeaser(story, position) : null),
+    [story, position],
+  );
+
   if (loading) return <p className="text-cream-300">Loading…</p>;
   if (!story)
     return (
-      <div className="space-y-3">
-        <p className="text-cream-300">Story not found.</p>
+      <div className="space-y-4">
+        <p className="body-prose text-cream-300">Story not found.</p>
         <Link to="/" className="btn-accent">
           Back to library
         </Link>
@@ -72,21 +79,50 @@ export default function Player() {
     );
 
   return (
-    <section className="space-y-6">
-      <button type="button" className="btn px-3" onClick={() => navigate(-1)}>
+    <section className="space-y-10">
+      <button
+        type="button"
+        className="btn-ghost px-3"
+        onClick={() => navigate(-1)}
+      >
         ← Back
       </button>
 
-      <header className="space-y-1">
-        <h2 className="text-2xl font-semibold leading-tight">{story.title}</h2>
-        <p className="text-cream-300">
-          {story.author}
-          {story.narrator ? ` · ${story.narrator}` : ""}
-        </p>
-        {story.summary && (
-          <p className="text-sm text-cream-300 mt-2">{story.summary}</p>
-        )}
-      </header>
+      {/* HERO: cover + title + author + relevance */}
+      <div className="grid gap-8 sm:grid-cols-[200px_1fr] sm:gap-10 items-start">
+        <BookCover story={story} className="w-44 sm:w-[200px]" />
+        <div className="space-y-4">
+          {story.series && (
+            <p className="label-eyebrow">
+              {story.series.name} · Chapter {story.series.order}
+              {story.series.totalParts ? ` of ${story.series.totalParts}` : ""}
+            </p>
+          )}
+          <h2 className="display-title text-balance">{story.title}</h2>
+          <p className="font-serif text-lg italic text-cream-200">
+            by {story.author}
+            {story.narrator && (
+              <span className="not-italic text-cream-400">
+                {" "}
+                · narrated by {story.narrator}
+              </span>
+            )}
+          </p>
+          {story.relevance && (
+            <p className="font-serif text-base text-amber/90 italic max-w-prose">
+              {story.relevance}
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* DESCRIPTION */}
+      {story.description && (
+        <div className="space-y-2">
+          <p className="label-eyebrow">About this story</p>
+          <p className="body-prose">{story.description}</p>
+        </div>
+      )}
 
       {/* The hidden audio element. crossorigin is essential so the Web Audio
           graph can analyze/process the stream without tainting. */}
@@ -98,20 +134,26 @@ export default function Player() {
       />
 
       {error && (
-        <div className="rounded-xl border border-accent-dim bg-night-900 p-3 text-accent">
+        <div className="rounded-xl border border-amber-dim bg-ink-900 p-3 text-amber">
           {error}
         </div>
       )}
 
-      {savedPosition !== undefined && useSaved && !isPlaying && position < 1 && (
-        <div className="rounded-xl bg-night-800 border border-night-600 p-3 flex items-center justify-between gap-3">
-          <span className="text-sm text-cream-100">
-            Resume from {formatDuration(savedPosition)}?
-          </span>
-          <div className="flex gap-2">
+      {savedPosition !== undefined &&
+        useSaved &&
+        !isPlaying &&
+        position < 1 && (
+          <div className="panel p-4 flex items-center justify-between gap-3">
+            <span className="font-serif text-cream-100">
+              Resume from{" "}
+              <span className="text-amber tabular-nums">
+                {formatDuration(savedPosition)}
+              </span>
+              ?
+            </span>
             <button
               type="button"
-              className="btn px-3"
+              className="btn-ghost px-3"
               onClick={() => {
                 clearResume(story.id);
                 setUseSaved(false);
@@ -121,15 +163,17 @@ export default function Player() {
               Start over
             </button>
           </div>
-        </div>
-      )}
+        )}
 
-      <div className="rounded-2xl bg-night-900 border border-night-800 p-5 space-y-4">
+      {/* PLAYER CORE: VU meter, transport, scrubber */}
+      <div className="panel p-6 sm:p-8 space-y-6">
+        <VuMeter analyser={analyser} active={isPlaying} />
+
         <div className="flex items-center justify-center">
           <button
             type="button"
             onClick={togglePlay}
-            className="btn-accent w-24 h-24 rounded-full text-3xl"
+            className="btn-accent w-28 h-28 rounded-full text-3xl shadow-cover"
             aria-label={isPlaying ? "Pause" : "Play"}
           >
             {isPlaying ? "❚❚" : "▶"}
@@ -139,18 +183,18 @@ export default function Player() {
         <Scrubber position={position} duration={duration} onSeek={seek} />
 
         {appliedGainDb !== null && (
-          <p className="text-center text-xs text-cream-500 tabular-nums">
-            Loudness: {story.loudness.integratedLufs.toFixed(1)} LUFS · gain
-            applied {appliedGainDb >= 0 ? "+" : ""}
+          <p className="text-center label-eyebrow tabular-nums opacity-80">
+            {story.loudness.integratedLufs.toFixed(1)} LUFS · gain{" "}
+            {appliedGainDb >= 0 ? "+" : ""}
             {appliedGainDb.toFixed(1)} dB · target{" "}
             {story.loudness.targetLufs.toFixed(0)} LUFS
           </p>
         )}
 
-        <div className="flex items-center justify-between gap-3 pt-2 border-t border-night-800">
+        <div className="flex items-center justify-between gap-3 pt-4 border-t border-ink-800">
           <div className="text-sm">
-            <div className="text-cream-100">Reduce hiss</div>
-            <div className="text-xs text-cream-500">
+            <div className="font-serif text-cream-100">Reduce hiss</div>
+            <div className="label-eyebrow normal-case tracking-normal opacity-70 mt-0.5">
               {story.restoration?.hissLevel === "high"
                 ? "Source has heavy tape hiss — recommended"
                 : story.restoration?.hissLevel === "low"
@@ -164,11 +208,11 @@ export default function Player() {
             aria-checked={denoiseEnabled}
             onClick={() => setDenoiseOverride(story.id, !denoiseEnabled)}
             className={`relative inline-flex h-7 w-12 items-center rounded-full transition-colors ${
-              denoiseEnabled ? "bg-accent" : "bg-night-700"
+              denoiseEnabled ? "bg-amber" : "bg-ink-700"
             }`}
           >
             <span
-              className={`inline-block h-5 w-5 transform rounded-full bg-night-950 transition-transform ${
+              className={`inline-block h-5 w-5 transform rounded-full bg-ink-950 transition-transform ${
                 denoiseEnabled ? "translate-x-6" : "translate-x-1"
               }`}
             />
@@ -176,6 +220,7 @@ export default function Player() {
         </div>
       </div>
 
+      {/* SLEEP TIMER */}
       <SleepTimerControl
         active={sleepTimerActive}
         fadeSec={fadeSec}
@@ -184,13 +229,49 @@ export default function Player() {
         onCancel={cancelSleepTimer}
       />
 
-      <p className="text-xs text-cream-500">
-        Source:{" "}
+      {/* TOMORROW NIGHT teaser */}
+      {teaser && (
+        <div className="panel p-5 space-y-2 border-l-4 border-l-amber/60">
+          <p className="label-eyebrow">{teaser.heading}</p>
+          <h3
+            className="font-serif text-2xl text-cream-50"
+            style={{ fontVariationSettings: '"opsz" 144, "SOFT" 60, "wght" 500' }}
+          >
+            {teaser.title}
+          </h3>
+          {teaser.teaser && (
+            <p className="font-serif italic text-cream-200 max-w-prose">
+              {teaser.teaser}
+            </p>
+          )}
+        </div>
+      )}
+
+      {/* AUTHOR BIO — collapsible */}
+      {story.authorBio && (
+        <div className="space-y-2">
+          <button
+            type="button"
+            onClick={() => setShowAuthor((v) => !v)}
+            className="label-eyebrow flex items-center gap-2 hover:text-cream-200"
+            aria-expanded={showAuthor}
+          >
+            About the author
+            <span className={showAuthor ? "rotate-180" : ""}>▾</span>
+          </button>
+          {showAuthor && (
+            <p className="body-prose">{story.authorBio}</p>
+          )}
+        </div>
+      )}
+
+      <p className="label-eyebrow opacity-70">
+        Source ·{" "}
         <a
           href={story.source.pageUrl}
           target="_blank"
           rel="noreferrer"
-          className="underline hover:text-cream-300"
+          className="underline hover:text-cream-200"
         >
           {story.source.attribution}
         </a>{" "}

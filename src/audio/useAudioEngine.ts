@@ -26,6 +26,8 @@ interface UseAudioEngineApi {
   appliedGainDb: number | null;
   ready: boolean;
   error: string | null;
+  /** AnalyserNode for visualizers. Null until the graph is built. */
+  analyser: AnalyserNode | null;
 
   play: () => Promise<void>;
   pause: () => void;
@@ -63,6 +65,7 @@ export function useAudioEngine({
   const [ready, setReady] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [sleepTimerActive, setSleepTimerActive] = useState(false);
+  const [analyser, setAnalyser] = useState<AnalyserNode | null>(null);
 
   // Keep latest initialPosition in a ref so we can apply it once metadata loads
   // without re-running the main effect on every change.
@@ -110,6 +113,7 @@ export function useAudioEngine({
     const db = applyLoudness(graph, story.loudness);
     setAppliedGainDb(db);
     setDenoiseEnabled(graph, denoise);
+    setAnalyser(graph.analyser);
 
     const onLoaded = () => {
       setDuration(el.duration || story.durationSec);
@@ -227,6 +231,7 @@ export function useAudioEngine({
     appliedGainDb,
     ready,
     error,
+    analyser,
     play,
     pause,
     togglePlay,

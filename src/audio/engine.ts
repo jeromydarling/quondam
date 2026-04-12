@@ -74,6 +74,9 @@ export interface AudioGraph {
   bandHigh: BiquadFilterNode;
   highBandExpander: DynamicsCompressorNode;
   wetMerge: GainNode;
+
+  /** Tap point for visualizers (VU meter, scopes). Sits post-limiter. */
+  analyser: AnalyserNode;
 }
 
 /** Build the full per-element audio graph (see AudioGraph doc above). */
@@ -157,6 +160,11 @@ export function buildGraph(
   limiter.attack.value = 0.003;
   limiter.release.value = 0.25;
 
+  // ----- Visualizer tap (post-limiter) -----
+  const analyser = context.createAnalyser();
+  analyser.fftSize = 1024;
+  analyser.smoothingTimeConstant = 0.6;
+
   // ----- Wire it up -----
   source.connect(gain);
   gain.connect(cleanupHighpass);
@@ -177,7 +185,8 @@ export function buildGraph(
   wetMerge.connect(wetGain);
   wetGain.connect(limiter);
 
-  limiter.connect(context.destination);
+  limiter.connect(analyser);
+  analyser.connect(context.destination);
 
   return {
     context,
@@ -194,6 +203,7 @@ export function buildGraph(
     bandHigh,
     highBandExpander,
     wetMerge,
+    analyser,
   };
 }
 

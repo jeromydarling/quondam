@@ -8,6 +8,9 @@
       "author": "Aesop",
       "narrator": "LibriVox Volunteers",
       "summary": "A short fable about a fox who decides the grapes he cannot reach must be sour anyway.",
+      "description": "One of Aesop's shortest and most enduring fables. A hungry fox spies a bunch of ripe grapes hanging from a vine, leaps for them again and again, and finally walks away muttering that they were probably sour to begin with. From this little story we get the everyday phrase 'sour grapes' — the way we dismiss the things we cannot have.",
+      "authorBio": "Aesop is the legendary author of the world's most famous collection of fables. Whether he was a real person — possibly a Greek storyteller and slave living in the 6th century BCE — or a name later attached to a tradition of folk wisdom, the fables themselves have shaped storytelling for more than two thousand years.",
+      "relevance": "Aesop's fables are usually a child's first taste of stories that come with a quiet lesson tucked inside. They're short enough for a tired parent and a tireder child, and they leave room to talk afterward.",
       "source": {
         "provider": "librivox",
         "pageUrl": "https://librivox.org/aesops-fables-volume-1-by-aesop/",
@@ -36,6 +39,9 @@
       "author": "Beatrix Potter",
       "narrator": "Karen Savage",
       "summary": "A mischievous young rabbit slips into Mr. McGregor's garden and learns why his mother told him not to.",
+      "description": "Beatrix Potter's first and most beloved book. Peter ignores his mother's warning, squeezes under the gate of Mr. McGregor's garden, and finds himself in a slow, panicky chase through lettuces and watering cans. He loses his little blue jacket and his shoes, comes home soaked and shivering, and is sent to bed with chamomile tea while his well-behaved sisters have bread, milk, and blackberries for supper. The book is gentle, exact, and entirely without moralizing — Potter trusts the child to draw their own conclusions.",
+      "authorBio": "Beatrix Potter (1866–1943) was an English author, illustrator, natural scientist and conservationist. She wrote and illustrated 23 small books featuring animal characters, beginning with The Tale of Peter Rabbit in 1902. Her royalties bought thousands of acres of farmland in the Lake District, which she left to the National Trust.",
+      "relevance": "A near-perfect picture book — short, exciting, and consoling. Children love that Peter is naughty and afraid, and that he comes home anyway.",
       "source": {
         "provider": "librivox",
         "pageUrl": "https://librivox.org/the-tale-of-peter-rabbit-by-beatrix-potter/",
@@ -60,10 +66,13 @@
     },
     {
       "id": "librivox-kenneth-grahame-the-wind-in-the-willows-ch1",
-      "title": "The Wind in the Willows — Chapter 1: The River Bank",
+      "title": "The Wind in the Willows",
       "author": "Kenneth Grahame",
       "narrator": "Mark F. Smith",
       "summary": "Mole abandons his spring cleaning, meets the Water Rat, and discovers the joys of the river.",
+      "description": "Chapter 1 — 'The River Bank.' On the first warm day of spring, Mole throws down his whitewash brush, runs out of his underground home and finds himself for the first time at the edge of a river. He meets Ratty, who introduces him to messing about in boats, packs a fat picnic basket, and the two of them drift through a slow golden afternoon while Ratty tells him about all the strange and brave creatures of the riverbank — including, in passing, a certain Mr Toad. It is one of the gentlest and most contented openings in English children's literature.",
+      "authorBio": "Kenneth Grahame (1859–1932) was a Scottish writer who spent his working life as Secretary of the Bank of England. He wrote The Wind in the Willows for his young son Alastair, originally as bedtime stories and then as letters when Alastair was away. It was published in 1908 and rejected by several editors before becoming one of the most beloved books in the English language.",
+      "relevance": "A book about friendship, the seasons, and the deep pleasure of small things — a riverbank, a picnic, a quiet afternoon. Perfect for the slow chapter-a-night pace bedtime asks for.",
       "source": {
         "provider": "librivox",
         "pageUrl": "https://librivox.org/the-wind-in-the-willows-by-kenneth-grahame/",
@@ -88,6 +97,13 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
+      },
+      "series": {
+        "id": "wind-in-the-willows",
+        "name": "The Wind in the Willows",
+        "order": 1,
+        "totalParts": 12,
+        "nextTeaser": "Mole and Ratty pay a visit to the boastful Mr Toad, who has discovered an entirely new and very expensive enthusiasm: the gypsy caravan."
       }
     }
   ]

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useCatalog } from "../catalog/useCatalog";
 import { useStore } from "../state/store";
 import { formatDuration } from "../catalog/filter";
+import BookCover from "../components/BookCover";
 
 export default function Tonight() {
   const { catalog, loading } = useCatalog();
@@ -16,40 +17,66 @@ export default function Tonight() {
     .map((id) => byId.get(id))
     .filter((s): s is NonNullable<typeof s> => !!s);
 
+  const totalSec = items.reduce((sum, s) => sum + s.durationSec, 0);
+
   return (
-    <section className="space-y-4">
-      <h2 className="text-lg font-medium">Tonight's shortlist</h2>
+    <section className="space-y-8">
+      <header className="space-y-3">
+        <p className="label-eyebrow">Tonight</p>
+        <h2 className="display-title">Tonight's shortlist.</h2>
+        {items.length > 0 && (
+          <p className="body-prose">
+            {items.length} {items.length === 1 ? "story" : "stories"} ·{" "}
+            {formatDuration(totalSec)} of bedtime listening.
+          </p>
+        )}
+      </header>
+
       {items.length === 0 ? (
-        <p className="text-cream-500">
+        <p className="body-prose text-cream-400 italic">
           Nothing yet — add stories from the{" "}
-          <Link to="/" className="text-accent underline">
+          <Link to="/" className="text-amber underline decoration-amber/40">
             Library
           </Link>
           .
         </p>
       ) : (
-        <ol className="space-y-2">
+        <ol className="space-y-4">
           {items.map((s, idx) => (
             <li
               key={s.id}
-              className="rounded-xl bg-night-900 border border-night-800 p-3 flex items-center gap-3"
+              className="panel p-4 flex items-center gap-4"
             >
-              <span className="text-cream-500 w-6 text-right">{idx + 1}.</span>
+              <span className="font-serif text-2xl text-cream-400 w-8 text-right tabular-nums">
+                {idx + 1}
+              </span>
+              <Link
+                to={`/play/${encodeURIComponent(s.id)}`}
+                className="shrink-0 w-14"
+                aria-label={`Play ${s.title}`}
+              >
+                <BookCover story={s} className="w-full" showFallbackTitle={false} />
+              </Link>
               <div className="min-w-0 flex-1">
                 <Link
                   to={`/play/${encodeURIComponent(s.id)}`}
-                  className="block font-medium hover:text-accent truncate"
+                  className="block hover:text-amber"
                 >
-                  {s.title}
+                  <h3
+                    className="font-serif text-xl text-cream-50 leading-tight truncate"
+                    style={{ fontVariationSettings: '"opsz" 144, "SOFT" 60, "wght" 500' }}
+                  >
+                    {s.title}
+                  </h3>
                 </Link>
-                <div className="text-xs text-cream-500">
+                <div className="text-xs text-cream-400 italic mt-0.5">
                   {s.author} · {formatDuration(s.durationSec)} · age {s.ageBand}
                 </div>
               </div>
-              <div className="flex gap-1">
+              <div className="flex gap-1 shrink-0">
                 <button
                   type="button"
-                  className="btn px-2"
+                  className="btn-ghost px-3"
                   aria-label="Move up"
                   disabled={idx === 0}
                   onClick={() => reorderTonight(idx, idx - 1)}
@@ -58,7 +85,7 @@ export default function Tonight() {
                 </button>
                 <button
                   type="button"
-                  className="btn px-2"
+                  className="btn-ghost px-3"
                   aria-label="Move down"
                   disabled={idx === items.length - 1}
                   onClick={() => reorderTonight(idx, idx + 1)}
@@ -67,7 +94,7 @@ export default function Tonight() {
                 </button>
                 <button
                   type="button"
-                  className="btn px-2"
+                  className="btn-ghost px-3"
                   aria-label="Remove"
                   onClick={() => removeFromTonight(s.id)}
                 >

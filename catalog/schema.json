@@ -39,6 +39,10 @@
         "author": { "type": "string", "minLength": 1 },
         "narrator": { "type": "string" },
         "summary": { "type": "string" },
+        "description": { "type": "string" },
+        "authorBio": { "type": "string" },
+        "relevance": { "type": "string" },
+        "coverUrl": { "type": "string", "format": "uri" },
         "source": {
           "type": "object",
           "required": ["provider", "pageUrl", "audioUrl", "license", "attribution"],
@@ -100,6 +104,31 @@
           "properties": {
             "hissLevel": { "enum": ["none", "low", "high"] },
             "suggestDenoise": { "type": "boolean" }
+          }
+        },
+        "series": {
+          "type": "object",
+          "required": ["id", "name", "order"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "name": { "type": "string", "minLength": 1 },
+            "order": { "type": "integer", "minimum": 1 },
+            "totalParts": { "type": "integer", "minimum": 1 },
+            "nextTeaser": { "type": "string" }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "startSec"],
+            "additionalProperties": false,
+            "properties": {
+              "title": { "type": "string", "minLength": 1 },
+              "startSec": { "type": "number", "minimum": 0 },
+              "teaser": { "type": "string" }
+            }
           }
         }
       }

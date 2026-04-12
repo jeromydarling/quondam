@@ -20,13 +20,11 @@ export default function SleepTimerControl({
   const [custom, setCustom] = useState("");
 
   return (
-    <div className="rounded-2xl bg-night-900 border border-night-800 p-4 space-y-3">
+    <div className="panel p-5 space-y-4">
       <div className="flex items-center justify-between">
-        <h3 className="text-sm uppercase tracking-wider text-cream-500">
-          Sleep timer
-        </h3>
+        <h3 className="label-eyebrow">Sleep timer</h3>
         {active && (
-          <button type="button" className="btn px-3" onClick={onCancel}>
+          <button type="button" className="btn-ghost px-3 py-1.5" onClick={onCancel}>
             Cancel
           </button>
         )}
@@ -58,17 +56,17 @@ export default function SleepTimerControl({
             value={custom}
             onChange={(e) => setCustom(e.target.value)}
             placeholder="custom"
-            className="w-20 rounded-xl bg-night-800 border border-night-700 px-3 py-2 text-sm"
+            className="w-20 rounded-xl bg-ink-850 border border-ink-700 px-3 py-2 text-sm font-serif"
             aria-label="Custom minutes"
           />
-          <button type="submit" className="btn px-3">
+          <button type="submit" className="btn-ghost px-3 py-2">
             Set
           </button>
         </form>
       </div>
 
-      <div className="flex items-center gap-2 text-sm text-cream-300">
-        <label htmlFor="fade">Fade-out</label>
+      <div className="flex items-center gap-3 text-sm text-cream-300">
+        <label htmlFor="fade" className="font-sans">Fade-out</label>
         <input
           id="fade"
           type="range"
@@ -77,9 +75,9 @@ export default function SleepTimerControl({
           step={5}
           value={fadeSec}
           onChange={(e) => onFadeChange(Number(e.target.value))}
-          className="flex-1 accent-accent"
+          className="flex-1 accent-amber"
         />
-        <span className="tabular-nums w-12 text-right">{fadeSec}s</span>
+        <span className="tabular-nums w-12 text-right font-sans text-cream-200">{fadeSec}s</span>
       </div>
     </div>
   );

@@ -139,6 +139,93 @@ it for genuinely soothing material.
 
 ---
 
+## 4a. Rich metadata (optional but strongly encouraged)
+
+The player's design depends on rich text metadata to feel calm and
+beautiful instead of empty. None of these fields are required, but a
+catalog entry without them will look bare. Aim to fill them all unless
+the work genuinely doesn't merit it.
+
+### `summary` (1 sentence)
+
+A one-line blurb shown on library cards. Verb-first, present tense, no
+spoilers. Example:
+
+> "A mischievous young rabbit slips into Mr. McGregor's garden and learns
+> why his mother told him not to."
+
+### `description` (1–3 paragraphs)
+
+Long-form description shown on the Player hero. This is where you set the
+mood. Tell the parent what the book is *like* — the pacing, the warmth,
+the kind of evening it suits. Don't summarize the plot beat by beat.
+
+### `authorBio` (2–4 sentences)
+
+Brief, honest, factual. Birth/death years, nationality, one or two notes
+about the work or the life that helps a parent place the author. Avoid
+listicle-style accolades.
+
+### `relevance` (1–2 sentences)
+
+Why a parent should pick this book *for bedtime, for this child*. Not a
+review of the book in general — a reason to put it in the queue tonight.
+
+### `coverUrl` (URL, optional)
+
+A direct URL to a book-cover image. The player will use it as-is.
+
+**You usually don't need to set this.** The player auto-derives a cover
+from the archive.org identifier in `audioUrl` using
+`https://archive.org/services/img/{identifier}` — that endpoint returns
+the same thumbnail you see on the book's archive.org page, with CORS
+headers, for free. Only set `coverUrl` when:
+
+- The auto-derived thumbnail is wrong, ugly, or missing.
+- You have a better high-resolution scan from Wikimedia Commons or Open
+  Library that's clearly public domain.
+
+If both are missing, the player renders a beautiful generated SVG cover
+from the title and a deterministic palette — so it never looks broken.
+
+### `series` (object, optional)
+
+When a story is one chapter of a larger work split across multiple audio
+files, group them with `series`. The player uses this to show "Tomorrow
+night: ..." with the next chapter's teaser:
+
+```jsonc
+"series": {
+  "id": "wind-in-the-willows",     // shared across all chapters in the work
+  "name": "The Wind in the Willows",
+  "order": 1,                       // 1-based
+  "totalParts": 12,
+  "nextTeaser": "Mole and Ratty pay a visit to the boastful Mr Toad..."
+}
+```
+
+The `nextTeaser` belongs to *this* chapter (it teases what's next from
+here). The very last chapter in a series should omit `nextTeaser`.
+
+### `chapters` (array, optional)
+
+When a *single* audio file contains multiple internal chapters or
+sections (e.g. a collection of fables in one mp3), provide markers:
+
+```jsonc
+"chapters": [
+  { "title": "The Fox and the Grapes", "startSec": 0, "teaser": "Sour grapes." },
+  { "title": "The Tortoise and the Hare", "startSec": 184, "teaser": "Slow and steady." }
+]
+```
+
+The player finds the chapter containing the current playback position
+and uses the *next* chapter's teaser as "tomorrow night."
+
+You will rarely need both `series` and `chapters` on the same entry.
+
+---
+
 ## 4b. Restoration hint (optional)
 
 Many public-domain recordings — especially older LibriVox volunteer

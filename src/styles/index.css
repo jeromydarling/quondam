@@ -9,10 +9,41 @@
     height: 100%;
   }
   body {
-    @apply bg-night-950 text-cream-50 antialiased;
-    font-feature-settings: "ss01", "ss02";
+    @apply bg-ink-950 text-cream-100 antialiased;
+    font-family: "Fraunces", ui-serif, Georgia, serif;
+    font-feature-settings: "ss01", "ss02", "ss03", "ss04";
+    /* Slight Fraunces SOFT axis for warmer terminals — bedtime, not boardroom. */
+    font-variation-settings: "SOFT" 30;
   }
-  /* Reduce blue-light intensity at the system level when supported. */
+  /* Paper-grain overlay sits above background, below content, never blocks clicks. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: theme("backgroundImage.grain");
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+  }
+  #root {
+    position: relative;
+    z-index: 1;
+  }
+  h1, h2, h3 {
+    font-variation-settings: "SOFT" 50, "opsz" 144;
+    letter-spacing: -0.01em;
+  }
+  ::selection {
+    background: theme("colors.amber.DEFAULT");
+    color: theme("colors.ink.950");
+  }
+  /* Calmer focus ring */
+  :focus-visible {
+    outline: 2px solid theme("colors.amber.DEFAULT");
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
   @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -25,19 +56,44 @@
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center min-h-tap min-w-tap rounded-xl px-4 py-2 text-base font-medium
-           bg-night-700 text-cream-50 hover:bg-night-600 active:bg-night-800
+    @apply inline-flex items-center justify-center min-h-tap min-w-tap rounded-xl px-5 py-2.5 text-base font-medium
+           bg-ink-800 text-cream-50 hover:bg-ink-700 active:bg-ink-850
+           border border-ink-700
            transition-colors disabled:opacity-50 disabled:pointer-events-none;
+    font-variation-settings: "SOFT" 30, "opsz" 14;
   }
   .btn-accent {
-    @apply btn bg-accent text-night-950 hover:bg-cream-100;
+    @apply btn bg-amber text-ink-950 hover:bg-cream-100 border-amber;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent border-ink-700 hover:bg-ink-800;
   }
   .chip {
     @apply inline-flex items-center min-h-tap rounded-full px-4 py-2 text-sm
-           bg-night-800 text-cream-100 border border-night-600
-           hover:bg-night-700 transition-colors;
+           bg-ink-850 text-cream-100 border border-ink-700
+           hover:bg-ink-800 transition-colors;
+    font-variation-settings: "opsz" 14;
   }
   .chip-on {
-    @apply chip bg-accent text-night-950 border-accent hover:bg-accent;
+    @apply chip bg-amber text-ink-950 border-amber hover:bg-amber;
+  }
+  .panel {
+    @apply rounded-2xl bg-ink-900/80 border border-ink-800 backdrop-blur-sm;
+    box-shadow: theme("boxShadow.innerWarm");
+  }
+  .display-title {
+    @apply font-serif text-display text-cream-50;
+    font-variation-settings: "opsz" 144, "SOFT" 50, "wght" 500;
+  }
+  .hero-title {
+    @apply font-serif text-hero text-cream-50;
+    font-variation-settings: "opsz" 144, "SOFT" 50, "wght" 500;
+  }
+  .body-prose {
+    @apply font-serif text-base leading-relaxed text-cream-200 max-w-prose;
+    font-variation-settings: "opsz" 14, "SOFT" 30, "wght" 400;
+  }
+  .label-eyebrow {
+    @apply uppercase tracking-[0.15em] text-[0.7rem] text-cream-400 font-sans font-medium;
   }
 }
