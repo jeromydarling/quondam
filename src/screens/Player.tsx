@@ -5,6 +5,7 @@ import { useStore } from "../state/store";
 import { useAudioEngine } from "../audio/useAudioEngine";
 import { formatDuration } from "../catalog/filter";
 import { computeNextTeaser } from "../lib/teaser";
+import { humanizeGain } from "../lib/humanize";
 import BookCover from "../components/BookCover";
 import VuMeter from "../components/VuMeter";
 import Scrubber from "../components/Scrubber";
@@ -177,23 +178,25 @@ export default function Player() {
         <Scrubber position={position} duration={duration} onSeek={seek} />
 
         {appliedGainDb !== null && (
-          <p className="text-center label-eyebrow tabular-nums opacity-80">
-            {story.loudness.integratedLufs.toFixed(1)} LUFS · gain{" "}
-            {appliedGainDb >= 0 ? "+" : ""}
-            {appliedGainDb.toFixed(1)} dB · target{" "}
-            {story.loudness.targetLufs.toFixed(0)} LUFS
+          <p
+            className="text-center font-serif italic text-sm text-cream-400 opacity-90"
+            title={`${story.loudness.integratedLufs.toFixed(1)} LUFS, gain ${
+              appliedGainDb >= 0 ? "+" : ""
+            }${appliedGainDb.toFixed(1)} dB, target ${story.loudness.targetLufs.toFixed(0)} LUFS`}
+          >
+            {humanizeGain(appliedGainDb)}
           </p>
         )}
 
         <div className="flex items-center justify-between gap-3 pt-4 border-t border-ink-800">
-          <div className="text-sm">
-            <div className="font-serif text-cream-100">Reduce hiss</div>
-            <div className="label-eyebrow normal-case tracking-normal opacity-70 mt-0.5">
+          <div className="text-sm pr-3">
+            <div className="font-serif text-cream-100">Quiet the hiss</div>
+            <div className="font-serif text-cream-300 italic text-[13px] mt-0.5 max-w-prose">
               {story.restoration?.hissLevel === "high"
-                ? "Source has heavy tape hiss — recommended"
+                ? "An older recording with audible background hiss — we recommend leaving this on tonight."
                 : story.restoration?.hissLevel === "low"
-                  ? "Source has light hiss"
-                  : "High-band downward expander"}
+                  ? "A little background hiss in this recording. Cleanup is optional."
+                  : "Gently smooths tape hiss in older recordings without dulling the reader's voice."}
             </div>
           </div>
           <button
