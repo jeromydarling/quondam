@@ -3,14 +3,33 @@ import { useCatalog } from "../catalog/useCatalog";
 import { useStore } from "../state/store";
 import { formatDuration } from "../catalog/filter";
 import BookCover from "../components/BookCover";
+import SignInCTA from "../components/auth/SignInCTA";
+import { useIsSignedIn } from "../auth/useAuth";
 
 export default function Tonight() {
+  const isSignedIn = useIsSignedIn();
   const { catalog, loading } = useCatalog();
   const tonight = useStore((s) => s.tonight);
   const removeFromTonight = useStore((s) => s.removeFromTonight);
   const reorderTonight = useStore((s) => s.reorderTonight);
 
   if (loading || !catalog) return <p className="text-cream-300">Loading…</p>;
+
+  if (!isSignedIn) {
+    return (
+      <section className="space-y-8">
+        <header className="space-y-3">
+          <p className="label-eyebrow">Tonight</p>
+          <h2 className="display-title">Your bedtime queue.</h2>
+          <p className="body-prose">
+            Build a small playlist of stories for the week — drag to
+            reorder, tick off as you go.
+          </p>
+        </header>
+        <SignInCTA title="Sign in to start your Tonight shortlist." />
+      </section>
+    );
+  }
 
   const byId = new Map(catalog.stories.map((s) => [s.id, s]));
   const items = tonight

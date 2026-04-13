@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import { useCatalog } from "../catalog/useCatalog";
 import { useStore } from "../state/store";
 import { useAudioEngine } from "../audio/useAudioEngine";
@@ -10,11 +10,15 @@ import BookCover from "../components/BookCover";
 import VuMeter from "../components/VuMeter";
 import Scrubber from "../components/Scrubber";
 import SleepTimerControl from "../components/SleepTimerControl";
+import SignInCTA from "../components/auth/SignInCTA";
+import { useIsSignedIn } from "../auth/useAuth";
+import { isAnonymousPlayable } from "../auth/entitlements";
 
 export default function Player() {
   const { id = "" } = useParams<{ id: string }>();
   const decodedId = decodeURIComponent(id);
   const navigate = useNavigate();
+  const isSignedIn = useIsSignedIn();
   const { catalog, loading } = useCatalog();
 
   const story = useMemo(
@@ -32,15 +36,17 @@ export default function Player() {
   const [fadeSec, setFadeSec] = useState(30);
   const [showAuthor, setShowAuthor] = useState(false);
 
-  const denoiseEnabled =
-    denoiseOverride ?? story?.restoration?.suggestDenoise ?? false;
+  // Anonymous users get bare playback only — no denoise, no resume.
+  const denoiseEnabled = isSignedIn
+    ? (denoiseOverride ?? story?.restoration?.suggestDenoise ?? false)
+    : false;
 
   const onPositionTick = useCallback(
     (sec: number) => {
-      if (!story) return;
+      if (!isSignedIn || !story) return;
       setResume(story.id, sec);
     },
-    [story, setResume],
+    [isSignedIn, story, setResume],
   );
 
   const {
@@ -58,7 +64,7 @@ export default function Player() {
     sleepTimerActive,
   } = useAudioEngine({
     story,
-    initialPosition: useSaved ? savedPosition : 0,
+    initialPosition: isSignedIn && useSaved ? savedPosition : 0,
     onPositionTick,
     denoise: denoiseEnabled,
   });
@@ -79,6 +85,69 @@ export default function Player() {
       </div>
     );
 
+  // If an anonymous visitor lands on a story past the free preview limit,
+  // bounce them to sign-in.
+  if (!isSignedIn && catalog && !isAnonymousPlayable(story.id, catalog.stories)) {
+    return <Navigate to="/sign-up" replace />;
+  }
+
+  // ----- ANONYMOUS BARE PLAYER -----
+  if (!isSignedIn) {
+    return (
+      <section className="space-y-8">
+        <button
+          type="button"
+          className="btn-ghost px-3"
+          onClick={() => navigate(-1)}
+        >
+          ← Back
+        </button>
+
+        <header className="space-y-2 text-center">
+          <h2 className="display-title text-balance">{story.title}</h2>
+          <p className="font-serif text-lg italic text-cream-200">
+            by {story.author}
+          </p>
+        </header>
+
+        <audio
+          ref={audioRef}
+          src={story.source.audioUrl}
+          crossOrigin="anonymous"
+          preload="metadata"
+        />
+
+        {error && (
+          <div className="rounded-xl border border-amber-dim bg-ink-900 p-3 text-amber">
+            {error}
+          </div>
+        )}
+
+        <div className="panel p-6 sm:p-8 space-y-6">
+          <VuMeter analyser={analyser} active={isPlaying} />
+
+          <div className="flex items-center justify-center">
+            <button
+              type="button"
+              onClick={togglePlay}
+              className="btn-accent w-28 h-28 rounded-full text-3xl shadow-cover"
+              aria-label={isPlaying ? "Pause" : "Play"}
+            >
+              {isPlaying ? "❚❚" : "▶"}
+            </button>
+          </div>
+
+          <Scrubber position={position} duration={duration} onSeek={seek} />
+        </div>
+
+        <SignInCTA
+          title="Sleep timer, favorites, covers, descriptions, and more — sign in free."
+        />
+      </section>
+    );
+  }
+
+  // ----- SIGNED-IN FULL PLAYER -----
   return (
     <section className="space-y-10">
       <button
@@ -111,7 +180,6 @@ export default function Player() {
         </div>
       </div>
 
-      {/* DESCRIPTION */}
       {story.description && (
         <div className="space-y-2">
           <p className="label-eyebrow">About this story</p>
@@ -119,8 +187,6 @@ export default function Player() {
         </div>
       )}
 
-      {/* The hidden audio element. crossorigin is essential so the Web Audio
-          graph can analyze/process the stream without tainting. */}
       <audio
         ref={audioRef}
         src={story.source.audioUrl}
@@ -160,7 +226,6 @@ export default function Player() {
           </div>
         )}
 
-      {/* PLAYER CORE: VU meter, transport, scrubber */}
       <div className="panel p-6 sm:p-8 space-y-6">
         <VuMeter analyser={analyser} active={isPlaying} />
 
@@ -217,7 +282,6 @@ export default function Player() {
         </div>
       </div>
 
-      {/* SLEEP TIMER */}
       <SleepTimerControl
         active={sleepTimerActive}
         fadeSec={fadeSec}
@@ -226,7 +290,6 @@ export default function Player() {
         onCancel={cancelSleepTimer}
       />
 
-      {/* TOMORROW NIGHT teaser */}
       {teaser && (
         <div className="panel p-5 space-y-2 border-l-4 border-l-amber/60">
           <p className="label-eyebrow">{teaser.heading}</p>
@@ -244,7 +307,6 @@ export default function Player() {
         </div>
       )}
 
-      {/* AUTHOR BIO — collapsible */}
       {story.authorBio && (
         <div className="space-y-2">
           <button
@@ -261,7 +323,6 @@ export default function Player() {
           )}
         </div>
       )}
-
     </section>
   );
 }
