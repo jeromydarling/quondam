@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generatedAt": "2026-04-13T02:45:15Z",
+  "generatedAt": "2026-04-13T02:50:55Z",
   "stories": [
     {
       "id": "archive-big-jon-sparkie-ep1",
@@ -6081,7 +6081,7 @@
         "name": "The Boxcar Children",
         "order": 1,
         "totalParts": 17,
-        "nextTeaser": "Next: The children spend their second night alone, cold and hungry."
+        "nextTeaser": "Next: The children spend a cold, hungry night and decide they must find shelter."
       },
       "loudness": {
         "integratedLufs": -20.0,
@@ -6092,6 +6092,405 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch10",
+      "title": "The Boxcar Children: The Race",
+      "author": "Gertrude Chandler Warner",
+      "summary": "Henry enters a local footrace and the whole family cheers him on.",
+      "description": "Henry enters a Fourth of July footrace in town. His siblings watch nervously from the crowd as he competes against older, bigger boys. The race is exciting, but what matters most is the family's pride in each other — win or lose.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_10_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 431,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "brave",
+        "heartwarming"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 10,
+        "totalParts": 17,
+        "nextTeaser": "Next: More Education."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch11",
+      "title": "The Boxcar Children: More Education",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The children find creative ways to keep learning even without school.",
+      "description": "Jessie worries that the children are falling behind in their education. They devise their own lessons — Henry teaches from a newspaper, Jessie practices arithmetic with their grocery money, and even Benny learns his letters. Warner gently shows that curiosity and determination matter more than a classroom.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_11_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 464,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "heartwarming",
+        "funny"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 11,
+        "totalParts": 17,
+        "nextTeaser": "Next: Ginseng."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch12",
+      "title": "The Boxcar Children: Ginseng",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The children discover a valuable wild plant and learn about the treasures hidden in nature.",
+      "description": "While exploring the woods, the children find ginseng — a plant worth real money. Henry researches it and they carefully harvest and dry it. The discovery adds to their small income and teaches them to pay attention to the natural world around them.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_12_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 303,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "nature",
+        "brave"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 12,
+        "totalParts": 17,
+        "nextTeaser": "Next: Trouble."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch13",
+      "title": "The Boxcar Children: Trouble",
+      "author": "Gertrude Chandler Warner",
+      "summary": "Violet falls seriously ill and the children face their biggest crisis yet.",
+      "description": "Violet becomes dangerously sick with a fever. The other children are terrified — they have no medicine, no doctor, and calling for help might mean being found and separated. Henry must make a difficult choice between keeping their secret and saving his sister. The stakes have never been higher.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_13_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 625,
+      "lengthBucket": "medium",
+      "ageBand": "6-9",
+      "mood": [
+        "brave",
+        "heartwarming"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 13,
+        "totalParts": 17,
+        "nextTeaser": "Next: Caught."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch14",
+      "title": "The Boxcar Children: Caught",
+      "author": "Gertrude Chandler Warner",
+      "summary": "Dr. Moore discovers the children's secret and brings help — but also brings change.",
+      "description": "With Violet gravely ill, Henry runs to Dr. Moore for help. The doctor comes to the boxcar, and the children's carefully guarded secret is finally out. But Dr. Moore is kind, not threatening, and his concern for the children's wellbeing is genuine. Change is coming whether they want it or not.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_14_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 437,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "brave",
+        "heartwarming"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 14,
+        "totalParts": 17,
+        "nextTeaser": "Next: A New Grandfather."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch15",
+      "title": "The Boxcar Children: A New Grandfather",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The children discover that the grandfather they feared is nothing like they imagined.",
+      "description": "Dr. Moore reveals a stunning truth — the kind man who has been helping Henry with work is actually their grandfather, James Alden. He has been searching for them all along, and he is nothing like the mean old man they were told about. The children's fear melts into wonder.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_15_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 431,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "heartwarming",
+        "fairy-tale"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 15,
+        "totalParts": 17,
+        "nextTeaser": "Next: A United Family."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch16",
+      "title": "The Boxcar Children: A United Family",
+      "author": "Gertrude Chandler Warner",
+      "summary": "Grandfather Alden welcomes the children into his home and gives them a surprise they never expected.",
+      "description": "James Alden brings the children to his large, comfortable house. He has prepared rooms for each of them, and he even has their beloved boxcar moved to his backyard so they can play in it whenever they want. The family is finally united, and the children realize that home isn't a place — it's the people who love you.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_16_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 565,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "heartwarming",
+        "calming"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 16,
+        "totalParts": 17,
+        "nextTeaser": "Next: Safe."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch17",
+      "title": "The Boxcar Children: Safe",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The Alden children settle into their new life, finally safe and together.",
+      "description": "The final chapter wraps the story in warmth. The children explore their new home, meet their grandfather's household, and begin to understand that being found was not the end of their adventure but the beginning of a better one. Benny insists on sleeping in the boxcar one more time, and Grandfather smiles and lets him. Warner closes with the quiet reassurance that every child deserves — you are safe, you are loved, and you belong.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_17_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 359,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "calming",
+        "heartwarming"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 17,
+        "totalParts": 17
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch2",
+      "title": "The Boxcar Children: The Second Night",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The four children spend a cold, hungry night in a bakery doorway and decide they must find shelter.",
+      "description": "After fleeing on their own, the Alden children huddle together through a difficult second night. Jessie takes charge, comforting little Benny and keeping everyone's spirits up. Their determination to stick together rather than be separated drives them deeper into the countryside.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_02_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 536,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "brave",
+        "heartwarming"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 2,
+        "totalParts": 17,
+        "nextTeaser": "Next: Shelter."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch3",
+      "title": "The Boxcar Children: Shelter",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The children search the woods for a safe place to sleep and stumble upon something promising.",
+      "description": "Exhausted and hungry, the children push through the forest looking for any kind of shelter. Henry scouts ahead while Jessie keeps Benny and Violet close. The simple act of finding a dry, safe spot becomes a small triumph — a reminder that even in hard times, looking out for each other is enough.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_03_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 395,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "brave",
+        "nature"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 3,
+        "totalParts": 17,
+        "nextTeaser": "Next: The children discover an abandoned boxcar in the woods and turn it into their home."
       }
     },
     {
@@ -6121,7 +6520,7 @@
         "name": "The Boxcar Children",
         "order": 4,
         "totalParts": 17,
-        "nextTeaser": "Next: The children begin keeping house in their boxcar."
+        "nextTeaser": "Next: The children organize their boxcar home with clever solutions."
       },
       "loudness": {
         "integratedLufs": -20.0,
@@ -6132,6 +6531,206 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch5",
+      "title": "The Boxcar Children: Housekeeping",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The children organize their boxcar home, finding clever solutions for everyday needs.",
+      "description": "With their boxcar claimed, the Aldens set about making it livable. They gather blueberries for breakfast, find a dump where they salvage dishes and a tablecloth, and divide up chores. Violet arranges wildflowers. Benny names their dog Watch. The chapter is a masterclass in resourcefulness and the joy of making a home from nothing.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_05_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 536,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "heartwarming",
+        "nature"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 5,
+        "totalParts": 17,
+        "nextTeaser": "Next: Earning a Living."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch6",
+      "title": "The Boxcar Children: Earning a Living",
+      "author": "Gertrude Chandler Warner",
+      "summary": "Henry finds work to support his siblings while keeping their hideout a secret.",
+      "description": "Henry walks to town and finds a job mowing lawns for a kind doctor named Dr. Moore. He works hard all day and brings home wages and food, carefully hiding where he lives. The other children contribute too — picking berries to sell. Warner shows children that honest work and family loyalty go hand in hand.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_06_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 649,
+      "lengthBucket": "medium",
+      "ageBand": "6-9",
+      "mood": [
+        "brave",
+        "heartwarming"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 6,
+        "totalParts": 17,
+        "nextTeaser": "Next: At Home."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch7",
+      "title": "The Boxcar Children: At Home",
+      "author": "Gertrude Chandler Warner",
+      "summary": "Life in the boxcar settles into a happy routine as the children build their little world.",
+      "description": "The Aldens have found their rhythm. They swim in the brook, cook simple meals over a fire, and take care of each other with surprising competence. Benny's cheerful commentary provides constant humor. The chapter captures the dream every child has — living independently in the woods with the people you love most.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_07_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 647,
+      "lengthBucket": "medium",
+      "ageBand": "6-9",
+      "mood": [
+        "heartwarming",
+        "nature"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 7,
+        "totalParts": 17,
+        "nextTeaser": "Next: Building the Dam."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch8",
+      "title": "The Boxcar Children: Building the Dam",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The children build a swimming pool by damming their brook — and discover they make a great team.",
+      "description": "Henry and Jessie lead a project to dam the brook and create a proper swimming hole. Everyone contributes — even little Benny hauls stones. The engineering is simple but the teamwork is genuine, and by the end they have a cool, clear pool in the summer heat.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_08_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 616,
+      "lengthBucket": "medium",
+      "ageBand": "6-9",
+      "mood": [
+        "nature",
+        "funny"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 8,
+        "totalParts": 17,
+        "nextTeaser": "Next: Cherry Picking."
+      }
+    },
+    {
+      "id": "librivox-warner-boxcar-children-ch9",
+      "title": "The Boxcar Children: Cherry Picking",
+      "author": "Gertrude Chandler Warner",
+      "summary": "The children earn money picking cherries and Benny charms everyone he meets.",
+      "description": "Dr. Moore arranges for all four children to help pick cherries at a nearby farm. Benny's enthusiastic personality wins over the farmer, and Violet's quiet helpfulness earns respect. The children prove they can work alongside adults while keeping their secret safe.",
+      "authorBio": "Gertrude Chandler Warner (1890–1979) was an American teacher and author who wrote The Boxcar Children in 1924. The series eventually grew to over 150 books and remains one of the best-selling children's series of all time.",
+      "relevance": "A story about siblings who stick together no matter what — exactly the kind of courage and warmth that makes a good bedtime adventure.",
+      "source": {
+        "provider": "librivox",
+        "pageUrl": "https://librivox.org/the-boxcar-children-by-gertrude-chandler-warner/",
+        "audioUrl": "https://archive.org/download/boxcarchildren_1310_librivox/boxcarchildren_09_warner.mp3",
+        "license": "public-domain",
+        "attribution": "Public domain"
+      },
+      "durationSec": 464,
+      "lengthBucket": "short",
+      "ageBand": "6-9",
+      "mood": [
+        "funny",
+        "heartwarming"
+      ],
+      "loudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.5,
+        "targetLufs": -18.0
+      },
+      "safety": {
+        "reviewed": true,
+        "reviewer": "perplexity-curator-v1",
+        "flags": []
+      },
+      "series": {
+        "id": "boxcar-children",
+        "name": "The Boxcar Children",
+        "order": 9,
+        "totalParts": 17,
+        "nextTeaser": "Next: The Race."
       }
     },
     {
