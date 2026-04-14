@@ -1,11 +1,10 @@
 import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
 import { useCatalog } from "../catalog/useCatalog";
 import { EMPTY_FILTER, filterStories, type FilterCriteria } from "../catalog/filter";
 import FilterChips from "../components/FilterChips";
 import StoryCard from "../components/StoryCard";
-import SignInCTA from "../components/auth/SignInCTA";
 import WelcomeCard from "../components/WelcomeCard";
+import BigSignUpCTA from "../components/BigSignUpCTA";
 import { useIsSignedIn } from "../auth/useAuth";
 import { visibleToAnonymous } from "../auth/entitlements";
 
@@ -14,10 +13,20 @@ export default function Library() {
   const { catalog, loading, error } = useCatalog();
   const [criteria, setCriteria] = useState<FilterCriteria>(EMPTY_FILTER);
 
-  const filtered = useMemo(() => {
+  // Anonymous users see the first FREE_STORY_LIMIT stories from the catalog;
+  // signed-in users see everything. Everything else — covers, descriptions,
+  // filters, search — is identical between the two.
+  const visibleStories = useMemo(() => {
     if (!catalog) return [];
-    return filterStories(catalog.stories, criteria);
-  }, [catalog, criteria]);
+    return isSignedIn
+      ? catalog.stories
+      : visibleToAnonymous(catalog.stories);
+  }, [catalog, isSignedIn]);
+
+  const filtered = useMemo(
+    () => filterStories(visibleStories, criteria),
+    [visibleStories, criteria],
+  );
 
   if (loading) return <p className="text-cream-300">Loading…</p>;
   if (error)
@@ -26,64 +35,6 @@ export default function Library() {
     );
   if (!catalog) return null;
 
-  // ----- Anonymous: bare list of top 10 titles -----
-  if (!isSignedIn) {
-    const previewStories = visibleToAnonymous(catalog.stories);
-    return (
-      <section className="space-y-8">
-        <header className="space-y-3">
-          <p className="label-eyebrow">The library</p>
-          <h2 className="display-title">Stories for tonight.</h2>
-          <p className="body-prose">
-            Hand-picked classic stories for bedtime, with a calm player and
-            a gentle sleep timer. Free forever — no payment, no card.
-          </p>
-        </header>
-
-        <SignInCTA
-          title="Sign in for covers, descriptions, sleep timer, favorites, and more."
-        />
-
-        <ol className="divide-y divide-ink-800 panel">
-          {previewStories.map((s, i) => (
-            <li key={s.id} className="px-5 py-4 flex items-center gap-4">
-              <span className="font-serif text-2xl text-cream-400 w-8 text-right tabular-nums shrink-0">
-                {i + 1}
-              </span>
-              <div className="min-w-0 flex-1">
-                <Link
-                  to={`/play/${encodeURIComponent(s.id)}`}
-                  className="block hover:text-amber"
-                >
-                  <h3
-                    className="font-serif text-xl text-cream-50 leading-tight truncate"
-                    style={{
-                      fontVariationSettings:
-                        '"opsz" 144, "SOFT" 60, "wght" 500',
-                    }}
-                  >
-                    {s.title}
-                  </h3>
-                </Link>
-                <p className="text-sm text-cream-400 italic truncate">
-                  by {s.author}
-                </p>
-              </div>
-              <Link
-                to={`/play/${encodeURIComponent(s.id)}`}
-                className="btn-ghost shrink-0"
-                aria-label={`Play ${s.title}`}
-              >
-                Play
-              </Link>
-            </li>
-          ))}
-        </ol>
-      </section>
-    );
-  }
-
-  // ----- Signed in: full library -----
   return (
     <section className="space-y-8">
       <header className="space-y-3">
@@ -96,7 +47,7 @@ export default function Library() {
         </p>
       </header>
 
-      <WelcomeCard />
+      {isSignedIn ? <WelcomeCard /> : <BigSignUpCTA />}
 
       <div className="space-y-5">
         <input
@@ -113,7 +64,7 @@ export default function Library() {
       </div>
 
       <p className="label-eyebrow">
-        {filtered.length} of {catalog.stories.length} stories
+        {filtered.length} of {visibleStories.length} stories
       </p>
       <div className="grid gap-5 sm:grid-cols-2">
         {filtered.map((s) => (
