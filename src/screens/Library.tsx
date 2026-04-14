@@ -5,6 +5,7 @@ import { EMPTY_FILTER, filterStories, type FilterCriteria } from "../catalog/fil
 import FilterChips from "../components/FilterChips";
 import StoryCard from "../components/StoryCard";
 import SignInCTA from "../components/auth/SignInCTA";
+import WelcomeCard from "../components/WelcomeCard";
 import { useIsSignedIn } from "../auth/useAuth";
 import { visibleToAnonymous } from "../auth/entitlements";
 
@@ -94,6 +95,8 @@ export default function Library() {
           gentle fade-out for the way bedtime actually goes.
         </p>
       </header>
+
+      <WelcomeCard />
 
       <div className="space-y-5">
         <input

@@ -14,6 +14,12 @@ interface QuondamState {
    * user can flip it off and we remember that here. Absent = follow catalog.
    */
   denoiseOverrides: Record<string, boolean>;
+  /**
+   * Has the user dismissed the "Welcome to quondam / brought to you by
+   * CROS Schola" card on the Library? One-shot, device-local until
+   * Lovable moves it to the user record.
+   */
+  welcomeDismissed: boolean;
 
   toggleFavorite: (id: string) => void;
   isFavorite: (id: string) => boolean;
@@ -28,6 +34,9 @@ interface QuondamState {
 
   setDenoiseOverride: (id: string, on: boolean) => void;
   clearDenoiseOverride: (id: string) => void;
+
+  dismissWelcome: () => void;
+  resetWelcome: () => void;
 }
 
 export const useStore = create<QuondamState>()(
@@ -37,6 +46,7 @@ export const useStore = create<QuondamState>()(
       tonight: [],
       resumeMap: {},
       denoiseOverrides: {},
+      welcomeDismissed: false,
 
       toggleFavorite: (id) =>
         set((s) => ({
@@ -93,6 +103,9 @@ export const useStore = create<QuondamState>()(
           const { [id]: _drop, ...rest } = s.denoiseOverrides;
           return { denoiseOverrides: rest };
         }),
+
+      dismissWelcome: () => set({ welcomeDismissed: true }),
+      resetWelcome: () => set({ welcomeDismissed: false }),
     }),
     {
       name: "quondam-state-v1",
@@ -102,6 +115,7 @@ export const useStore = create<QuondamState>()(
         tonight: s.tonight,
         resumeMap: s.resumeMap,
         denoiseOverrides: s.denoiseOverrides,
+        welcomeDismissed: s.welcomeDismissed,
       }),
     },
   ),

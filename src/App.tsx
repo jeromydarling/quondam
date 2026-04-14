@@ -8,6 +8,7 @@ import Account from "./screens/Account";
 import ForgotPassword from "./screens/ForgotPassword";
 import UserMenu from "./components/auth/UserMenu";
 import EmailVerifyBanner from "./components/auth/EmailVerifyBanner";
+import { crosScholaUrl } from "./lib/cros";
 
 export default function App() {
   return (
@@ -48,7 +49,7 @@ export default function App() {
 
       <footer className="text-center py-8">
         <a
-          href="https://myschola.app"
+          href={crosScholaUrl("footer")}
           target="_blank"
           rel="noreferrer"
           className="font-serif text-sm text-cream-300 italic hover:text-amber transition-colors"

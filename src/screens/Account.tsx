@@ -3,6 +3,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/useAuth";
 import PasswordField from "../components/auth/PasswordField";
 import PasswordStrengthMeter from "../components/auth/PasswordStrengthMeter";
+import SupportCard from "../components/SupportCard";
 
 type Status = { kind: "ok" | "error"; message: string } | null;
 
@@ -38,6 +39,8 @@ export default function Account() {
               : "Email not yet verified"}
         </p>
       </div>
+
+      <SupportCard />
 
       {user.authProvider === "email" && <ChangeEmailCard />}
       {user.authProvider === "email" && <ChangePasswordCard />}
