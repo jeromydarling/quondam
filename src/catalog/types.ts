@@ -4,11 +4,12 @@ export type AgeBand = "0-3" | "3-6" | "6-9" | "9-12";
 export type LengthBucket = "short" | "medium" | "long";
 export type Mood =
   | "calming"
-  | "adventurous"
+  | "brave"
   | "funny"
   | "fairy-tale"
   | "nature"
-  | "classic";
+  | "faithful"
+  | "heartwarming";
 export type Provider = "librivox" | "archive";
 
 export interface StorySource {
@@ -120,11 +121,12 @@ export const ALL_LENGTH_BUCKETS: readonly LengthBucket[] = [
 ];
 export const ALL_MOODS: readonly Mood[] = [
   "calming",
-  "adventurous",
+  "brave",
   "funny",
   "fairy-tale",
   "nature",
-  "classic",
+  "faithful",
+  "heartwarming",
 ];
 
 export const LENGTH_BUCKET_LABEL: Record<LengthBucket, string> = {

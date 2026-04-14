@@ -30,7 +30,7 @@ Each entry is a JSON object inside `catalog.json`'s `stories` array. The exact s
   "durationSec": 184,
   "lengthBucket": "short",
   "ageBand": "3-6",
-  "mood": ["calming", "fairy-tale", "classic"],
+  "mood": ["calming", "fairy-tale", "heartwarming"],
   "loudness": {
     "integratedLufs": -22.4,
     "truePeakDbtp": -1.2,
@@ -56,7 +56,7 @@ Add **20 new entries** to `catalog/catalog.json`. The catalog currently has 6; y
 - **8 first-chapter openings** of classic children's novels (10-30 minutes), age band `6-9`. Looking for: Just So Stories (more chapters beyond "How the Whale Got His Throat"), Alice's Adventures in Wonderland (chapters 2+), The Wind in the Willows (chapters 2+), The Jungle Book (chapters 2+), The Secret Garden (chapters 2+), E. Nesbit (Five Children and It, The Railway Children), J.M. Barrie's Peter and Wendy.
 - **4 longer chapter readings** (30+ minutes), age band `9-12`. Looking for: The Wind in the Willows later chapters, A Little Princess, Little Women, Anne of Green Gables, Treasure Island.
 
-**Mix the moods.** Don't tag everything `calming` — reserve that for genuinely soothing material. The full vocabulary in CURATION.md §4: `calming`, `adventurous`, `funny`, `fairy-tale`, `nature`, `classic`. Use 1–3 moods per story.
+**Mix the moods.** Don't tag everything `calming` — reserve that for genuinely soothing material. The full vocabulary in CURATION.md §4: `calming`, `brave`, `funny`, `fairy-tale`, `nature`, `faithful`, `heartwarming`. Use 1–3 moods per story.
 
 Avoid duplicates with the existing 6 entries: Aesop's Fox and the Grapes, How the Whale Got His Throat (chapter 1), The Wind in the Willows chapter 1, Alice in Wonderland chapter 1, The Jungle Book Mowgli's Brothers, The Secret Garden chapter 1.
 

@@ -125,14 +125,17 @@ reviewer should spot-check.
 
 ### `mood` (array, ≥1, controlled vocabulary)
 
+Family-friendly browsing categories. Pick the ones that genuinely apply.
+
 | Value | When to use |
 |---|---|
 | `calming` | Slow pacing, no jump scares or shouting. The default for bedtime. |
-| `adventurous` | Light peril, journey/quest structure, but still age-appropriate. |
+| `brave` | Light peril, journey/quest structure, courage under pressure — still age-appropriate. |
 | `funny` | Wordplay, comic situations, gentle humor. |
 | `fairy-tale` | Recognizable fairy-tale tropes (princes, witches, talking animals). |
 | `nature` | Animals, weather, the outdoors as a major character. |
-| `classic` | Canonical children's literature (Aesop, Grimm, Potter, Grahame, Burnett, etc.). |
+| `faithful` | Stories rooted in a trusting, reverent view of the world — Bible stories, hymnic retellings, gentle religious tradition. |
+| `heartwarming` | Family, friendship, kindness rewarded, quiet emotional resolution. |
 
 A story can carry multiple moods. Don't tag everything `calming` — reserve
 it for genuinely soothing material.
@@ -316,7 +319,7 @@ A complete entry, end to end:
   "durationSec": 184,
   "lengthBucket": "short",
   "ageBand": "3-6",
-  "mood": ["calming", "fairy-tale", "classic"],
+  "mood": ["calming", "fairy-tale", "heartwarming"],
   "loudness": {
     "integratedLufs": -22.4,
     "truePeakDbtp": -1.2,
