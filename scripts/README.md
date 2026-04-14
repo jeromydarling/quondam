@@ -95,18 +95,36 @@ git push
 - Failed lookups are logged but not treated as errors. Re-run later
   (e.g. after adding a Gemini key) to pick up the remaining entries.
 
-### Using it as a GitHub Action
+### Using it as a GitHub Action (recommended)
 
-If you want to run this on-demand from the GitHub UI:
+The repo ships a `workflow_dispatch` workflow at
+`.github/workflows/fetch-covers.yml` that runs the pipeline in GitHub's
+infrastructure and opens a PR with the results. This is the easy path
+if you can't (or don't want to) run it locally.
 
-1. Add your Gemini key to the repo as a secret: **Settings → Secrets
-   and variables → Actions → New repository secret**, name
-   `GEMINI_API_KEY`.
-2. Create `.github/workflows/fetch-covers.yml` with a
-   `workflow_dispatch` trigger that checks out the repo, runs
-   `GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }} npm run covers`, and
-   opens a PR with the diff. (Template not shipped yet — see
-   `BACKLOG.md`.)
+**One-time setup:**
+
+1. Get a Gemini API key from
+   [Google AI Studio](https://aistudio.google.com/app/apikey).
+2. In GitHub, go to **Settings → Secrets and variables → Actions →
+   New repository secret**, name it `GEMINI_API_KEY`, paste the key,
+   save.
+
+**Running it:**
+
+1. Go to **Actions → fetch-covers → Run workflow**.
+2. Optionally tweak the inputs:
+   - `force` — re-fetch even entries that already have a `coverUrl`
+   - `only` — comma-separated stages, e.g. `s1,s2` to skip Gemini
+   - `id` — single story id to process
+3. Click **Run workflow**.
+4. When the job finishes, it opens a PR titled `Auto-fetch covers (run N)`.
+5. Review the images in `public/covers/` on the PR, merge when you're
+   happy. If something looks off, delete the bad file from the PR
+   branch and re-run the workflow.
+
+The workflow skips stages with no output (e.g. `s3` if you haven't set
+`GEMINI_API_KEY`). If a run produces no changes, no PR is opened.
 
 ### Visual review
 

@@ -1,0 +1,116 @@
+name: fetch-covers
+
+# Manual-only. Runs scripts/fetch-covers.mjs in GitHub's infrastructure
+# (which has network access to archive.org and Wikipedia, unlike the
+# egress-restricted sandbox Claude Code runs in) and opens a PR with the
+# results for review.
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-fetch even entries that already have a coverUrl"
+        type: boolean
+        default: false
+      only:
+        description: "Comma-separated pipeline stages (s1=archive.org, s2=Wikipedia, s3=Gemini)"
+        type: string
+        default: "s1,s2,s3"
+      id:
+        description: "Single story id to process (leave blank to run over the whole catalog)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: fetch-covers
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so we can push a new branch from this ref.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install
+        run: npm ci
+
+      - name: Run cover pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          set -euo pipefail
+          ARGS=()
+          if [ "${{ inputs.force }}" = "true" ]; then
+            ARGS+=(--force)
+          fi
+          if [ -n "${{ inputs.only }}" ]; then
+            ARGS+=(--only "${{ inputs.only }}")
+          fi
+          if [ -n "${{ inputs.id }}" ]; then
+            ARGS+=(--id "${{ inputs.id }}")
+          fi
+          echo "Running: npm run covers -- ${ARGS[*]}"
+          npm run covers -- "${ARGS[@]}"
+
+      - name: Validate catalog after run
+        run: npm run validate:catalog
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No catalog or cover file changes — nothing to PR."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected:"
+            git status --short
+          fi
+
+      - name: Commit and open PR
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          BRANCH="covers/auto-${{ github.run_id }}"
+          git config user.name "quondam-cover-bot"
+          git config user.email "quondam-cover-bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add catalog/catalog.json public/covers/
+          git commit -m "Auto-fetch covers (run ${{ github.run_id }})"
+          git push origin "$BRANCH"
+
+          BODY=$(cat <<'BODY_EOF'
+          Automated run of `scripts/fetch-covers.mjs` via the
+          `fetch-covers` workflow.
+
+          Three stages were attempted per entry, in order:
+            1. archive.org item metadata
+            2. Wikipedia REST API
+            3. Gemini 2.5 Flash Image (only if `GEMINI_API_KEY` is set)
+
+          **Before merging, please spot-check `public/covers/*.jpg`** in an
+          image viewer. Any cover that came out wrong can be fixed by
+          deleting the file from this PR and either re-running the workflow
+          with `--force` or setting `coverUrl` on the entry by hand.
+
+          See `scripts/README.md` for details.
+          BODY_EOF
+          )
+          gh pr create \
+            --title "Auto-fetch covers (run ${{ github.run_id }})" \
+            --body "$BODY" \
+            --base main \
+            --head "$BRANCH"
