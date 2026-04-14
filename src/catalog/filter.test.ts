@@ -29,14 +29,14 @@ describe("filterStories", () => {
       id: "b",
       ageBand: "3-6",
       lengthBucket: "medium",
-      mood: ["adventurous", "fairy-tale"],
+      mood: ["brave", "fairy-tale"],
       title: "Peter Rabbit",
     }),
     baseStory({
       id: "c",
       ageBand: "6-9",
       lengthBucket: "long",
-      mood: ["nature", "classic"],
+      mood: ["nature", "heartwarming"],
       author: "Kenneth Grahame",
     }),
   ];

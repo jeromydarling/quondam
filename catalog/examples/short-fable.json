@@ -18,7 +18,7 @@
       "durationSec": 142,
       "lengthBucket": "short",
       "ageBand": "3-6",
-      "mood": ["funny", "classic"],
+      "mood": ["funny", "heartwarming"],
       "loudness": {
         "integratedLufs": -23.1,
         "truePeakDbtp": -1.5,

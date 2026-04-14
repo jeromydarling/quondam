@@ -18,7 +18,7 @@
       "durationSec": 1320,
       "lengthBucket": "long",
       "ageBand": "6-9",
-      "mood": ["calming", "classic", "nature"],
+      "mood": ["calming", "heartwarming", "nature"],
       "loudness": {
         "integratedLufs": -20.3,
         "truePeakDbtp": -1.8,
