@@ -23,18 +23,19 @@ const baseStory = (over: Partial<Story> = {}): Story => ({
 });
 
 describe("deriveCoverUrl", () => {
-  it("prefers a curator-supplied coverUrl", () => {
+  it("returns a curator-supplied coverUrl when set", () => {
     const s = baseStory({ coverUrl: "https://example.com/c.jpg" });
     expect(deriveCoverUrl(s)).toBe("https://example.com/c.jpg");
   });
 
-  it("falls back to archive.org services/img derived from audioUrl", () => {
-    expect(deriveCoverUrl(baseStory())).toBe(
-      "https://archive.org/services/img/example_id_librivox",
-    );
+  it("returns null when coverUrl is absent (caller renders SVG fallback)", () => {
+    // Note: we explicitly do NOT auto-derive from archive.org's thumbnail
+    // service anymore — it produces waveform images for audio-only items
+    // that look broken. The SVG fallback is strictly better.
+    expect(deriveCoverUrl(baseStory())).toBeNull();
   });
 
-  it("returns null for non-archive.org sources with no coverUrl", () => {
+  it("returns null even for non-archive audio sources", () => {
     const s = baseStory({
       source: {
         provider: "librivox",

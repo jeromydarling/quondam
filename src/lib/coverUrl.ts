@@ -3,27 +3,24 @@ import type { Story } from "../catalog/types";
 /**
  * Derive a cover image URL for a story.
  *
- * Priority:
- *   1. story.coverUrl (curator-supplied)
- *   2. archive.org's own thumbnail service, derived from the identifier in
- *      the audioUrl. Every LibriVox / Internet Archive item has a thumbnail
- *      at https://archive.org/services/img/{identifier}, served with CORS.
- *   3. null — caller should render the SVG fallback.
+ * Tiers:
+ *   1. story.coverUrl (curator-supplied) — always wins when present
+ *   2. null — caller renders the generated SVG fallback
  *
- * The archive.org identifier is the path segment immediately following
- * `/download/` in the audioUrl. For
- *   https://archive.org/download/wind_willows_mfs_librivox/...mp3
- * the identifier is `wind_willows_mfs_librivox`.
+ * We deliberately do NOT fall through to archive.org's own thumbnail
+ * service (archive.org/services/img/{id}) because, for audio-only items
+ * without uploaded cover art, archive.org auto-generates a waveform
+ * image. Those waveforms are low-resolution, visually identical across
+ * all episodes of the same item, and look like broken placeholders in
+ * a library grid. The generated SVG cover (see BookCover.tsx) is
+ * always-available, deterministic per-story, and visually distinctive,
+ * which is a strictly better fallback.
+ *
+ * Real archive.org-hosted cover art can still be used by setting
+ * story.coverUrl explicitly in the catalog.
  */
 export function deriveCoverUrl(story: Story): string | null {
-  if (story.coverUrl) return story.coverUrl;
-  const m = story.source.audioUrl.match(
-    /https?:\/\/(?:[^/]*\.)?archive\.org\/download\/([^/]+)\//,
-  );
-  if (m) {
-    return `https://archive.org/services/img/${m[1]}`;
-  }
-  return null;
+  return story.coverUrl ?? null;
 }
 
 /**
