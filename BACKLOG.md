@@ -20,13 +20,14 @@ urgent — just tracked here so nothing falls off.
 
 ## Content / curation
 
-- **Run the cover-fetch pipeline**: `npm run covers` (see
-  `scripts/README.md`). Three-stage resolver — archive.org item
-  metadata → Wikipedia REST → Gemini 2.5 Flash Image (needs
-  `GEMINI_API_KEY`). Outputs `public/covers/*.jpg` and rewrites
-  `catalog.json` coverUrl values in place. Idempotent; safe to re-run.
-  **Run this locally, not in any sandbox that blocks archive.org /
-  Wikipedia hosts.**
+- **Run the cover-fetch pipeline**: either `npm run covers` locally or
+  trigger the **fetch-covers** GitHub Action (workflow_dispatch). See
+  `scripts/README.md` for both paths. Three-stage resolver — archive.org
+  item metadata → Wikipedia REST → Gemini 2.5 Flash Image (needs
+  `GEMINI_API_KEY` as a repo secret for stage 3). Outputs
+  `public/covers/*.jpg` and rewrites `catalog.json` coverUrl values in
+  place. Idempotent; safe to re-run. The GitHub Action opens a PR for
+  review.
 - **Verify audio URLs for the 183 imported entries.** The curator PR
   added these without us running a round-trip CORS/200 check. The ones
   that fail fall through to an error in the player at playback time —
