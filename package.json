@@ -11,7 +11,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate:catalog": "ajv validate -c ajv-formats -s catalog/schema.json -d catalog/catalog.json --spec=draft2020 --strict=false && ajv validate -c ajv-formats -s catalog/schema.json -d \"catalog/examples/*.json\" --spec=draft2020 --strict=false"
+    "validate:catalog": "ajv validate -c ajv-formats -s catalog/schema.json -d catalog/catalog.json --spec=draft2020 --strict=false && ajv validate -c ajv-formats -s catalog/schema.json -d \"catalog/examples/*.json\" --spec=draft2020 --strict=false",
+    "covers": "node scripts/fetch-covers.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

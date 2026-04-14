@@ -72,8 +72,26 @@ Avoid duplicates with the existing 6 entries: Aesop's Fox and the Grapes, How th
   - `audioUrl` — a direct streamable mp3, almost always under `https://archive.org/download/...`
 
 ### Cover art
-- **github.com/standardebooks** repos via `raw.githubusercontent.com` URL. Standard Ebooks publishes high-quality CC0 cover art for many classics. Search the org by author/title; the convention is `/{slug}/master/images/cover.jpg`. **Verify each URL returns HTTP 200 before adding it.**
-- If Standard Ebooks doesn't carry a title, leave `coverUrl` unset — the player generates a beautiful SVG fallback from the title.
+
+**You usually don't need to set `coverUrl` at all.** The repo has a
+cover-fetch pipeline (`npm run covers`, see `scripts/README.md`) that
+runs after you submit. It tries three sources per entry:
+
+1. archive.org item metadata (real uploaded cover art — not the waveform thumbnail)
+2. Wikipedia REST API (`originalimage.source`)
+3. Gemini 2.5 Flash Image generation (when a `GEMINI_API_KEY` is available)
+
+Results are saved to `public/covers/{story-id}.jpg` and the catalog is
+updated in place. Entries the pipeline can't find a cover for stay
+without a `coverUrl` and the player renders a generated SVG fallback.
+
+When **should** you set `coverUrl` by hand?
+- You have a specific high-quality public-domain cover in mind and want
+  to lock it in. Use an absolute URL (e.g. `https://raw.githubusercontent.com/standardebooks/.../images/cover.jpg`).
+- The pipeline ran and picked the wrong image — delete the file from
+  `public/covers/` and set `coverUrl` to the correct absolute URL (or
+  just re-run the pipeline with `--force` after fixing whatever the
+  root cause was).
 
 ### CORS check (mandatory for every audio URL)
 
@@ -158,7 +176,7 @@ Each entry must set:
 | `description` | ⭐ | 1–3 paragraphs in a warm, parental voice. Set the mood, don't recap the plot. |
 | `authorBio` | ⭐ | 2–4 factual sentences |
 | `relevance` | ⭐ | 1–2 sentences on why this story for *bedtime*, *for this child*. Not a general review. |
-| `coverUrl` | ⭐ | Standard Ebooks raw URL, verified 200. Omit if no cover available. |
+| `coverUrl` |  | Usually omit — the cover-fetch pipeline (`npm run covers`) populates this. Set by hand only when you want to override it with a specific URL. Absolute URLs or relative paths like `covers/{story-id}.jpg` both work. |
 | `source.provider` | ✅ | `librivox` or `archive` |
 | `source.pageUrl` | ✅ | Human-readable LibriVox/Archive page |
 | `source.audioUrl` | ✅ | Direct mp3 URL, CORS-checked |
@@ -181,7 +199,7 @@ Each entry must set:
 
 ## Per-entry verification checklist
 
-- [ ] `coverUrl` returns 200 from Standard Ebooks (or omitted)
+- [ ] `coverUrl` is either omitted (let the pipeline handle it) or an absolute URL that returns 200
 - [ ] `audioUrl` returns 200 AND serves CORS headers
 - [ ] LUFS measurements taken from the **actual file**, not invented
 - [ ] `description` / `authorBio` / `relevance` are written, not boilerplate
