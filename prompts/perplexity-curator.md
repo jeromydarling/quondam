@@ -79,7 +79,9 @@ runs after you submit. It tries three sources per entry:
 
 1. archive.org item metadata (real uploaded cover art — not the waveform thumbnail)
 2. Wikipedia REST API (`originalimage.source`)
-3. Gemini 2.5 Flash Image generation (when a `GEMINI_API_KEY` is available)
+3. AI generation (Recraft `digital_illustration/hand_drawn` as the primary
+   provider, Gemini 2.5 Flash Image as an alternative — whichever API key
+   is present)
 
 Results are saved to `public/covers/{story-id}.jpg` and the catalog is
 updated in place. Entries the pipeline can't find a cover for stay

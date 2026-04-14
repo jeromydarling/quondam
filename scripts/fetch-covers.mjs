@@ -17,11 +17,14 @@
  *      Wikipedia article. We try bare title, "Title (book)",
  *      "Title (radio program)", and "Title (story)" variants.
  *
- *   3. Gemini 2.5 Flash Image (a.k.a. "Nano Banana") — only runs if
- *      GEMINI_API_KEY is set in the environment. Generates a warm
- *      hand-drawn children's-storybook cover. Skipped entirely if the key
- *      is missing — the entry's coverUrl stays null and BookCover falls
- *      through to the generated SVG.
+ *   3. AI generation — only runs if a provider API key is set. Supported
+ *      providers, tried in order:
+ *        - Recraft         (RECRAFT_API_KEY) — primary choice, tuned for
+ *                          the "digital_illustration/hand_drawn" style
+ *                          that suits children's-book covers
+ *        - Gemini 2.5 Flash Image (GEMINI_API_KEY) — alternative
+ *      Skipped entirely if no provider key is set — the entry's coverUrl
+ *      stays null and BookCover falls through to the generated SVG.
  *
  * For every entry where a cover is found, the image is written to
  * public/covers/{story-id}.jpg and the catalog entry's coverUrl is set to
@@ -30,12 +33,13 @@
  *
  * Idempotent: running again is a no-op for entries that already have a
  * coverUrl set. Failed lookups are logged and skipped; re-run after
- * adding a Gemini key to pick up the rest.
+ * adding a provider key to pick up the rest.
  *
  * Usage:
  *   node scripts/fetch-covers.mjs              # stages 1+2 only
- *   GEMINI_API_KEY=... node scripts/fetch-covers.mjs  # + stage 3
- *   node scripts/fetch-covers.mjs --only s1,s2 # skip Gemini
+ *   RECRAFT_API_KEY=... node scripts/fetch-covers.mjs  # + stage 3 via Recraft
+ *   GEMINI_API_KEY=...  node scripts/fetch-covers.mjs  # + stage 3 via Gemini
+ *   node scripts/fetch-covers.mjs --only s1,s2 # skip AI
  *   node scripts/fetch-covers.mjs --id librivox-aesop-fables  # one entry
  *   node scripts/fetch-covers.mjs --dry-run    # don't write anything
  */
@@ -50,7 +54,9 @@ const REPO_ROOT = path.resolve(__dirname, "..");
 const CATALOG_PATH = path.join(REPO_ROOT, "catalog/catalog.json");
 const COVERS_DIR = path.join(REPO_ROOT, "public/covers");
 
+const RECRAFT_API_KEY = process.env.RECRAFT_API_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const AI_PROVIDER_AVAILABLE = Boolean(RECRAFT_API_KEY || GEMINI_API_KEY);
 const USER_AGENT =
   "quondam-cover-pipeline/1.0 (+https://github.com/jeromydarling/quondam)";
 
@@ -105,9 +111,17 @@ async function main() {
       result = await tryWikipediaCover(story);
       if (result) result.stage = "wikipedia";
     }
-    if (!result && args.stages.includes("s3") && GEMINI_API_KEY) {
-      result = await tryGeminiCover(story);
-      if (result) result.stage = "gemini";
+    if (!result && args.stages.includes("s3") && AI_PROVIDER_AVAILABLE) {
+      // Prefer Recraft when both keys are present — it's tuned for the
+      // hand-drawn storybook style we want. Gemini is the fallback.
+      if (RECRAFT_API_KEY) {
+        result = await tryRecraftCover(story);
+        if (result) result.stage = "recraft";
+      }
+      if (!result && GEMINI_API_KEY) {
+        result = await tryGeminiCover(story);
+        if (result) result.stage = "gemini";
+      }
     }
 
     if (result) {
@@ -145,10 +159,17 @@ async function main() {
     }
   }
   if (args.dryRun) console.log("(dry run — no files written)");
-  if (!GEMINI_API_KEY && args.stages.includes("s3")) {
+  if (!AI_PROVIDER_AVAILABLE && args.stages.includes("s3")) {
     console.log(
-      "\nGemini stage was requested but GEMINI_API_KEY is not set — stage 3 was skipped.",
+      "\nStage 3 (AI generation) was requested but neither RECRAFT_API_KEY nor GEMINI_API_KEY is set — it was skipped.",
     );
+  } else if (args.stages.includes("s3")) {
+    const provider = RECRAFT_API_KEY
+      ? GEMINI_API_KEY
+        ? "recraft (primary) + gemini (fallback)"
+        : "recraft"
+      : "gemini";
+    console.log(`\nAI provider in use: ${provider}`);
   }
 }
 
@@ -240,18 +261,86 @@ async function tryWikipediaCover(story) {
   return null;
 }
 
-// ---------- Stage 3: Gemini 2.5 Flash Image ----------
+// ---------- Stage 3: AI generation ----------
+//
+// Two providers supported. Recraft is the primary — its hand-drawn
+// illustration sub-style is a near-perfect match for our bedtime
+// aesthetic, and the API is simpler (returns a URL; we download). Gemini
+// is an alternative. If both keys are set, Recraft runs first and Gemini
+// only fills in when Recraft fails.
 
-async function tryGeminiCover(story) {
+function buildCoverPrompt(story) {
   const moodCues = (story.mood || []).join(", ");
-  const prompt = [
+  return [
     `A warm, hand-drawn illustration in the style of a vintage children's`,
     `storybook cover for "${story.title}" by ${story.author}.`,
     `Painterly, soft edges, warm earth tones, textured paper feel, no text`,
     `and no lettering anywhere in the image.`,
     moodCues ? `Mood: ${moodCues}.` : "",
     `The composition should suit a 2:3 vertical book-cover aspect ratio.`,
-  ].join(" ");
+  ]
+    .filter(Boolean)
+    .join(" ");
+}
+
+// Recraft
+
+async function tryRecraftCover(story) {
+  const prompt = buildCoverPrompt(story);
+  try {
+    const res = await fetch(
+      "https://external.api.recraft.ai/v1/images/generations",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          authorization: `Bearer ${RECRAFT_API_KEY}`,
+        },
+        body: JSON.stringify({
+          prompt,
+          style: "digital_illustration",
+          substyle: "hand_drawn",
+          size: "1024x1365", // ~3:4 — closest Recraft offers to 2:3
+          n: 1,
+          response_format: "url",
+        }),
+      },
+    );
+    if (!res.ok) {
+      const body = await res.text();
+      console.log(
+        `  recraft http ${res.status}: ${body.slice(0, 200).replace(/\n/g, " ")}`,
+      );
+      return null;
+    }
+    const data = await res.json();
+    const imageUrl = data.data?.[0]?.url;
+    if (!imageUrl) {
+      console.log(`  recraft: no image url in response`);
+      return null;
+    }
+    // Download the returned image
+    const imgRes = await fetch(imageUrl);
+    if (!imgRes.ok) {
+      console.log(`  recraft download failed: ${imgRes.status}`);
+      return null;
+    }
+    const buffer = Buffer.from(await imgRes.arrayBuffer());
+    if (buffer.length < 5000) {
+      console.log(`  recraft returned a suspiciously tiny file, skipping`);
+      return null;
+    }
+    return { buffer };
+  } catch (e) {
+    console.log(`  recraft error: ${e.message}`);
+    return null;
+  }
+}
+
+// Gemini 2.5 Flash Image
+
+async function tryGeminiCover(story) {
+  const prompt = buildCoverPrompt(story);
 
   try {
     const url =

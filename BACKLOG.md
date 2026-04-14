@@ -23,11 +23,11 @@ urgent — just tracked here so nothing falls off.
 - **Run the cover-fetch pipeline**: either `npm run covers` locally or
   trigger the **fetch-covers** GitHub Action (workflow_dispatch). See
   `scripts/README.md` for both paths. Three-stage resolver — archive.org
-  item metadata → Wikipedia REST → Gemini 2.5 Flash Image (needs
-  `GEMINI_API_KEY` as a repo secret for stage 3). Outputs
-  `public/covers/*.jpg` and rewrites `catalog.json` coverUrl values in
-  place. Idempotent; safe to re-run. The GitHub Action opens a PR for
-  review.
+  item metadata → Wikipedia REST → AI generation (Recraft preferred via
+  `RECRAFT_API_KEY`; Gemini 2.5 Flash Image alternative via
+  `GEMINI_API_KEY`). Outputs `public/covers/*.jpg` and rewrites
+  `catalog.json` coverUrl values in place. Idempotent; safe to re-run.
+  The GitHub Action opens a PR for review.
 - **Verify audio URLs for the 183 imported entries.** The curator PR
   added these without us running a round-trip CORS/200 check. The ones
   that fail fall through to an error in the player at playback time —
