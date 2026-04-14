@@ -1,15 +1,42 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import type { Story } from "../catalog/types";
 import { formatDuration } from "../catalog/filter";
 import { useStore } from "../state/store";
+import { useIsSignedIn } from "../auth/useAuth";
 import BookCover from "./BookCover";
 
 export default function StoryCard({ story }: { story: Story }) {
+  const isSignedIn = useIsSignedIn();
+  const navigate = useNavigate();
   const isFav = useStore((s) => s.favorites.includes(story.id));
   const inTonight = useStore((s) => s.tonight.includes(story.id));
   const toggleFavorite = useStore((s) => s.toggleFavorite);
   const addToTonight = useStore((s) => s.addToTonight);
   const removeFromTonight = useStore((s) => s.removeFromTonight);
+
+  // Anonymous favorite / Tonight clicks teach the value prop by routing
+  // to /sign-up instead of silently persisting to localStorage.
+  function onFavoriteClick() {
+    if (!isSignedIn) {
+      navigate("/sign-up");
+      return;
+    }
+    toggleFavorite(story.id);
+  }
+  function onTonightClick() {
+    if (!isSignedIn) {
+      navigate("/sign-up");
+      return;
+    }
+    if (inTonight) removeFromTonight(story.id);
+    else addToTonight(story.id);
+  }
+
+  // Show the favorite/Tonight state only if the user is signed in; for
+  // anonymous users the buttons always appear "empty" (they don't own the
+  // state, so let the UI read that way).
+  const showFav = isSignedIn && isFav;
+  const showInTonight = isSignedIn && inTonight;
 
   return (
     <article className="panel p-5 flex flex-col gap-5">
@@ -49,13 +76,25 @@ export default function StoryCard({ story }: { story: Story }) {
         </div>
         <button
           type="button"
-          aria-pressed={isFav}
-          aria-label={isFav ? "Remove favorite" : "Add favorite"}
-          onClick={() => toggleFavorite(story.id)}
+          aria-pressed={showFav}
+          aria-label={
+            !isSignedIn
+              ? "Sign up to favorite this story"
+              : showFav
+                ? "Remove favorite"
+                : "Add favorite"
+          }
+          onClick={onFavoriteClick}
           className="min-h-tap min-w-tap flex items-center justify-center text-2xl text-amber shrink-0"
-          title={isFav ? "Favorited" : "Favorite"}
+          title={
+            !isSignedIn
+              ? "Sign up free to save favorites"
+              : showFav
+                ? "Favorited"
+                : "Favorite"
+          }
         >
-          {isFav ? "♥" : "♡"}
+          {showFav ? "♥" : "♡"}
         </button>
       </div>
 
@@ -85,12 +124,15 @@ export default function StoryCard({ story }: { story: Story }) {
         </Link>
         <button
           type="button"
-          className={inTonight ? "btn bg-ink-700" : "btn-ghost"}
-          onClick={() =>
-            inTonight ? removeFromTonight(story.id) : addToTonight(story.id)
+          className={showInTonight ? "btn bg-ink-700" : "btn-ghost"}
+          onClick={onTonightClick}
+          title={
+            !isSignedIn
+              ? "Sign up free to build your Tonight shortlist"
+              : undefined
           }
         >
-          {inTonight ? "✓ Tonight" : "+ Tonight"}
+          {showInTonight ? "✓ Tonight" : "+ Tonight"}
         </button>
       </div>
     </article>
