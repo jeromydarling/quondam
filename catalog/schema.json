@@ -71,7 +71,7 @@
         },
         "coverUrl": {
           "type": "string",
-          "format": "uri"
+          "format": "uri-reference"
         },
         "source": {
           "type": "object",

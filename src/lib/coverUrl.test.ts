@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { deriveCoverUrl, hashHue } from "./coverUrl";
+import { deriveCoverUrl, hashHue, resolveCoverUrl } from "./coverUrl";
 import type { Story } from "../catalog/types";
 
 const baseStory = (over: Partial<Story> = {}): Story => ({
@@ -46,6 +46,42 @@ describe("deriveCoverUrl", () => {
       },
     });
     expect(deriveCoverUrl(s)).toBeNull();
+  });
+});
+
+describe("resolveCoverUrl", () => {
+  it("returns null for null input", () => {
+    expect(resolveCoverUrl(null)).toBeNull();
+  });
+
+  it("returns absolute https URLs unchanged", () => {
+    expect(resolveCoverUrl("https://example.com/cover.jpg")).toBe(
+      "https://example.com/cover.jpg",
+    );
+  });
+
+  it("returns absolute http URLs unchanged", () => {
+    expect(resolveCoverUrl("http://example.com/cover.jpg")).toBe(
+      "http://example.com/cover.jpg",
+    );
+  });
+
+  it("returns data: URLs unchanged", () => {
+    expect(resolveCoverUrl("data:image/png;base64,abc")).toBe(
+      "data:image/png;base64,abc",
+    );
+  });
+
+  it("prepends Vite BASE_URL to relative paths", () => {
+    // In the vitest jsdom environment, import.meta.env.BASE_URL is "/" by
+    // default. The helper strips any trailing slash and joins with "/".
+    const r = resolveCoverUrl("covers/foo.jpg");
+    expect(r).toBe("/covers/foo.jpg");
+  });
+
+  it("strips a leading slash from the relative path before joining", () => {
+    const r = resolveCoverUrl("/covers/foo.jpg");
+    expect(r).toBe("/covers/foo.jpg");
   });
 });
 

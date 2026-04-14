@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { Story } from "../catalog/types";
-import { deriveCoverUrl, hashHue } from "../lib/coverUrl";
+import { deriveCoverUrl, hashHue, resolveCoverUrl } from "../lib/coverUrl";
 
 interface Props {
   story: Story;
@@ -11,20 +11,20 @@ interface Props {
 }
 
 /**
- * Three-tier cover renderer:
- *   1. story.coverUrl                                       (curator-supplied)
- *   2. https://archive.org/services/img/{archiveIdentifier} (auto-derived)
- *   3. Generated SVG cover with the title typeset on a deterministic palette
+ * Two-tier cover renderer:
+ *   1. story.coverUrl (absolute URL or relative path like
+ *      "covers/foo.jpg") — resolved against Vite's BASE_URL
+ *   2. Generated SVG cover with the title typeset on a deterministic palette
  *
- * Tiers 1 and 2 are tried as <img> tags. If either errors (404, network),
- * we fall through to the SVG cover. The SVG cover is always renderable.
+ * Tier 1 is tried as an <img> tag. If it errors (404, network, CORS), we
+ * fall through to the SVG cover, which is always renderable.
  */
 export default function BookCover({
   story,
   className = "",
   showFallbackTitle = true,
 }: Props) {
-  const initialUrl = deriveCoverUrl(story);
+  const initialUrl = resolveCoverUrl(deriveCoverUrl(story));
   const [errored, setErrored] = useState(false);
   const showImage = initialUrl !== null && !errored;
 

@@ -1,0 +1,6 @@
+# Placeholder so git tracks the directory before the cover-fetch
+# pipeline (scripts/fetch-covers.mjs) has been run.
+#
+# Real cover images live next to this file as {story-id}.jpg once the
+# pipeline has populated them. Don't delete this file; git otherwise
+# drops the empty directory.
