@@ -47,6 +47,9 @@ jobs:
 
       - name: Run cover pipeline
         env:
+          # Stage 3 (AI generation) uses whichever of these is set.
+          # Recraft is preferred when both are present.
+          RECRAFT_API_KEY: ${{ secrets.RECRAFT_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           set -euo pipefail
