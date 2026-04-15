@@ -25,9 +25,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -37,7 +37,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-big-jon-sparkie-ep1.jpg"
     },
     {
       "id": "archive-big-jon-sparkie-ep2",
@@ -62,9 +63,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -74,7 +75,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-big-jon-sparkie-ep2.jpg"
     },
     {
       "id": "archive-big-jon-sparkie-ep3",
@@ -99,9 +101,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -111,7 +113,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-big-jon-sparkie-ep3.jpg"
     },
     {
       "id": "archive-cinnamon-bear-ep1",
@@ -147,15 +150,16 @@
         "nextTeaser": "Next: Judy, Jimmy, and Paddy meet Weary Willie on their quest for the silver star."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/archive-cinnamon-bear-ep1.jpg"
     },
     {
       "id": "archive-cinnamon-bear-ep2",
@@ -191,15 +195,16 @@
         "nextTeaser": "Next: The Crazy Quilt Dragon makes his first appearance."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/archive-cinnamon-bear-ep2.jpg"
     },
     {
       "id": "archive-greatest-story-the-good-samaritan",
@@ -224,9 +229,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -236,7 +241,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-greatest-story-the-good-samaritan.jpg"
     },
     {
       "id": "archive-greatest-story-the-lost-sheep",
@@ -261,9 +267,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -273,7 +279,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-greatest-story-the-lost-sheep.jpg"
     },
     {
       "id": "archive-greatest-story-the-second-mile",
@@ -298,9 +305,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -310,7 +317,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-greatest-story-the-second-mile.jpg"
     },
     {
       "id": "archive-lets-pretend-beauty-and-the-beast",
@@ -335,9 +343,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -347,7 +355,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-beauty-and-the-beast.jpg"
     },
     {
       "id": "archive-lets-pretend-bluebeard",
@@ -372,9 +381,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -384,7 +393,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-bluebeard.jpg"
     },
     {
       "id": "archive-lets-pretend-brother-and-sister",
@@ -409,9 +419,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -421,7 +431,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-brother-and-sister.jpg"
     },
     {
       "id": "archive-lets-pretend-cinderella",
@@ -446,9 +457,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -458,7 +469,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-cinderella.jpg"
     },
     {
       "id": "archive-lets-pretend-jack-and-the-beanstalk",
@@ -483,9 +495,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -495,7 +507,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-jack-and-the-beanstalk.jpg"
     },
     {
       "id": "archive-lets-pretend-snow-queen",
@@ -520,9 +533,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -532,7 +545,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-snow-queen.jpg"
     },
     {
       "id": "archive-lets-pretend-the-enchanted-frog",
@@ -557,9 +571,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -569,7 +583,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-the-enchanted-frog.jpg"
     },
     {
       "id": "archive-lone-ranger-ep1",
@@ -594,9 +609,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -612,7 +627,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lone-ranger-ep1.jpg"
     },
     {
       "id": "archive-lone-ranger-ep2",
@@ -637,9 +653,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -655,7 +671,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lone-ranger-ep2.jpg"
     },
     {
       "id": "archive-lone-ranger-ep3",
@@ -680,9 +697,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -698,7 +715,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lone-ranger-ep3.jpg"
     },
     {
       "id": "archive-sgt-preston-ep1",
@@ -723,9 +741,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -741,7 +759,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-sgt-preston-ep1.jpg"
     },
     {
       "id": "archive-sgt-preston-ep2",
@@ -766,9 +785,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -784,7 +803,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-sgt-preston-ep2.jpg"
     },
     {
       "id": "archive-sgt-preston-ep3",
@@ -809,9 +829,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -827,7 +847,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-sgt-preston-ep3.jpg"
     },
     {
       "id": "archive-superman-ep1",
@@ -852,9 +873,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -870,7 +891,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-superman-ep1.jpg"
     },
     {
       "id": "archive-superman-ep2",
@@ -895,9 +917,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -913,7 +935,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-superman-ep2.jpg"
     },
     {
       "id": "archive-superman-ep3",
@@ -938,9 +961,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -956,7 +979,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-superman-ep3.jpg"
     },
     {
       "id": "librivox-aesop-the-ant-and-the-grasshopper",
@@ -981,15 +1005,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-ant-and-the-grasshopper.jpg"
     },
     {
       "id": "librivox-aesop-the-boy-who-cried-wolf",
@@ -1014,15 +1039,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-boy-who-cried-wolf.jpg"
     },
     {
       "id": "librivox-aesop-the-fox-and-the-grapes",
@@ -1050,7 +1076,7 @@
       "loudness": {
         "integratedLufs": -22.4,
         "truePeakDbtp": -1.2,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1082,15 +1108,16 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-north-wind-and-the-sun.jpg"
     },
     {
       "id": "librivox-aesop-the-tortoise-and-the-hare",
@@ -1115,15 +1142,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-tortoise-and-the-hare.jpg"
     },
     {
       "id": "librivox-aesop-the-town-mouse-and-the-country-mouse",
@@ -1148,15 +1176,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-town-mouse-and-the-country-mouse.jpg"
     },
     {
       "id": "librivox-andrew-lang-blue-fairy-book-ch1",
@@ -1181,9 +1210,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1195,7 +1224,8 @@
         "name": "The Blue Fairy Book",
         "order": 1,
         "totalParts": 18
-      }
+      },
+      "coverUrl": "covers/librivox-andrew-lang-blue-fairy-book-ch1.jpg"
     },
     {
       "id": "librivox-andrew-lang-joan-of-arc-ch1",
@@ -1221,9 +1251,9 @@
         "faithful"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1237,7 +1267,8 @@
         "name": "The Story of Joan of Arc",
         "order": 1,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-andrew-lang-joan-of-arc-ch1.jpg"
     },
     {
       "id": "librivox-andrew-lang-joan-of-arc-ch2",
@@ -1263,9 +1294,9 @@
         "faithful"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1277,7 +1308,8 @@
         "name": "The Story of Joan of Arc",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-andrew-lang-joan-of-arc-ch2.jpg"
     },
     {
       "id": "librivox-anna-sewell-black-beauty-ch1",
@@ -1303,9 +1335,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1317,7 +1349,8 @@
         "name": "Black Beauty",
         "order": 1,
         "totalParts": 24
-      }
+      },
+      "coverUrl": "covers/librivox-anna-sewell-black-beauty-ch1.jpg"
     },
     {
       "id": "librivox-anonymous-wee-ones-bible-stories-ch1",
@@ -1343,9 +1376,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1357,7 +1390,8 @@
         "name": "Wee Ones' Bible Stories",
         "order": 1,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-anonymous-wee-ones-bible-stories-ch1.jpg"
     },
     {
       "id": "librivox-anonymous-wee-ones-bible-stories-ch2",
@@ -1383,9 +1417,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1397,7 +1431,8 @@
         "name": "Wee Ones' Bible Stories",
         "order": 2,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-anonymous-wee-ones-bible-stories-ch2.jpg"
     },
     {
       "id": "librivox-arthur-ransome-old-peters-russian-tales-ch1",
@@ -1422,9 +1457,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1436,7 +1471,8 @@
         "name": "Old Peter's Russian Tales",
         "order": 1,
         "totalParts": 10
-      }
+      },
+      "coverUrl": "covers/librivox-arthur-ransome-old-peters-russian-tales-ch1.jpg"
     },
     {
       "id": "librivox-arthur-ransome-old-peters-russian-tales-ch2",
@@ -1461,9 +1497,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1475,7 +1511,8 @@
         "name": "Old Peter's Russian Tales",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-arthur-ransome-old-peters-russian-tales-ch2.jpg"
     },
     {
       "id": "librivox-asbjornsen-east-of-the-sun-ch1",
@@ -1507,15 +1544,16 @@
         "nextTeaser": "Next: The Three Billy Goats Gruff — the famous tale of the troll under the bridge."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-asbjornsen-east-of-the-sun-ch1.jpg"
     },
     {
       "id": "librivox-baum-wizard-of-oz-ch1",
@@ -1547,15 +1585,16 @@
         "nextTeaser": "Next: Dorothy meets the Munchkins and the Good Witch of the North."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-baum-wizard-of-oz-ch1.jpg"
     },
     {
       "id": "librivox-baum-wizard-of-oz-ch6",
@@ -1587,15 +1626,16 @@
         "nextTeaser": "Next: The journey through the dark forest to the Emerald City."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-baum-wizard-of-oz-ch6.jpg"
     },
     {
       "id": "librivox-beatrix-potter-benjamin-bunny",
@@ -1621,9 +1661,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1656,9 +1696,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1691,9 +1731,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1726,9 +1766,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1760,9 +1800,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1770,7 +1810,8 @@
         "flags": [
           "mild-peril"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-brothers-grimm-cinderella.jpg"
     },
     {
       "id": "librivox-brothers-grimm-hansel-and-gretel",
@@ -1795,9 +1836,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1805,7 +1846,8 @@
         "flags": [
           "mild-peril"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-brothers-grimm-hansel-and-gretel.jpg"
     },
     {
       "id": "librivox-brothers-grimm-rapunzel",
@@ -1830,9 +1872,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1840,7 +1882,8 @@
         "flags": [
           "mild-peril"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-brothers-grimm-rapunzel.jpg"
     },
     {
       "id": "librivox-brothers-grimm-snow-white",
@@ -1865,9 +1908,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1875,7 +1918,8 @@
         "flags": [
           "mild-peril"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-brothers-grimm-snow-white.jpg"
     },
     {
       "id": "librivox-carlo-collodi-the-adventures-of-pinocchio-ch1",
@@ -1900,9 +1944,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1914,7 +1958,8 @@
         "name": "The Adventures of Pinocchio",
         "order": 1,
         "totalParts": 18
-      }
+      },
+      "coverUrl": "covers/librivox-carlo-collodi-the-adventures-of-pinocchio-ch1.jpg"
     },
     {
       "id": "librivox-carlo-collodi-the-adventures-of-pinocchio-ch2",
@@ -1939,9 +1984,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1953,7 +1998,8 @@
         "name": "The Adventures of Pinocchio",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-carlo-collodi-the-adventures-of-pinocchio-ch2.jpg"
     },
     {
       "id": "librivox-charles-kingsley-the-heroes-ch1",
@@ -1978,9 +2024,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -1992,7 +2038,8 @@
         "name": "The Heroes",
         "order": 1,
         "totalParts": 8
-      }
+      },
+      "coverUrl": "covers/librivox-charles-kingsley-the-heroes-ch1.jpg"
     },
     {
       "id": "librivox-charles-kingsley-the-water-babies-ch1",
@@ -2017,9 +2064,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2033,7 +2080,8 @@
         "name": "The Water-Babies",
         "order": 1,
         "totalParts": 8
-      }
+      },
+      "coverUrl": "covers/librivox-charles-kingsley-the-water-babies-ch1.jpg"
     },
     {
       "id": "librivox-charles-perrault-cinderella",
@@ -2058,15 +2106,16 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-charles-perrault-cinderella.jpg"
     },
     {
       "id": "librivox-charles-perrault-puss-in-boots",
@@ -2091,15 +2140,16 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-charles-perrault-puss-in-boots.jpg"
     },
     {
       "id": "librivox-charles-perrault-sleeping-beauty",
@@ -2124,15 +2174,16 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-charles-perrault-sleeping-beauty.jpg"
     },
     {
       "id": "librivox-christina-rossetti-sing-song-pt1",
@@ -2157,15 +2208,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt1.jpg"
     },
     {
       "id": "librivox-christina-rossetti-sing-song-pt2",
@@ -2190,15 +2242,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt2.jpg"
     },
     {
       "id": "librivox-dickens-christmas-carol-stave1",
@@ -2230,15 +2283,16 @@
         "nextTeaser": "Next: The Ghost of Christmas Past takes Scrooge on a journey through his memories."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-dickens-christmas-carol-stave1.jpg"
     },
     {
       "id": "librivox-e-nesbit-five-children-and-it-ch1",
@@ -2263,9 +2317,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2303,9 +2357,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2343,15 +2397,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-e-nesbit-railway-children-ch1.jpg"
     },
     {
       "id": "librivox-edward-lear-nonsense-verses",
@@ -2376,15 +2431,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-edward-lear-nonsense-verses.jpg"
     },
     {
       "id": "librivox-ellen-c-babbitt-jataka-tales-ch1",
@@ -2409,9 +2465,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2423,7 +2479,8 @@
         "name": "Jataka Tales",
         "order": 1,
         "totalParts": 9
-      }
+      },
+      "coverUrl": "covers/librivox-ellen-c-babbitt-jataka-tales-ch1.jpg"
     },
     {
       "id": "librivox-ellen-c-babbitt-jataka-tales-ch2",
@@ -2448,15 +2505,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-ellen-c-babbitt-jataka-tales-ch2.jpg"
     },
     {
       "id": "librivox-erick-berry-black-folk-tales-ch1",
@@ -2481,9 +2539,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2495,7 +2553,8 @@
         "name": "Black Folk Tales",
         "order": 1,
         "totalParts": 7
-      }
+      },
+      "coverUrl": "covers/librivox-erick-berry-black-folk-tales-ch1.jpg"
     },
     {
       "id": "librivox-ernest-thompson-seto-the-biography-of-a-grizzl-ch1",
@@ -2520,9 +2579,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2534,7 +2593,8 @@
         "name": "The Biography of a Grizzly",
         "order": 1,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-ernest-thompson-seto-the-biography-of-a-grizzl-ch1.jpg"
     },
     {
       "id": "librivox-ernest-thompson-seto-wild-animals-i-have-known-ch1",
@@ -2559,9 +2619,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2573,7 +2633,8 @@
         "name": "Wild Animals I Have Known",
         "order": 1,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-ernest-thompson-seto-wild-animals-i-have-known-ch1.jpg"
     },
     {
       "id": "librivox-ernest-thompson-seton-bannertail-ch1",
@@ -2598,15 +2659,16 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-ernest-thompson-seton-bannertail-ch1.jpg"
     },
     {
       "id": "librivox-florence-kingsley-titus-comrade-cross-ch1",
@@ -2631,9 +2693,9 @@
         "faithful"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2647,7 +2709,8 @@
         "name": "Titus: A Comrade of the Cross",
         "order": 1,
         "totalParts": 17
-      }
+      },
+      "coverUrl": "covers/librivox-florence-kingsley-titus-comrade-cross-ch1.jpg"
     },
     {
       "id": "librivox-frances-hodgson-burnett-a-little-princess-ch1",
@@ -2672,9 +2735,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2717,7 +2780,7 @@
       "loudness": {
         "integratedLufs": -20.3,
         "truePeakDbtp": -1.8,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2758,9 +2821,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2799,9 +2862,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2839,15 +2902,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-baby.jpg"
     },
     {
       "id": "librivox-george-macdonald-bedtime",
@@ -2872,15 +2936,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-bedtime.jpg"
     },
     {
       "id": "librivox-george-macdonald-day-boy-night-girl",
@@ -2905,15 +2970,16 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-day-boy-night-girl.jpg"
     },
     {
       "id": "librivox-george-macdonald-gifts-child-christ",
@@ -2940,15 +3006,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-gifts-child-christ.jpg"
     },
     {
       "id": "librivox-george-macdonald-light-princess-ch1",
@@ -2973,9 +3040,9 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -2987,7 +3054,8 @@
         "name": "The Light Princess",
         "order": 1,
         "totalParts": 7
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-light-princess-ch1.jpg"
     },
     {
       "id": "librivox-george-macdonald-light-princess-ch2",
@@ -3012,9 +3080,9 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3026,7 +3094,8 @@
         "name": "The Light Princess",
         "order": 2,
         "totalParts": 7
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-light-princess-ch2.jpg"
     },
     {
       "id": "librivox-george-macdonald-light-princess-other",
@@ -3051,15 +3120,16 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-light-princess-other.jpg"
     },
     {
       "id": "librivox-george-macdonald-lost-princess-ch1",
@@ -3084,9 +3154,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3098,7 +3168,8 @@
         "name": "The Lost Princess",
         "order": 1,
         "totalParts": 1
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-lost-princess-ch1.jpg"
     },
     {
       "id": "librivox-george-macdonald-north-wind-ch1",
@@ -3123,9 +3194,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3138,7 +3209,8 @@
         "order": 1,
         "totalParts": 19,
         "nextTeaser": "Diamond rides with North Wind across London and begins to understand that she is not always gentle."
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-north-wind-ch1.jpg"
     },
     {
       "id": "librivox-george-macdonald-north-wind-ch2",
@@ -3163,9 +3235,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3177,7 +3249,8 @@
         "name": "At the Back of the North Wind",
         "order": 2,
         "totalParts": 19
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-north-wind-ch2.jpg"
     },
     {
       "id": "librivox-george-macdonald-princess-curdie-ch1",
@@ -3202,9 +3275,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3216,7 +3289,8 @@
         "name": "The Princess and Curdie",
         "order": 1,
         "totalParts": 1
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-princess-curdie-ch1.jpg"
     },
     {
       "id": "librivox-george-macdonald-princess-goblin-ch1",
@@ -3241,9 +3315,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3258,7 +3332,8 @@
         "order": 1,
         "totalParts": 9,
         "nextTeaser": "Curdie the miner's boy hears the goblins singing beneath the mountain — and their words are not kind."
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-princess-goblin-ch1.jpg"
     },
     {
       "id": "librivox-george-macdonald-princess-goblin-ch2",
@@ -3283,9 +3358,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3300,7 +3375,8 @@
         "order": 2,
         "totalParts": 9,
         "nextTeaser": "Irene tries to show Curdie the thread her grandmother gave her, but he cannot see it."
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-princess-goblin-ch2.jpg"
     },
     {
       "id": "librivox-george-macdonald-princess-goblin-ch3",
@@ -3325,9 +3401,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3341,7 +3417,8 @@
         "name": "The Princess and the Goblin",
         "order": 3,
         "totalParts": 9
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-princess-goblin-ch3.jpg"
     },
     {
       "id": "librivox-george-macdonald-ranald-bannerman-ch1",
@@ -3366,9 +3443,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3380,7 +3457,8 @@
         "name": "Ranald Bannerman's Boyhood",
         "order": 1,
         "totalParts": 1
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-ranald-bannerman-ch1.jpg"
     },
     {
       "id": "librivox-george-macdonald-the-shadows",
@@ -3405,15 +3483,16 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-the-shadows.jpg"
     },
     {
       "id": "librivox-george-macdonald-the-wind-and-the-moon",
@@ -3438,15 +3517,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-the-wind-and-the-moon.jpg"
     },
     {
       "id": "librivox-george-macdonald-wise-woman-ch1",
@@ -3471,9 +3551,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3485,7 +3565,8 @@
         "name": "The Wise Woman",
         "order": 1,
         "totalParts": 1
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-wise-woman-ch1.jpg"
     },
     {
       "id": "librivox-gk-chesterton-father-brown-the-blue-cross",
@@ -3510,9 +3591,9 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3524,7 +3605,8 @@
         "name": "The Innocence of Father Brown",
         "order": 1,
         "totalParts": 6
-      }
+      },
+      "coverUrl": "covers/librivox-gk-chesterton-father-brown-the-blue-cross.jpg"
     },
     {
       "id": "librivox-gk-chesterton-father-brown-the-hammer-of-god",
@@ -3549,9 +3631,9 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3563,7 +3645,8 @@
         "name": "The Innocence of Father Brown",
         "order": 3,
         "totalParts": 6
-      }
+      },
+      "coverUrl": "covers/librivox-gk-chesterton-father-brown-the-hammer-of-god.jpg"
     },
     {
       "id": "librivox-gk-chesterton-father-brown-the-invisible-man",
@@ -3588,9 +3671,9 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3602,7 +3685,8 @@
         "name": "The Innocence of Father Brown",
         "order": 2,
         "totalParts": 6
-      }
+      },
+      "coverUrl": "covers/librivox-gk-chesterton-father-brown-the-invisible-man.jpg"
     },
     {
       "id": "librivox-gk-chesterton-greybeards-at-play",
@@ -3627,15 +3711,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-gk-chesterton-greybeards-at-play.jpg"
     },
     {
       "id": "librivox-gk-chesterton-st-francis-ch1",
@@ -3661,9 +3746,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3677,7 +3762,8 @@
         "name": "St. Francis of Assisi",
         "order": 1,
         "totalParts": 5
-      }
+      },
+      "coverUrl": "covers/librivox-gk-chesterton-st-francis-ch1.jpg"
     },
     {
       "id": "librivox-gk-chesterton-st-francis-ch2",
@@ -3703,9 +3789,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3719,7 +3805,8 @@
         "name": "St. Francis of Assisi",
         "order": 2,
         "totalParts": 5
-      }
+      },
+      "coverUrl": "covers/librivox-gk-chesterton-st-francis-ch2.jpg"
     },
     {
       "id": "librivox-hans-christian-andersen-snow-queen-pt1",
@@ -3744,15 +3831,16 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-hans-christian-andersen-snow-queen-pt1.jpg"
     },
     {
       "id": "librivox-hans-christian-andersen-the-emperors-new-clothes",
@@ -3777,15 +3865,16 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-hans-christian-andersen-the-emperors-new-clothes.jpg"
     },
     {
       "id": "librivox-hans-christian-andersen-the-princess-and-the-pea",
@@ -3810,15 +3899,16 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-hans-christian-andersen-the-princess-and-the-pea.jpg"
     },
     {
       "id": "librivox-hans-christian-andersen-the-ugly-duckling",
@@ -3843,15 +3933,16 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-hans-christian-andersen-the-ugly-duckling.jpg"
     },
     {
       "id": "librivox-hans-christian-andersen-thumbelina",
@@ -3876,15 +3967,16 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-hans-christian-andersen-thumbelina.jpg"
     },
     {
       "id": "librivox-henry-sherman-childrens-bible-ch1",
@@ -3910,9 +4002,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3924,7 +4016,8 @@
         "name": "The Children's Bible",
         "order": 1,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-henry-sherman-childrens-bible-ch1.jpg"
     },
     {
       "id": "librivox-henry-sherman-childrens-bible-ch2",
@@ -3950,9 +4043,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -3964,7 +4057,8 @@
         "name": "The Children's Bible",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-henry-sherman-childrens-bible-ch2.jpg"
     },
     {
       "id": "librivox-jean-henri-fabre-story-book-science-ch2",
@@ -3990,9 +4084,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4004,7 +4098,8 @@
         "name": "The Story-Book of Science",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-jean-henri-fabre-story-book-science-ch2.jpg"
     },
     {
       "id": "librivox-jean-henri-fabre-the-story-book-of-science-ch1",
@@ -4029,9 +4124,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4043,7 +4138,8 @@
         "name": "The Story Book of Science",
         "order": 1,
         "totalParts": 40
-      }
+      },
+      "coverUrl": "covers/librivox-jean-henri-fabre-the-story-book-of-science-ch1.jpg"
     },
     {
       "id": "librivox-jm-barrie-peter-and-wendy-ch1",
@@ -4068,9 +4164,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4082,7 +4178,8 @@
         "name": "Peter and Wendy",
         "order": 1,
         "totalParts": 8
-      }
+      },
+      "coverUrl": "covers/librivox-jm-barrie-peter-and-wendy-ch1.jpg"
     },
     {
       "id": "librivox-johanna-spyri-heidi-ch1",
@@ -4108,15 +4205,16 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-johanna-spyri-heidi-ch1.jpg"
     },
     {
       "id": "librivox-john-bunyan-pilgrims-progress-one-syllable-ch1",
@@ -4141,9 +4239,9 @@
         "faithful"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4155,7 +4253,8 @@
         "name": "The Pilgrim's Progress (Young Readers)",
         "order": 1,
         "totalParts": 9
-      }
+      },
+      "coverUrl": "covers/librivox-john-bunyan-pilgrims-progress-one-syllable-ch1.jpg"
     },
     {
       "id": "librivox-john-gilmary-shea-saint-of-the-day",
@@ -4180,15 +4279,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-john-gilmary-shea-saint-of-the-day.jpg"
     },
     {
       "id": "librivox-john-gilmary-shea-st-george",
@@ -4213,15 +4313,16 @@
         "faithful"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-john-gilmary-shea-st-george.jpg"
     },
     {
       "id": "librivox-john-gilmary-shea-st-patrick",
@@ -4246,15 +4347,16 @@
         "faithful"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-john-gilmary-shea-st-patrick.jpg"
     },
     {
       "id": "librivox-john-ruskin-king-of-golden-river-ch2",
@@ -4279,9 +4381,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4293,7 +4395,8 @@
         "name": "The King of the Golden River",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-john-ruskin-king-of-golden-river-ch2.jpg"
     },
     {
       "id": "librivox-john-ruskin-king-of-the-golden-river-ch1",
@@ -4318,9 +4421,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4332,7 +4435,8 @@
         "name": "The King of the Golden River",
         "order": 1,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-john-ruskin-king-of-the-golden-river-ch1.jpg"
     },
     {
       "id": "librivox-joseph-jacobs-celtic-fairy-tales-ch1",
@@ -4357,9 +4461,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4371,7 +4475,8 @@
         "name": "Celtic Fairy Tales",
         "order": 1,
         "totalParts": 13
-      }
+      },
+      "coverUrl": "covers/librivox-joseph-jacobs-celtic-fairy-tales-ch1.jpg"
     },
     {
       "id": "librivox-joseph-jacobs-english-fairy-tales-ch1",
@@ -4396,9 +4501,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4410,7 +4515,8 @@
         "name": "English Fairy Tales",
         "order": 1,
         "totalParts": 22
-      }
+      },
+      "coverUrl": "covers/librivox-joseph-jacobs-english-fairy-tales-ch1.jpg"
     },
     {
       "id": "librivox-kenneth-grahame-the-wind-in-the-willows-ch1",
@@ -4439,7 +4545,7 @@
       "loudness": {
         "integratedLufs": -19.7,
         "truePeakDbtp": -2.1,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4481,9 +4587,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4521,9 +4627,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4561,15 +4667,16 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-kipling-rikki-tikki-tavi.jpg"
     },
     {
       "id": "librivox-lewis-carroll-a-mad-tea-party",
@@ -4594,9 +4701,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4608,7 +4715,8 @@
         "name": "Alice's Adventures in Wonderland",
         "order": 7,
         "totalParts": 6
-      }
+      },
+      "coverUrl": "covers/librivox-lewis-carroll-a-mad-tea-party.jpg"
     },
     {
       "id": "librivox-lewis-carroll-alice-in-wonderland-ch1",
@@ -4637,7 +4745,7 @@
       "loudness": {
         "integratedLufs": -21.2,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4675,9 +4783,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4689,7 +4797,8 @@
         "name": "Alice's Adventures in Wonderland",
         "order": 2,
         "totalParts": 6
-      }
+      },
+      "coverUrl": "covers/librivox-lewis-carroll-the-pool-of-tears.jpg"
     },
     {
       "id": "librivox-lm-montgomery-anne-of-green-gables-ch1",
@@ -4714,9 +4823,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4754,9 +4863,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4795,9 +4904,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4809,7 +4918,8 @@
         "name": "The Wonder Book of Bible Stories",
         "order": 1,
         "totalParts": 14
-      }
+      },
+      "coverUrl": "covers/librivox-logan-marshall-the-wonder-book-of-bible-stori-ch1.jpg"
     },
     {
       "id": "librivox-logan-marshall-the-wonder-book-of-bible-stori-ch2",
@@ -4835,9 +4945,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4849,7 +4959,8 @@
         "name": "The Wonder Book of Bible Stories",
         "order": 2,
         "totalParts": 14
-      }
+      },
+      "coverUrl": "covers/librivox-logan-marshall-the-wonder-book-of-bible-stori-ch2.jpg"
     },
     {
       "id": "librivox-louisa-may-alcott-little-women-ch1",
@@ -4874,9 +4985,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4915,9 +5026,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4929,7 +5040,8 @@
         "name": "Parables from Nature",
         "order": 1,
         "totalParts": 15
-      }
+      },
+      "coverUrl": "covers/librivox-margaret-gatty-parables-from-nature-ch1.jpg"
     },
     {
       "id": "librivox-margaret-gatty-parables-from-nature-ch2",
@@ -4955,9 +5067,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -4969,7 +5081,8 @@
         "name": "Parables from Nature",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-margaret-gatty-parables-from-nature-ch2.jpg"
     },
     {
       "id": "librivox-mark-twain-tom-sawyer-ch1",
@@ -4994,15 +5107,16 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-mark-twain-tom-sawyer-ch1.jpg"
     },
     {
       "id": "librivox-milne-pooh-corner-ch10",
@@ -5033,15 +5147,16 @@
         "totalParts": 3
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-milne-pooh-corner-ch10.jpg"
     },
     {
       "id": "librivox-milne-pooh-corner-ch2",
@@ -5072,15 +5187,16 @@
         "totalParts": 3
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-milne-pooh-corner-ch2.jpg"
     },
     {
       "id": "librivox-milne-winnie-the-pooh-ch1",
@@ -5112,15 +5228,16 @@
         "nextTeaser": "Next: Pooh goes visiting Rabbit and eats too much honey."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-milne-winnie-the-pooh-ch1.jpg"
     },
     {
       "id": "librivox-milne-winnie-the-pooh-ch2",
@@ -5152,15 +5269,16 @@
         "nextTeaser": "Next: Pooh and Piglet go hunting and nearly catch a Woozle."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-milne-winnie-the-pooh-ch2.jpg"
     },
     {
       "id": "librivox-milne-winnie-the-pooh-ch6",
@@ -5192,15 +5310,16 @@
         "nextTeaser": "Next: Kanga and Baby Roo come to the Forest, and Piglet has a bath."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-milne-winnie-the-pooh-ch6.jpg"
     },
     {
       "id": "librivox-moore-night-before-christmas",
@@ -5225,15 +5344,16 @@
         "calming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-moore-night-before-christmas.jpg"
     },
     {
       "id": "librivox-oscar-wilde-the-canterville-ghost-ch1",
@@ -5258,9 +5378,9 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5272,7 +5392,8 @@
         "name": "The Canterville Ghost",
         "order": 1,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-oscar-wilde-the-canterville-ghost-ch1.jpg"
     },
     {
       "id": "librivox-oscar-wilde-the-devoted-friend",
@@ -5297,15 +5418,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-oscar-wilde-the-devoted-friend.jpg"
     },
     {
       "id": "librivox-oscar-wilde-the-happy-prince",
@@ -5330,9 +5452,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5340,7 +5462,8 @@
         "flags": [
           "sad-opening"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-oscar-wilde-the-happy-prince.jpg"
     },
     {
       "id": "librivox-oscar-wilde-the-nightingale-and-the-rose",
@@ -5365,9 +5488,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5375,7 +5498,8 @@
         "flags": [
           "sad-opening"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-oscar-wilde-the-nightingale-and-the-rose.jpg"
     },
     {
       "id": "librivox-oscar-wilde-the-remarkable-rocket",
@@ -5400,15 +5524,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-oscar-wilde-the-remarkable-rocket.jpg"
     },
     {
       "id": "librivox-oscar-wilde-the-selfish-giant",
@@ -5433,15 +5558,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-oscar-wilde-the-selfish-giant.jpg"
     },
     {
       "id": "librivox-oscar-wilde-the-star-child",
@@ -5466,9 +5592,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5476,7 +5602,8 @@
         "flags": [
           "older-language"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-oscar-wilde-the-star-child.jpg"
     },
     {
       "id": "librivox-oscar-wilde-the-young-king",
@@ -5501,9 +5628,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5511,7 +5638,8 @@
         "flags": [
           "older-language"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-oscar-wilde-the-young-king.jpg"
     },
     {
       "id": "librivox-robert-louis-stevenson-childs-garden-of-verses",
@@ -5536,15 +5664,16 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-robert-louis-stevenson-childs-garden-of-verses.jpg"
     },
     {
       "id": "librivox-robert-louis-stevenson-treasure-island-ch1",
@@ -5569,9 +5698,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5609,9 +5738,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5623,7 +5752,8 @@
         "name": "Just So Stories",
         "order": 2,
         "totalParts": 6
-      }
+      },
+      "coverUrl": "covers/librivox-rudyard-kipling-how-the-camel-got-his-hump.jpg"
     },
     {
       "id": "librivox-rudyard-kipling-how-the-rhinoceros-got-his-ski",
@@ -5648,9 +5778,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5662,7 +5792,8 @@
         "name": "Just So Stories",
         "order": 3,
         "totalParts": 6
-      }
+      },
+      "coverUrl": "covers/librivox-rudyard-kipling-how-the-rhinoceros-got-his-ski.jpg"
     },
     {
       "id": "librivox-rudyard-kipling-how-the-whale-got-his-throat",
@@ -5689,8 +5820,8 @@
       ],
       "loudness": {
         "integratedLufs": -19.8,
-        "truePeakDbtp": -1.0,
-        "targetLufs": -18.0
+        "truePeakDbtp": -1,
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5729,9 +5860,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5743,7 +5874,8 @@
         "name": "Just So Stories",
         "order": 4,
         "totalParts": 6
-      }
+      },
+      "coverUrl": "covers/librivox-rudyard-kipling-the-elephants-child.jpg"
     },
     {
       "id": "librivox-rudyard-kipling-the-jungle-book-kaas-hunting",
@@ -5768,9 +5900,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5782,7 +5914,8 @@
         "name": "The Jungle Book",
         "order": 3,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-rudyard-kipling-the-jungle-book-kaas-hunting.jpg"
     },
     {
       "id": "librivox-rudyard-kipling-the-jungle-book-mowglis-brothers",
@@ -5811,7 +5944,7 @@
       "loudness": {
         "integratedLufs": -18.4,
         "truePeakDbtp": -0.8,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5851,15 +5984,16 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-steel-english-fairy-tales-ch1.jpg"
     },
     {
       "id": "librivox-steel-english-fairy-tales-jack-beanstalk",
@@ -5884,15 +6018,16 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-steel-english-fairy-tales-jack-beanstalk.jpg"
     },
     {
       "id": "librivox-thornton-burgess-old-mother-west-wind-ch2",
@@ -5919,9 +6054,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5933,7 +6068,8 @@
         "name": "Old Mother West Wind",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-thornton-burgess-old-mother-west-wind-ch2.jpg"
     },
     {
       "id": "librivox-thornton-w-burgess-old-mother-west-wind-ch1",
@@ -5960,9 +6096,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -5974,7 +6110,8 @@
         "name": "Old Mother West Wind",
         "order": 1,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-thornton-w-burgess-old-mother-west-wind-ch1.jpg"
     },
     {
       "id": "librivox-thornton-w-burgess-the-adventures-of-buster-ch1",
@@ -5999,9 +6136,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6013,7 +6150,8 @@
         "name": "The Adventures of Buster Bear",
         "order": 1,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-thornton-w-burgess-the-adventures-of-buster-ch1.jpg"
     },
     {
       "id": "librivox-thornton-w-burgess-the-adventures-of-reddy-f-ch1",
@@ -6038,9 +6176,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6084,15 +6222,16 @@
         "nextTeaser": "Next: The children spend a cold, hungry night and decide they must find shelter."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch1.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch10",
@@ -6117,9 +6256,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6132,7 +6271,8 @@
         "order": 10,
         "totalParts": 17,
         "nextTeaser": "Next: More Education."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch10.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch11",
@@ -6157,9 +6297,9 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6172,7 +6312,8 @@
         "order": 11,
         "totalParts": 17,
         "nextTeaser": "Next: Ginseng."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch11.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch12",
@@ -6197,9 +6338,9 @@
         "brave"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6212,7 +6353,8 @@
         "order": 12,
         "totalParts": 17,
         "nextTeaser": "Next: Trouble."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch12.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch13",
@@ -6237,9 +6379,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6252,7 +6394,8 @@
         "order": 13,
         "totalParts": 17,
         "nextTeaser": "Next: Caught."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch13.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch14",
@@ -6277,9 +6420,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6292,7 +6435,8 @@
         "order": 14,
         "totalParts": 17,
         "nextTeaser": "Next: A New Grandfather."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch14.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch15",
@@ -6317,9 +6461,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6332,7 +6476,8 @@
         "order": 15,
         "totalParts": 17,
         "nextTeaser": "Next: A United Family."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch15.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch16",
@@ -6357,9 +6502,9 @@
         "calming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6372,7 +6517,8 @@
         "order": 16,
         "totalParts": 17,
         "nextTeaser": "Next: Safe."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch16.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch17",
@@ -6397,9 +6543,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6411,7 +6557,8 @@
         "name": "The Boxcar Children",
         "order": 17,
         "totalParts": 17
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch17.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch2",
@@ -6436,9 +6583,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6451,7 +6598,8 @@
         "order": 2,
         "totalParts": 17,
         "nextTeaser": "Next: Shelter."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch2.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch3",
@@ -6476,9 +6624,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6491,7 +6639,8 @@
         "order": 3,
         "totalParts": 17,
         "nextTeaser": "Next: The children discover an abandoned boxcar in the woods and turn it into their home."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch3.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch4",
@@ -6523,15 +6672,16 @@
         "nextTeaser": "Next: The children organize their boxcar home with clever solutions."
       },
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch4.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch5",
@@ -6556,9 +6706,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6571,7 +6721,8 @@
         "order": 5,
         "totalParts": 17,
         "nextTeaser": "Next: Earning a Living."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch5.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch6",
@@ -6596,9 +6747,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6611,7 +6762,8 @@
         "order": 6,
         "totalParts": 17,
         "nextTeaser": "Next: At Home."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch6.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch7",
@@ -6636,9 +6788,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6651,7 +6803,8 @@
         "order": 7,
         "totalParts": 17,
         "nextTeaser": "Next: Building the Dam."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch7.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch8",
@@ -6676,9 +6829,9 @@
         "funny"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6691,7 +6844,8 @@
         "order": 8,
         "totalParts": 17,
         "nextTeaser": "Next: Cherry Picking."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch8.jpg"
     },
     {
       "id": "librivox-warner-boxcar-children-ch9",
@@ -6716,9 +6870,9 @@
         "heartwarming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6731,7 +6885,8 @@
         "order": 9,
         "totalParts": 17,
         "nextTeaser": "Next: The Race."
-      }
+      },
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch9.jpg"
     },
     {
       "id": "librivox-william-h-barker-west-african-folk-tales-ch1",
@@ -6756,9 +6911,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6770,7 +6925,8 @@
         "name": "West African Folk Tales",
         "order": 1,
         "totalParts": 17
-      }
+      },
+      "coverUrl": "covers/librivox-william-h-barker-west-african-folk-tales-ch1.jpg"
     },
     {
       "id": "librivox-william-trowbridge-l-american-indian-fairy-tal-ch1",
@@ -6795,9 +6951,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6809,7 +6965,8 @@
         "name": "American Indian Fairy Tales",
         "order": 1,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-william-trowbridge-l-american-indian-fairy-tal-ch1.jpg"
     },
     {
       "id": "librivox-williams-velveteen-rabbit",
@@ -6834,15 +6991,16 @@
         "calming"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-williams-velveteen-rabbit.jpg"
     },
     {
       "id": "librivox-yei-theodora-ozaki-japanese-fairy-tales-ch1",
@@ -6867,9 +7025,9 @@
         "fairy-tale"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6881,7 +7039,8 @@
         "name": "Japanese Fairy Tales",
         "order": 1,
         "totalParts": 11
-      }
+      },
+      "coverUrl": "covers/librivox-yei-theodora-ozaki-japanese-fairy-tales-ch1.jpg"
     },
     {
       "id": "librivox-yei-theodora-ozaki-tongue-cut-sparrow",
@@ -6907,15 +7066,16 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-yei-theodora-ozaki-tongue-cut-sparrow.jpg"
     },
     {
       "id": "librivox-zitkala-sa-old-indian-legends-ch1",
@@ -6940,9 +7100,9 @@
         "nature"
       ],
       "loudness": {
-        "integratedLufs": -20.0,
+        "integratedLufs": -20,
         "truePeakDbtp": -1.5,
-        "targetLufs": -18.0
+        "targetLufs": -18
       },
       "safety": {
         "reviewed": true,
@@ -6954,7 +7114,8 @@
         "name": "Old Indian Legends",
         "order": 1,
         "totalParts": 7
-      }
+      },
+      "coverUrl": "covers/librivox-zitkala-sa-old-indian-legends-ch1.jpg"
     }
   ]
 }
