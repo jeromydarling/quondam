@@ -243,15 +243,15 @@ async function tryArchiveOrgCover(story) {
     const mediatype = meta.metadata?.mediatype || "";
 
     // Look for an uploaded cover image. Filter on:
-    //   - format JPEG / PNG / Item Image
+    //   - format JPEG (we deliberately exclude PNG and Item Image — for
+    //     audio items those are almost always placeholder waveforms,
+    //     program logos, or banners, never real cover art)
     //   - name doesn't match the placeholder/waveform/thumbnail patterns
     //   - source == "original" preferred (not a derivative auto-generated
     //     by archive.org)
     let candidates = files.filter(
       (f) =>
-        (f.format === "JPEG" ||
-          f.format === "PNG" ||
-          f.format === "Item Image") &&
+        f.format === "JPEG" &&
         !ARCHIVE_BAD_NAME_RE.test(f.name),
     );
     // Prefer originals over derivatives.
@@ -278,11 +278,19 @@ async function tryArchiveOrgCover(story) {
     // Guard against tiny files that are almost certainly thumbnails,
     // waveforms, or broken responses.
     if (buffer.length < MIN_COVER_BYTES) return null;
+    // Guard against the archive.org-serves-PNG-bytes-for-a-jpg-named-file
+    // case. We only want real JPEGs because we save as {story-id}.jpg.
+    if (!isJpegBuffer(buffer)) return null;
     return { buffer };
   } catch (e) {
     console.log(`  archive.org error: ${e.message}`);
     return null;
   }
+}
+
+/** Pure: returns true iff the buffer's magic bytes are a JPEG SOI marker. */
+function isJpegBuffer(buf) {
+  return buf.length >= 2 && buf[0] === 0xff && buf[1] === 0xd8;
 }
 
 // ---------- Stage 2: Wikipedia ----------
@@ -473,6 +481,19 @@ async function runAudit() {
 
     if (size < MIN_COVER_BYTES) {
       remove.push({ name, reason: `size ${size}B < ${MIN_COVER_BYTES}B` });
+      continue;
+    }
+    // We save covers as {story-id}.jpg, so anything that isn't a real
+    // JPEG is either a thumbnail PNG, a logo, a placeholder served with
+    // the wrong content-type, or a WebP that's pretending to be a JPG.
+    // Reject all of them — the next workflow run will re-attempt these
+    // entries via stages 2 / 3.
+    if (name.toLowerCase().endsWith(".jpg") && !isJpegBuffer(buf)) {
+      const magic = buf.slice(0, 4).toString("hex");
+      remove.push({
+        name,
+        reason: `not a real JPEG (magic=${magic})`,
+      });
       continue;
     }
     const earlier = seen.get(h);

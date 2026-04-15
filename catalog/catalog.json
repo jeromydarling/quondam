@@ -743,8 +743,7 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      },
-      "coverUrl": "covers/archive-sgt-preston-ep1.jpg"
+      }
     },
     {
       "id": "archive-sgt-preston-ep2",
@@ -2180,8 +2179,7 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      },
-      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt1.jpg"
+      }
     },
     {
       "id": "librivox-christina-rossetti-sing-song-pt2",
@@ -2214,8 +2212,7 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      },
-      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt2.jpg"
+      }
     },
     {
       "id": "librivox-dickens-christmas-carol-stave1",
@@ -2516,8 +2513,7 @@
         "name": "Black Folk Tales",
         "order": 1,
         "totalParts": 7
-      },
-      "coverUrl": "covers/librivox-erick-berry-black-folk-tales-ch1.jpg"
+      }
     },
     {
       "id": "librivox-ernest-thompson-seto-the-biography-of-a-grizzl-ch1",
@@ -2630,8 +2626,7 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      },
-      "coverUrl": "covers/librivox-ernest-thompson-seton-bannertail-ch1.jpg"
+      }
     },
     {
       "id": "librivox-florence-kingsley-titus-comrade-cross-ch1",
