@@ -418,17 +418,18 @@ async function tryRecraftCover(story, styleId) {
   const body = {
     prompt,
     model: "recraftv3",
-    style: "digital_illustration",
-    substyle: "hand_drawn",
     size: "1024x1365",
     n: 1,
     response_format: "url",
     negative_prompt: NEGATIVE_PROMPT,
   };
-  // If we have a style reference from an earlier episode in this series,
-  // pass it so characters look consistent.
   if (styleId) {
+    // Style reference already encodes the base style — don't send
+    // style/substyle alongside it or the API rejects the request.
     body.style_id = styleId;
+  } else {
+    body.style = "digital_illustration";
+    body.substyle = "hand_drawn";
   }
 
   try {
