@@ -92,14 +92,34 @@ async function main() {
   // same content into a different story slot.
   await preloadExistingHashes();
 
-  const stories = args.id
-    ? catalog.stories.filter((s) => s.id === args.id)
-    : catalog.stories;
+  // Filter stories based on CLI flags.
+  let stories = catalog.stories;
+  if (args.id) {
+    stories = stories.filter((s) => s.id === args.id);
+  } else if (args.series) {
+    stories = stories.filter((s) => s.series?.id === args.series);
+  }
 
-  if (args.id && stories.length === 0) {
-    console.error(`No story found with id ${args.id}`);
+  if ((args.id || args.series) && stories.length === 0) {
+    console.error(`No stories found for ${args.id ? "id " + args.id : "series " + args.series}`);
     process.exit(1);
   }
+
+  // Sort so series entries are grouped together with lowest order first.
+  // This ensures chapter 1 generates before chapter 2, so the style
+  // reference is available when later chapters are processed.
+  stories = [...stories].sort((a, b) => {
+    const aS = a.series?.id || "";
+    const bS = b.series?.id || "";
+    if (aS !== bS) return aS.localeCompare(bS);
+    return (a.series?.order || 0) - (b.series?.order || 0);
+  });
+
+  console.log(`Processing ${stories.length} stories…\n`);
+
+  // Track Recraft style references per series so episodes share a
+  // consistent character design.
+  const seriesStyleMap = new Map(); // series.id → recraft style UUID
 
   const stats = { updated: 0, skipped: 0, failed: 0, dedup: 0, stage: {} };
 
@@ -135,11 +155,24 @@ async function main() {
       if (result) result.stage = "wikipedia";
     }
     if (!result && args.stages.includes("s3") && AI_PROVIDER_AVAILABLE) {
-      // Prefer Recraft when both keys are present — it's tuned for the
-      // hand-drawn storybook style we want. Gemini is the fallback.
+      // Determine if we have a style reference for this series.
+      const seriesId = story.series?.id;
+      const styleId = seriesId ? seriesStyleMap.get(seriesId) : undefined;
+
       if (RECRAFT_API_KEY) {
-        result = await tryRecraftCover(story);
-        if (result) result.stage = "recraft";
+        result = await tryRecraftCover(story, styleId);
+        if (result) {
+          result.stage = styleId ? "recraft (styled)" : "recraft";
+          // If this is the first cover in a series, upload it as a
+          // style reference so later episodes match.
+          if (seriesId && !styleId && !args.dryRun) {
+            const newStyleId = await uploadStyleReference(result.buffer);
+            if (newStyleId) {
+              seriesStyleMap.set(seriesId, newStyleId);
+              console.log(`  ⬆ uploaded style reference for series "${seriesId}" → ${newStyleId}`);
+            }
+          }
+        }
       }
       if (!result && GEMINI_API_KEY) {
         result = await tryGeminiCover(story);
@@ -181,7 +214,13 @@ async function main() {
     await sleep(400);
   }
 
-  if (!args.dryRun && !args.id) {
+  if (!args.dryRun && !args.id && !args.series) {
+    await writeFile(
+      CATALOG_PATH,
+      JSON.stringify(catalog, null, 2) + "\n",
+    );
+  } else if (!args.dryRun && (args.id || args.series)) {
+    // Even for targeted runs, write the catalog so coverUrl is persisted.
     await writeFile(
       CATALOG_PATH,
       JSON.stringify(catalog, null, 2) + "\n",
@@ -335,30 +374,63 @@ async function tryWikipediaCover(story) {
 
 // ---------- Stage 3: AI generation ----------
 //
-// Two providers supported. Recraft is the primary — its hand-drawn
-// illustration sub-style is a near-perfect match for our bedtime
-// aesthetic, and the API is simpler (returns a URL; we download). Gemini
-// is an alternative. If both keys are set, Recraft runs first and Gemini
-// only fills in when Recraft fails.
+// Two providers supported. Recraft is the primary — we use V3 for its
+// style_id and negative_prompt support. Gemini is the fallback.
+//
+// Series-aware: the main loop uploads the first cover in a series to
+// POST /styles to create a Recraft style reference. Later episodes in
+// the same series pass that style_id, which gives Recraft a visual
+// anchor for character consistency.
 
+const NEGATIVE_PROMPT =
+  "text, lettering, words, title, author name, typography, writing, numbers, font, watermark, signature, logo";
+
+/**
+ * Build the cover prompt for AI generation.
+ *
+ * ONE style for the entire library — inspired by the early Winnie-the-Pooh
+ * illustrations (pen-and-ink line drawings with light watercolor wash, warm
+ * honey-gold tones, generous white space). Every cover should look like it
+ * came from the same artist's hand.
+ */
 function buildCoverPrompt(story) {
-  const moodCues = (story.mood || []).join(", ");
+  const scene = story.summary
+    ? `${story.title} — ${story.summary}`
+    : story.title;
+
   return [
-    `A warm, hand-drawn illustration in the style of a vintage children's`,
-    `storybook cover for "${story.title}" by ${story.author}.`,
-    `Painterly, soft edges, warm earth tones, textured paper feel, no text`,
-    `and no lettering anywhere in the image.`,
-    moodCues ? `Mood: ${moodCues}.` : "",
-    `The composition should suit a 2:3 vertical book-cover aspect ratio.`,
-  ]
-    .filter(Boolean)
-    .join(" ");
+    `A gentle pen-and-ink illustration with delicate watercolor wash,`,
+    `inspired by classic 1920s English children's book illustration.`,
+    `Simple composition with a single focal scene, warm honey-gold and`,
+    `cream tones with touches of soft sage green and dusty rose.`,
+    `Expressive loose ink line work that carries the story; the`,
+    `watercolor is light, translucent, and supplementary. Generous`,
+    `white space and breathing room around the subject.`,
+    `The scene depicts: ${scene}.`,
+    `Vertical book-cover composition.`,
+  ].join(" ");
 }
 
-// Recraft
+// Recraft (V3 for style_id + negative_prompt support)
 
-async function tryRecraftCover(story) {
+async function tryRecraftCover(story, styleId) {
   const prompt = buildCoverPrompt(story);
+  const body = {
+    prompt,
+    model: "recraftv3",
+    style: "digital_illustration",
+    substyle: "hand_drawn",
+    size: "1024x1365",
+    n: 1,
+    response_format: "url",
+    negative_prompt: NEGATIVE_PROMPT,
+  };
+  // If we have a style reference from an earlier episode in this series,
+  // pass it so characters look consistent.
+  if (styleId) {
+    body.style_id = styleId;
+  }
+
   try {
     const res = await fetch(
       "https://external.api.recraft.ai/v1/images/generations",
@@ -368,20 +440,13 @@ async function tryRecraftCover(story) {
           "content-type": "application/json",
           authorization: `Bearer ${RECRAFT_API_KEY}`,
         },
-        body: JSON.stringify({
-          prompt,
-          style: "digital_illustration",
-          substyle: "hand_drawn",
-          size: "1024x1365", // ~3:4 — closest Recraft offers to 2:3
-          n: 1,
-          response_format: "url",
-        }),
+        body: JSON.stringify(body),
       },
     );
     if (!res.ok) {
-      const body = await res.text();
+      const errBody = await res.text();
       console.log(
-        `  recraft http ${res.status}: ${body.slice(0, 200).replace(/\n/g, " ")}`,
+        `  recraft http ${res.status}: ${errBody.slice(0, 200).replace(/\n/g, " ")}`,
       );
       return null;
     }
@@ -405,6 +470,44 @@ async function tryRecraftCover(story) {
     return { buffer };
   } catch (e) {
     console.log(`  recraft error: ${e.message}`);
+    return null;
+  }
+}
+
+/**
+ * Upload a cover image to Recraft's style-reference endpoint.
+ * Returns the style UUID on success, null on failure.
+ * Used so later episodes in the same series can reference this style
+ * for character consistency.
+ */
+async function uploadStyleReference(coverBuffer) {
+  try {
+    const formData = new FormData();
+    formData.append("style", "digital_illustration");
+    formData.append(
+      "file1",
+      new Blob([coverBuffer], { type: "image/webp" }),
+      "reference.webp",
+    );
+
+    const res = await fetch("https://external.api.recraft.ai/v1/styles", {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${RECRAFT_API_KEY}`,
+      },
+      body: formData,
+    });
+    if (!res.ok) {
+      const errBody = await res.text();
+      console.log(
+        `  style upload failed ${res.status}: ${errBody.slice(0, 200)}`,
+      );
+      return null;
+    }
+    const data = await res.json();
+    return data.id || null;
+  } catch (e) {
+    console.log(`  style upload error: ${e.message}`);
     return null;
   }
 }
@@ -577,6 +680,7 @@ function parseArgs(argv) {
     dryRun: false,
     force: false,
     id: null,
+    series: null,
     audit: false,
     stages: ["s1", "s2", "s3"],
   };
@@ -586,11 +690,12 @@ function parseArgs(argv) {
     else if (a === "--force") out.force = true;
     else if (a === "--audit") out.audit = true;
     else if (a === "--id") out.id = argv[++i];
+    else if (a === "--series") out.series = argv[++i];
     else if (a === "--only") out.stages = argv[++i].split(",");
     else if (a === "-h" || a === "--help") {
       console.log(
         "Usage:\n" +
-          "  node scripts/fetch-covers.mjs [--dry-run] [--force] [--id <story-id>] [--only s1,s2,s3]\n" +
+          "  node scripts/fetch-covers.mjs [--dry-run] [--force] [--id <story-id>] [--series <series-id>] [--only s1,s2,s3]\n" +
           "  node scripts/fetch-covers.mjs --audit [--dry-run]    # prune duplicates and tiny files",
       );
       process.exit(0);
