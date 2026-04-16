@@ -394,9 +394,15 @@ const NEGATIVE_PROMPT =
  * came from the same artist's hand.
  */
 function buildCoverPrompt(story) {
-  const scene = story.summary
-    ? `${story.title} — ${story.summary}`
-    : story.title;
+  // If the curator (or Perplexity) wrote a rich visual scene description,
+  // use it verbatim — it's already art-directed for the image generator.
+  // Otherwise fall back to the title + summary which is less visual but
+  // better than nothing.
+  const scene = story.coverScene
+    ? story.coverScene
+    : story.summary
+      ? `${story.title} — ${story.summary}`
+      : story.title;
 
   return [
     `A gentle pen-and-ink illustration with delicate watercolor wash,`,
