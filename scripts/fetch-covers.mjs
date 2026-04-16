@@ -269,18 +269,36 @@ async function tryWikipediaCover(story) {
 // is an alternative. If both keys are set, Recraft runs first and Gemini
 // only fills in when Recraft fails.
 
+/**
+ * Build the cover prompt for AI generation.
+ *
+ * ONE style for the entire library — inspired by the early Winnie-the-Pooh
+ * illustrations (pen-and-ink line drawings with light watercolor wash, warm
+ * honey-gold tones, generous white space). Every cover should look like it
+ * came from the same artist's hand, regardless of whether the story is a
+ * fairy tale, a radio drama, a Bible story, or a chapter of The Jungle Book.
+ *
+ * The story-specific part comes from the title + summary so each cover
+ * depicts a recognizable scene from the entry.
+ */
 function buildCoverPrompt(story) {
-  const moodCues = (story.mood || []).join(", ");
+  const scene = story.summary
+    ? `${story.title} — ${story.summary}`
+    : story.title;
+
   return [
-    `A warm, hand-drawn illustration in the style of a vintage children's`,
-    `storybook cover for "${story.title}" by ${story.author}.`,
-    `Painterly, soft edges, warm earth tones, textured paper feel, no text`,
-    `and no lettering anywhere in the image.`,
-    moodCues ? `Mood: ${moodCues}.` : "",
-    `The composition should suit a 2:3 vertical book-cover aspect ratio.`,
-  ]
-    .filter(Boolean)
-    .join(" ");
+    `A gentle pen-and-ink illustration with delicate watercolor wash,`,
+    `inspired by classic 1920s English children's book illustration.`,
+    `Simple composition with a single focal scene, warm honey-gold and`,
+    `cream tones with touches of soft sage green and dusty rose.`,
+    `Expressive loose ink line work that carries the story; the`,
+    `watercolor is light, translucent, and supplementary. Generous`,
+    `white space and breathing room around the subject.`,
+    `The scene depicts: ${scene}.`,
+    `Vertical book-cover composition.`,
+    `Absolutely no text, no lettering, no words, no title, no author`,
+    `name anywhere in the image.`,
+  ].join(" ");
 }
 
 // Recraft
