@@ -19,6 +19,10 @@ on:
         description: "Single story id to process (leave blank to run over the whole catalog)"
         type: string
         default: ""
+      series:
+        description: "Process only entries matching this series.id (e.g. boxcar-children). Leave blank for all."
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -62,6 +66,9 @@ jobs:
           fi
           if [ -n "${{ inputs.id }}" ]; then
             ARGS+=(--id "${{ inputs.id }}")
+          fi
+          if [ -n "${{ inputs.series }}" ]; then
+            ARGS+=(--series "${{ inputs.series }}")
           fi
           echo "Running: npm run covers -- ${ARGS[*]}"
           npm run covers -- "${ARGS[@]}"
