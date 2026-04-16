@@ -12,9 +12,9 @@ on:
         type: boolean
         default: false
       only:
-        description: "Comma-separated pipeline stages (s1=archive.org, s2=Wikipedia, s3=Gemini)"
+        description: "Pipeline stages: s3=AI only (default, recommended), s1=archive.org, s2=Wikipedia. Comma-separate for multiple."
         type: string
-        default: "s1,s2,s3"
+        default: "s3"
       id:
         description: "Single story id to process (leave blank to run over the whole catalog)"
         type: string
