@@ -38,7 +38,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-big-jon-sparkie-ep1.jpg"
+      "coverUrl": "covers/archive-big-jon-sparkie-ep1.jpg",
+      "coverScene": "A tall, gentle-looking man sitting on a wooden fence under a spreading oak tree, holding a tiny elf on his knee. The elf has pointed ears, a green cap, and a mischievous grin. Fireflies glow in the meadow behind them. Warm twilight sky fading from gold to violet."
     },
     {
       "id": "archive-big-jon-sparkie-ep2",
@@ -76,7 +77,8 @@
         "hissLevel": "high",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-big-jon-sparkie-ep2.jpg"
+      "coverUrl": "covers/archive-big-jon-sparkie-ep2.jpg",
+      "coverScene": "A tall man in a plaid shirt leaning against a barn door, laughing, while a tiny elf in a green cap dances on the fence rail beside him, arms outstretched for balance. A tabby cat watches from a hay bale. Late-afternoon sun casting long golden shadows across the farmyard."
     },
     {
       "id": "archive-big-jon-sparkie-ep3",
@@ -114,7 +116,8 @@
         "hissLevel": "high",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-big-jon-sparkie-ep3.jpg"
+      "coverUrl": "covers/archive-big-jon-sparkie-ep3.jpg",
+      "coverScene": "A tall man and a tiny green-capped elf sitting together on a porch swing at dusk, the man strumming a guitar while the elf swings his legs off the edge. A crescent moon hangs low over a quiet meadow. Lightning bugs drift in the warm evening air."
     },
     {
       "id": "archive-cinnamon-bear-ep1",
@@ -159,7 +162,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/archive-cinnamon-bear-ep1.jpg"
+      "coverUrl": "covers/archive-cinnamon-bear-ep1.jpg",
+      "coverScene": "Two children — a boy and a girl, both about eight, in 1930s clothes — kneeling in a dusty attic beside a small cinnamon-colored teddy bear who stands upright on a steamer trunk, one paw pointing toward a shimmering crack of light in the attic wall. Cobwebs, old hat boxes, and a missing silver star ornament's empty hook on the rafters."
     },
     {
       "id": "archive-cinnamon-bear-ep2",
@@ -204,7 +208,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/archive-cinnamon-bear-ep2.jpg"
+      "coverUrl": "covers/archive-cinnamon-bear-ep2.jpg",
+      "coverScene": "Two children in 1930s clothes and a small upright cinnamon-colored teddy bear walking along a candy-cane path through a pastel landscape of lollipop trees and gumdrop bushes. A sleepy-looking scarecrow made of patchwork quilts leans against a signpost ahead of them. Soft, dreamy light as if seen through frosted glass."
     },
     {
       "id": "archive-greatest-story-the-good-samaritan",
@@ -242,7 +247,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-greatest-story-the-good-samaritan.jpg"
+      "coverUrl": "covers/archive-greatest-story-the-good-samaritan.jpg",
+      "coverScene": "A man in a simple brown robe kneeling on a dusty road beside a wounded traveler, gently lifting the traveler's head and offering a clay water jug. A donkey waits patiently nearby. Rocky Judean hillside in the background, warm low sun casting long shadows across the pale stone."
     },
     {
       "id": "archive-greatest-story-the-lost-sheep",
@@ -280,7 +286,8 @@
         "hissLevel": "high",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-greatest-story-the-lost-sheep.jpg"
+      "coverUrl": "covers/archive-greatest-story-the-lost-sheep.jpg",
+      "coverScene": "A shepherd in a rough wool cloak carrying a small lamb over his shoulders, picking his way down a rocky hillside at dusk. Behind him, a flock of white sheep waits on the ridge. One oil lamp glows far below in a stone village. Deep blue twilight sky with a single bright star."
     },
     {
       "id": "archive-greatest-story-the-second-mile",
@@ -318,7 +325,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-greatest-story-the-second-mile.jpg"
+      "coverUrl": "covers/archive-greatest-story-the-second-mile.jpg",
+      "coverScene": "A young man in a plain tunic walking a dusty road beside a Roman soldier in a red cloak and bronze helmet, carrying the soldier's heavy pack on his own shoulders. The soldier looks surprised. Low hills dotted with olive trees stretch behind them in warm afternoon light."
     },
     {
       "id": "archive-lets-pretend-beauty-and-the-beast",
@@ -356,7 +364,8 @@
         "hissLevel": "high",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lets-pretend-beauty-and-the-beast.jpg"
+      "coverUrl": "covers/archive-lets-pretend-beauty-and-the-beast.jpg",
+      "coverScene": "A young woman in a blue gown standing in a candlelit great hall, one hand extended toward a large, shaggy beast who rises from a velvet chair. A single red rose in a glass dome glows on the table between them. Tall gothic windows behind them show a snow-covered garden at twilight."
     },
     {
       "id": "archive-lets-pretend-bluebeard",
@@ -394,7 +403,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lets-pretend-bluebeard.jpg"
+      "coverUrl": "covers/archive-lets-pretend-bluebeard.jpg",
+      "coverScene": "A young woman in a white dress holding a small golden key, standing before a heavy iron door at the end of a torchlit stone corridor. Her shadow stretches long behind her. The key glows faintly. Cobwebs cling to the door's hinges."
     },
     {
       "id": "archive-lets-pretend-brother-and-sister",
@@ -432,7 +442,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lets-pretend-brother-and-sister.jpg"
+      "coverUrl": "covers/archive-lets-pretend-brother-and-sister.jpg",
+      "coverScene": "A boy and a girl in simple peasant clothes walking hand in hand through a dark enchanted forest. A small deer with golden-brown fur walks beside the boy, nuzzling his free hand. Shafts of moonlight break through the canopy above. Ferns and mushrooms line the path."
     },
     {
       "id": "archive-lets-pretend-cinderella",
@@ -470,7 +481,8 @@
         "hissLevel": "high",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lets-pretend-cinderella.jpg"
+      "coverUrl": "covers/archive-lets-pretend-cinderella.jpg",
+      "coverScene": "A girl in a tattered dress sitting on a kitchen hearth among the ashes, one bare foot tucked beneath her, gazing up at a shimmering figure — a fairy godmother in a blue cloak with a raised wand trailing silver sparks. A fat orange pumpkin sits on the floor between them. Warm firelight from the hearth."
     },
     {
       "id": "archive-lets-pretend-jack-and-the-beanstalk",
@@ -508,7 +520,8 @@
         "hissLevel": "high",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lets-pretend-jack-and-the-beanstalk.jpg"
+      "coverUrl": "covers/archive-lets-pretend-jack-and-the-beanstalk.jpg",
+      "coverScene": "A boy in patched trousers climbing an enormous beanstalk that twists up through the clouds, one hand gripping a broad leaf, the other shielding his eyes as he peers upward. Far below, a tiny cottage and a cow the size of a speck. Bright morning sky with towering white cumulus clouds."
     },
     {
       "id": "archive-lets-pretend-snow-queen",
@@ -546,7 +559,8 @@
         "hissLevel": "high",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lets-pretend-snow-queen.jpg"
+      "coverUrl": "covers/archive-lets-pretend-snow-queen.jpg",
+      "coverScene": "A girl in a red cloak and fur-lined boots trudging through a vast snowfield toward a distant palace made entirely of blue ice, its spires glinting in pale arctic light. Her breath hangs in the frozen air. A single reindeer stands behind her, waiting. Northern lights shimmer faintly overhead."
     },
     {
       "id": "archive-lets-pretend-the-enchanted-frog",
@@ -584,7 +598,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lets-pretend-the-enchanted-frog.jpg"
+      "coverUrl": "covers/archive-lets-pretend-the-enchanted-frog.jpg",
+      "coverScene": "A princess in a golden dress kneeling by a mossy well in a forest clearing, peering down at a small green frog sitting on the stone rim. The frog wears a tiny gold crown. Her golden ball rests at the bottom of the well, visible through clear water. Dappled afternoon sunlight."
     },
     {
       "id": "archive-lone-ranger-ep1",
@@ -628,7 +643,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lone-ranger-ep1.jpg"
+      "coverUrl": "covers/archive-lone-ranger-ep1.jpg",
+      "coverScene": "A masked rider on a rearing white horse atop a rocky desert ridge at sunset. The rider wears a wide-brimmed hat and a black domino mask over his eyes, one hand raised. Beside him on a paint horse, a man with long dark hair watches the horizon. Orange and purple sky, silhouetted saguaro cactus."
     },
     {
       "id": "archive-lone-ranger-ep2",
@@ -672,7 +688,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lone-ranger-ep2.jpg"
+      "coverUrl": "covers/archive-lone-ranger-ep2.jpg",
+      "coverScene": "A masked man in a wide-brimmed hat crouching behind a boulder on a moonlit desert trail, silver pistol drawn, watching a campfire flicker in a canyon below. His white horse stands quietly behind him. A companion with long dark hair kneels beside him, pointing toward the distant light."
     },
     {
       "id": "archive-lone-ranger-ep3",
@@ -716,7 +733,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-lone-ranger-ep3.jpg"
+      "coverUrl": "covers/archive-lone-ranger-ep3.jpg",
+      "coverScene": "A white horse galloping at full speed along a dusty canyon road, its masked rider leaning forward in the saddle, hat blown back by the wind. A paint horse with a dark-haired rider races alongside. Red canyon walls tower on either side. Late-afternoon sun, dust cloud trailing behind."
     },
     {
       "id": "archive-sgt-preston-ep1",
@@ -760,7 +778,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-sgt-preston-ep1.jpg"
+      "coverUrl": "covers/archive-sgt-preston-ep1.jpg",
+      "coverScene": "A Royal Canadian Mountie in a red coat and wide-brimmed hat standing on a snow-covered ridge, one hand shielding his eyes against the glare, a large Alaskan malamute sitting alert beside him. Behind them, a vast frozen wilderness of snow-covered pines and distant mountains under a pale winter sky."
     },
     {
       "id": "archive-sgt-preston-ep2",
@@ -804,7 +823,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-sgt-preston-ep2.jpg"
+      "coverUrl": "covers/archive-sgt-preston-ep2.jpg",
+      "coverScene": "A Mountie in a red coat driving a dog sled through a blizzard, leaning into the wind, snow streaming past. The lead dog — a powerful malamute — pulls hard against the harness, ears flat. Pine trees along the trail are bent under heavy snow. White-out conditions, barely visible trail ahead."
     },
     {
       "id": "archive-sgt-preston-ep3",
@@ -848,7 +868,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-sgt-preston-ep3.jpg"
+      "coverUrl": "covers/archive-sgt-preston-ep3.jpg",
+      "coverScene": "A Mountie in a red coat kneeling beside a campfire in a snow-covered clearing at night, warming his hands. His malamute curls beside him, nose on paws. A pair of snowshoes leans against a pine tree. Stars glitter in a deep indigo sky above the treeline. Northern wilderness silence."
     },
     {
       "id": "archive-superman-ep1",
@@ -892,7 +913,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-superman-ep1.jpg"
+      "coverUrl": "covers/archive-superman-ep1.jpg",
+      "coverScene": "A broad-shouldered man in a blue suit and red cape standing on a rooftop ledge high above an Art Deco city at night, one fist on his hip, red cape billowing in the wind. The city below is a grid of glowing windows and tiny yellow taxicabs. A large full moon behind him."
     },
     {
       "id": "archive-superman-ep2",
@@ -936,7 +958,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-superman-ep2.jpg"
+      "coverUrl": "covers/archive-superman-ep2.jpg",
+      "coverScene": "A man in a blue suit and red cape soaring upward between the skyscrapers of a 1940s city, arms stretched forward, buildings blurring past on either side. Below, tiny figures on the street point upward. Golden sunset light reflecting off glass and steel."
     },
     {
       "id": "archive-superman-ep3",
@@ -980,7 +1003,8 @@
         "hissLevel": "low",
         "suggestDenoise": true
       },
-      "coverUrl": "covers/archive-superman-ep3.jpg"
+      "coverUrl": "covers/archive-superman-ep3.jpg",
+      "coverScene": "A broad-shouldered man in a blue suit and red cape catching a falling steel girder above a crowded city street, one knee bent, muscles straining. Workers in hard hats look up in astonishment. An Art Deco skyscraper under construction rises behind him. Bright midday light, sharp shadows."
     },
     {
       "id": "librivox-aesop-the-ant-and-the-grasshopper",
@@ -1014,7 +1038,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-aesop-the-ant-and-the-grasshopper.jpg"
+      "coverUrl": "covers/librivox-aesop-the-ant-and-the-grasshopper.jpg",
+      "coverScene": "A small brown ant carrying a grain of wheat twice its size along a dirt path, passing a green grasshopper lounging on a blade of grass with a tiny fiddle tucked under one arm. Golden wheat field stretching behind them. Late summer light, warm and hazy."
     },
     {
       "id": "librivox-aesop-the-boy-who-cried-wolf",
@@ -1048,7 +1073,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-aesop-the-boy-who-cried-wolf.jpg"
+      "coverUrl": "covers/librivox-aesop-the-boy-who-cried-wolf.jpg",
+      "coverScene": "A shepherd boy sitting on a hillside rock, cupping his hands around his mouth to shout, while a flock of white sheep grazes peacefully behind him. In the distance, a village with stone cottages. No wolf in sight. Bright afternoon sun, wildflowers among the grass."
     },
     {
       "id": "librivox-aesop-the-fox-and-the-grapes",
@@ -1082,7 +1108,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-aesop-the-fox-and-the-grapes.jpg"
+      "coverUrl": "covers/librivox-aesop-the-fox-and-the-grapes.jpg",
+      "coverScene": "A red fox standing on hind legs in a sun-dappled vineyard, one paw stretched toward a cluster of fat purple grapes hanging just out of reach from a wooden trellis. The fox's expression is determined, tail curled behind it. Warm golden afternoon light filtering through vine leaves."
     },
     {
       "id": "librivox-aesop-the-north-wind-and-the-sun",
@@ -1117,7 +1144,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-aesop-the-north-wind-and-the-sun.jpg"
+      "coverUrl": "covers/librivox-aesop-the-north-wind-and-the-sun.jpg",
+      "coverScene": "A fierce blue wind with a scowling face blowing hard from the left, and a warm golden sun with a gentle smile beaming from the right, both directed at a traveler below who clutches his cloak tightly around himself on a country road. Trees bending in the gale on one side, wildflowers blooming in warmth on the other."
     },
     {
       "id": "librivox-aesop-the-tortoise-and-the-hare",
@@ -1151,7 +1179,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-aesop-the-tortoise-and-the-hare.jpg"
+      "coverUrl": "covers/librivox-aesop-the-tortoise-and-the-hare.jpg",
+      "coverScene": "A small brown tortoise plodding steadily along a country lane, head stretched forward with quiet determination. Far behind on the grassy verge, a brown hare sleeps curled under a tree, one long ear flopped over its eye. A distant finish-line ribbon hangs between two posts. Soft morning light."
     },
     {
       "id": "librivox-aesop-the-town-mouse-and-the-country-mouse",
@@ -1185,7 +1214,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-aesop-the-town-mouse-and-the-country-mouse.jpg"
+      "coverUrl": "covers/librivox-aesop-the-town-mouse-and-the-country-mouse.jpg",
+      "coverScene": "Two mice sitting on opposite sides of a checkered tablecloth spread on a tree stump — one sleek and well-groomed in a tiny waistcoat, the other plump and rustic with a straw hat. Between them, a feast of cheese, bread crusts, and a single acorn. A hedgerow cottage garden behind them, late afternoon."
     },
     {
       "id": "librivox-andrew-lang-blue-fairy-book-ch1",
@@ -1225,7 +1255,8 @@
         "order": 1,
         "totalParts": 18
       },
-      "coverUrl": "covers/librivox-andrew-lang-blue-fairy-book-ch1.jpg"
+      "coverUrl": "covers/librivox-andrew-lang-blue-fairy-book-ch1.jpg",
+      "coverScene": "A princess with long golden hair asleep on a canopied bed draped in blue silk, a spindle lying on the floor beside her. Thorny rose vines have grown through the window and wrap around the bedposts. A prince in a short cloak stands in the doorway, one hand on the vine-covered frame. Dusty blue twilight filtering through the roses."
     },
     {
       "id": "librivox-andrew-lang-joan-of-arc-ch1",
@@ -1268,7 +1299,8 @@
         "order": 1,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-andrew-lang-joan-of-arc-ch1.jpg"
+      "coverUrl": "covers/librivox-andrew-lang-joan-of-arc-ch1.jpg",
+      "coverScene": "A young peasant girl in a plain dress kneeling in a sunlit garden beside a stone cottage, hands clasped in prayer, face tilted upward with an expression of wonder. Behind her, a small French village with a church steeple. Soft golden light surrounds her like a halo. Sheep graze in a meadow beyond the garden wall."
     },
     {
       "id": "librivox-andrew-lang-joan-of-arc-ch2",
@@ -1309,7 +1341,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-andrew-lang-joan-of-arc-ch2.jpg"
+      "coverUrl": "covers/librivox-andrew-lang-joan-of-arc-ch2.jpg",
+      "coverScene": "A young woman in simple armor standing before a group of armored knights at a castle gate, holding a white banner with a fleur-de-lis. The knights look skeptical but the girl's expression is calm and certain. Stone fortress walls and a drawbridge behind them. Overcast sky, wind stirring the banner."
     },
     {
       "id": "librivox-anna-sewell-black-beauty-ch1",
@@ -1350,7 +1383,8 @@
         "order": 1,
         "totalParts": 24
       },
-      "coverUrl": "covers/librivox-anna-sewell-black-beauty-ch1.jpg"
+      "coverUrl": "covers/librivox-anna-sewell-black-beauty-ch1.jpg",
+      "coverScene": "A young black colt with a white star on his forehead standing in a green meadow beside his mother, a gentle brown mare. The colt's legs are slightly splayed, still new to standing. A stone farmhouse and wooden fence in the background. Soft English countryside light, white clouds, buttercups in the grass."
     },
     {
       "id": "librivox-anonymous-wee-ones-bible-stories-ch1",
@@ -1391,7 +1425,8 @@
         "order": 1,
         "totalParts": 4
       },
-      "coverUrl": "covers/librivox-anonymous-wee-ones-bible-stories-ch1.jpg"
+      "coverUrl": "covers/librivox-anonymous-wee-ones-bible-stories-ch1.jpg",
+      "coverScene": "A kind-faced man in biblical robes sitting under a fig tree with three small children gathered around his knees, one child reaching up to touch his hand. Clay oil lamps glow on a low stone wall behind them. A star-filled sky above a flat-roofed village. Warm, gentle lamplight."
     },
     {
       "id": "librivox-anonymous-wee-ones-bible-stories-ch2",
@@ -1432,7 +1467,8 @@
         "order": 2,
         "totalParts": 4
       },
-      "coverUrl": "covers/librivox-anonymous-wee-ones-bible-stories-ch2.jpg"
+      "coverUrl": "covers/librivox-anonymous-wee-ones-bible-stories-ch2.jpg",
+      "coverScene": "A bearded man in a long robe standing at the prow of a wooden ark on a rain-lashed sea, arms spread wide, looking up at a break in the dark clouds where a faint rainbow begins to form. Animals peer from the ark's windows — a giraffe's head, a dove on the rail. Stormy seas giving way to calm."
     },
     {
       "id": "librivox-arthur-ransome-old-peters-russian-tales-ch1",
@@ -1472,7 +1508,8 @@
         "order": 1,
         "totalParts": 10
       },
-      "coverUrl": "covers/librivox-arthur-ransome-old-peters-russian-tales-ch1.jpg"
+      "coverUrl": "covers/librivox-arthur-ransome-old-peters-russian-tales-ch1.jpg",
+      "coverScene": "An old man with a long white beard sitting in a carved wooden chair beside a tiled stove in a Russian cottage, two children in felt boots and embroidered shirts sitting cross-legged at his feet. A fat orange cat sleeps on the warm stove ledge. Snow piles against the frost-patterned window. Warm candlelight inside, blue winter dusk outside."
     },
     {
       "id": "librivox-arthur-ransome-old-peters-russian-tales-ch2",
@@ -1512,7 +1549,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-arthur-ransome-old-peters-russian-tales-ch2.jpg"
+      "coverUrl": "covers/librivox-arthur-ransome-old-peters-russian-tales-ch2.jpg",
+      "coverScene": "A girl in a red headscarf and sheepskin coat walking through a birch forest in deep snow, carrying a woven basket. Ahead of her, a small hut on chicken legs peeks from behind the silver birch trees, smoke curling from its crooked chimney. Pale winter light, long blue shadows on the snow."
     },
     {
       "id": "librivox-asbjornsen-east-of-the-sun-ch1",
@@ -1553,7 +1591,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-asbjornsen-east-of-the-sun-ch1.jpg"
+      "coverUrl": "covers/librivox-asbjornsen-east-of-the-sun-ch1.jpg",
+      "coverScene": "A young girl in a simple Norse dress riding on the back of a great white bear through a snowy mountain pass at night. She grips the bear's thick fur with both hands, her cloak streaming behind her. Tall dark pines line the pass. A full moon lights the snow to silver. The bear's eyes are wise and sad."
     },
     {
       "id": "librivox-baum-wizard-of-oz-ch1",
@@ -1594,7 +1633,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-baum-wizard-of-oz-ch1.jpg"
+      "coverUrl": "covers/librivox-baum-wizard-of-oz-ch1.jpg",
+      "coverScene": "A small farmhouse spinning inside a dark tornado funnel, tilted at an angle, with a girl in a blue gingham dress clutching a small black dog as she peers out a window. Below, the grey Kansas prairie falls away. Above, glimpses of a strange colorful land through the swirling debris. Dark sky, one crack of lightning."
     },
     {
       "id": "librivox-baum-wizard-of-oz-ch6",
@@ -1635,7 +1675,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-baum-wizard-of-oz-ch6.jpg"
+      "coverUrl": "covers/librivox-baum-wizard-of-oz-ch6.jpg",
+      "coverScene": "A girl in a blue gingham dress, a scarecrow stuffed with straw, and a tin woodman standing together on a forest path, facing a large lion who sits on his haunches with tears rolling down his furry cheeks. The lion's mane is magnificent but his expression is sheepish and sorry. Dappled forest light, tall dark trees."
     },
     {
       "id": "librivox-beatrix-potter-benjamin-bunny",
@@ -1670,7 +1711,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-beatrix-potter-benjamin-bunny.jpg"
+      "coverUrl": "covers/librivox-beatrix-potter-benjamin-bunny.jpg",
+      "coverScene": "A small brown rabbit in a tam-o'-shanter cap and a slightly larger rabbit in a blue jacket creeping along the top of a garden wall, peering down at neat rows of lettuces and radishes below. A wooden garden gate stands ajar. A fat tabby cat sleeps on a sunny garden bench. English cottage garden, warm afternoon."
     },
     {
       "id": "librivox-beatrix-potter-jemima-puddle-duck",
@@ -1705,7 +1747,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-beatrix-potter-jemima-puddle-duck.jpg"
+      "coverUrl": "covers/librivox-beatrix-potter-jemima-puddle-duck.jpg",
+      "coverScene": "A white duck wearing a blue bonnet and shawl waddling up a woodland path toward a shed, looking pleased with herself. A fox in a smart coat stands in the shed doorway, smiling with too many teeth, holding the door open politely. Foxgloves and ferns along the path. Soft overcast English light."
     },
     {
       "id": "librivox-beatrix-potter-mrs-tiggy-winkle",
@@ -1740,7 +1783,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-beatrix-potter-mrs-tiggy-winkle.jpg"
+      "coverUrl": "covers/librivox-beatrix-potter-mrs-tiggy-winkle.jpg",
+      "coverScene": "A small hedgehog in an apron and cap standing at a tiny doorway built into a grassy hillside, holding out a stack of freshly pressed handkerchiefs to a little girl in a pinafore. A clothesline strung between two thorn bushes behind the hedgehog, with tiny garments fluttering. Misty Lake District hills in the distance."
     },
     {
       "id": "librivox-beatrix-potter-peter-rabbit",
@@ -1775,7 +1819,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-beatrix-potter-peter-rabbit.jpg"
+      "coverUrl": "covers/librivox-beatrix-potter-peter-rabbit.jpg",
+      "coverScene": "A small brown rabbit in a blue jacket squeezing under the gate of a vegetable garden, ears flat, looking nervously over his shoulder. Rows of carrots, lettuces, and radishes behind him. A large straw hat and garden rake lean against the gate — the gardener is nearby but unseen. Warm English garden light."
     },
     {
       "id": "librivox-brothers-grimm-cinderella",
@@ -1811,7 +1856,8 @@
           "mild-peril"
         ]
       },
-      "coverUrl": "covers/librivox-brothers-grimm-cinderella.jpg"
+      "coverUrl": "covers/librivox-brothers-grimm-cinderella.jpg",
+      "coverScene": "A girl in a ragged dress sitting among the ashes of a kitchen hearth, looking up at a white dove that has landed on the windowsill carrying a tiny golden slipper in its beak. Pots and pans hang from iron hooks above. A broom leans against the stone wall. Warm firelight, last light of evening through the window."
     },
     {
       "id": "librivox-brothers-grimm-hansel-and-gretel",
@@ -1847,7 +1893,8 @@
           "mild-peril"
         ]
       },
-      "coverUrl": "covers/librivox-brothers-grimm-hansel-and-gretel.jpg"
+      "coverUrl": "covers/librivox-brothers-grimm-hansel-and-gretel.jpg",
+      "coverScene": "Two small children — a boy in a brown cap and a girl with braids — standing hand in hand at the edge of a dark pine forest, staring at a small cottage whose walls are made of gingerbread and whose roof is frosted with white icing. A faint curl of smoke from the chimney. Dusk light, long shadows."
     },
     {
       "id": "librivox-brothers-grimm-rapunzel",
@@ -1883,7 +1930,8 @@
           "mild-peril"
         ]
       },
-      "coverUrl": "covers/librivox-brothers-grimm-rapunzel.jpg"
+      "coverUrl": "covers/librivox-brothers-grimm-rapunzel.jpg",
+      "coverScene": "A girl with impossibly long golden hair leaning from the window of a tall stone tower, her hair cascading down the tower wall like a golden waterfall. Far below, a prince on a white horse looks up with one hand shielding his eyes. Ivy grows up the tower stones. Sunset light turning the hair to fire."
     },
     {
       "id": "librivox-brothers-grimm-snow-white",
@@ -1919,7 +1967,8 @@
           "mild-peril"
         ]
       },
-      "coverUrl": "covers/librivox-brothers-grimm-snow-white.jpg"
+      "coverUrl": "covers/librivox-brothers-grimm-snow-white.jpg",
+      "coverScene": "A young woman with black hair and pale skin biting into a bright red apple offered by a stooped old woman in a dark hooded cloak. Behind them, a small cottage in a forest clearing with seven tiny chairs visible through the open door. Dark pines, a single shaft of light falling on the apple."
     },
     {
       "id": "librivox-carlo-collodi-the-adventures-of-pinocchio-ch1",
@@ -1959,7 +2008,8 @@
         "order": 1,
         "totalParts": 18
       },
-      "coverUrl": "covers/librivox-carlo-collodi-the-adventures-of-pinocchio-ch1.jpg"
+      "coverUrl": "covers/librivox-carlo-collodi-the-adventures-of-pinocchio-ch1.jpg",
+      "coverScene": "An old woodcarver in a leather apron sitting at a cluttered workbench, holding up a freshly carved wooden puppet with jointed limbs and a long pointed nose. The puppet's painted eyes seem to look back at him with a spark of mischief. Wood shavings curl on the floor, tools hung on the wall. Warm candlelight in the workshop."
     },
     {
       "id": "librivox-carlo-collodi-the-adventures-of-pinocchio-ch2",
@@ -1999,7 +2049,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-carlo-collodi-the-adventures-of-pinocchio-ch2.jpg"
+      "coverUrl": "covers/librivox-carlo-collodi-the-adventures-of-pinocchio-ch2.jpg",
+      "coverScene": "A wooden puppet boy with a long nose running down a cobblestone street in an Italian village, arms and legs swinging stiffly, a crowd of laughing children chasing behind him. An old man in a leather apron stands in a workshop doorway, calling after the puppet with outstretched arms. Warm Mediterranean light, terracotta rooftops."
     },
     {
       "id": "librivox-charles-kingsley-the-heroes-ch1",
@@ -2039,7 +2090,8 @@
         "order": 1,
         "totalParts": 8
       },
-      "coverUrl": "covers/librivox-charles-kingsley-the-heroes-ch1.jpg"
+      "coverUrl": "covers/librivox-charles-kingsley-the-heroes-ch1.jpg",
+      "coverScene": "A young Greek hero in a short tunic and winged sandals standing at the edge of a rocky cliff above a wine-dark sea, holding a polished bronze shield that reflects the sky like a mirror. A leather satchel hangs at his side. Distant Greek islands dot the sea. Golden Aegean light, wind in his hair."
     },
     {
       "id": "librivox-charles-kingsley-the-water-babies-ch1",
@@ -2081,7 +2133,8 @@
         "order": 1,
         "totalParts": 8
       },
-      "coverUrl": "covers/librivox-charles-kingsley-the-water-babies-ch1.jpg"
+      "coverUrl": "covers/librivox-charles-kingsley-the-water-babies-ch1.jpg",
+      "coverScene": "A small, soot-covered boy chimney sweep peering down from inside a dark chimney flue at a clean white bedroom below, where a little girl sleeps peacefully in a lace-trimmed bed. His face is black with soot except for two wide, wondering eyes. Moonlight streams through the bedroom window."
     },
     {
       "id": "librivox-charles-perrault-cinderella",
@@ -2115,7 +2168,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-charles-perrault-cinderella.jpg"
+      "coverUrl": "covers/librivox-charles-perrault-cinderella.jpg",
+      "coverScene": "A girl in a shimmering ball gown racing down a grand marble staircase at midnight, one glass slipper left behind on the top step. Her coach — a golden pumpkin on wheels — waits at the bottom with white mice-horses. A clock tower behind the palace strikes twelve. Moonlight and magic sparkles."
     },
     {
       "id": "librivox-charles-perrault-puss-in-boots",
@@ -2149,7 +2203,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-charles-perrault-puss-in-boots.jpg"
+      "coverUrl": "covers/librivox-charles-perrault-puss-in-boots.jpg",
+      "coverScene": "A ginger cat wearing tall leather boots, a plumed hat, and a sword belt, striding confidently down a country road with one paw raised in a theatrical gesture. Behind him, a young man in peasant clothes watches with amazement. A castle with turrets rises on a distant hill. Bright morning light, road dust."
     },
     {
       "id": "librivox-charles-perrault-sleeping-beauty",
@@ -2183,7 +2238,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-charles-perrault-sleeping-beauty.jpg"
+      "coverUrl": "covers/librivox-charles-perrault-sleeping-beauty.jpg",
+      "coverScene": "A princess in a pale gown lying asleep on a canopied bed in a tower room, one hand trailing off the edge. Roses have grown through the window and twine around the bedposts and canopy frame. A spinning wheel lies overturned in the corner. Dust motes hang in a single beam of golden light piercing the thorny vines."
     },
     {
       "id": "librivox-christina-rossetti-sing-song-pt1",
@@ -2217,7 +2273,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt1.jpg"
+      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt1.jpg",
+      "coverScene": "A mother and a small child sitting together in a window seat, the mother holding an open book of verses on her lap while the child points at something outside — a robin on a snow-covered branch. Lace curtains, a vase of dried flowers on the sill. Soft winter light, cozy interior warmth."
     },
     {
       "id": "librivox-christina-rossetti-sing-song-pt2",
@@ -2251,7 +2308,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt2.jpg"
+      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt2.jpg",
+      "coverScene": "A small child lying on her stomach in a garden, chin on hands, watching a ladybug crawl along a daisy stem. A tabby cat naps in the sun beside her. Hollyhocks and sweet peas climb a wooden fence behind them. Drowsy midsummer afternoon light, bees drifting among the flowers."
     },
     {
       "id": "librivox-dickens-christmas-carol-stave1",
@@ -2292,7 +2350,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-dickens-christmas-carol-stave1.jpg"
+      "coverUrl": "covers/librivox-dickens-christmas-carol-stave1.jpg",
+      "coverScene": "A thin, hunched old man in a nightcap and dressing gown holding a candle, staring in horror at the ghostly figure of a man wrapped in heavy chains and padlocked cashboxes who floats through the closed door of a cold, dark counting house. The ghost's jaw is bound with a cloth. Frost on the windowpanes, a meager fire nearly dead in the grate."
     },
     {
       "id": "librivox-e-nesbit-five-children-and-it-ch1",
@@ -2332,7 +2391,8 @@
         "order": 1,
         "totalParts": 5
       },
-      "coverUrl": "covers/librivox-e-nesbit-five-children-and-it-ch1.jpg"
+      "coverUrl": "covers/librivox-e-nesbit-five-children-and-it-ch1.jpg",
+      "coverScene": "Five children in Edwardian clothes — three boys and two girls — digging in a sandy gravel pit and discovering a round, furry creature with bat-like ears, a tubby body, and eyes on stalks like a snail. The creature blinks up at them crossly from the sand. Bright English summer day, chalk downs in the distance."
     },
     {
       "id": "librivox-e-nesbit-five-children-and-it-ch2",
@@ -2372,7 +2432,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-e-nesbit-five-children-and-it-ch2.jpg"
+      "coverUrl": "covers/librivox-e-nesbit-five-children-and-it-ch2.jpg",
+      "coverScene": "Five children in Edwardian clothes standing in a circle around a furry, bat-eared creature perched on a mound of sand, their faces lit with excitement and disbelief as the creature's eyes extend on their stalks and it puffs itself up importantly. An English meadow stretches behind them under a wide blue sky."
     },
     {
       "id": "librivox-e-nesbit-railway-children-ch1",
@@ -2406,7 +2467,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-e-nesbit-railway-children-ch1.jpg"
+      "coverUrl": "covers/librivox-e-nesbit-railway-children-ch1.jpg",
+      "coverScene": "Three children — two girls and a boy in Edwardian clothes — standing on a railway platform at a small country station, their mother behind them looking tired but brave, surrounded by trunks and hat boxes. The eldest girl holds her younger siblings' hands. A steam train disappears around a bend. Grey morning, a new and uncertain beginning."
     },
     {
       "id": "librivox-edward-lear-nonsense-verses",
@@ -2440,7 +2502,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-edward-lear-nonsense-verses.jpg"
+      "coverUrl": "covers/librivox-edward-lear-nonsense-verses.jpg",
+      "coverScene": "An owl and a pussycat sailing in a beautiful pea-green boat on a moonlit sea, the owl playing a small guitar while the cat gazes at the moon. A jar of honey and a five-pound note sit in the bow. Stars reflected in the calm water. Whimsical, dreamy moonlight."
     },
     {
       "id": "librivox-ellen-c-babbitt-jataka-tales-ch1",
@@ -2480,7 +2543,8 @@
         "order": 1,
         "totalParts": 9
       },
-      "coverUrl": "covers/librivox-ellen-c-babbitt-jataka-tales-ch1.jpg"
+      "coverUrl": "covers/librivox-ellen-c-babbitt-jataka-tales-ch1.jpg",
+      "coverScene": "A wise monkey sitting cross-legged on a river rock, one paw raised in a teaching gesture, speaking to a circle of forest animals — a deer, a crane, a rabbit, and a turtle — gathered on the bank below. Tropical trees with broad leaves arch overhead. A river flows past with lily pads. Warm, dappled jungle light."
     },
     {
       "id": "librivox-ellen-c-babbitt-jataka-tales-ch2",
@@ -2514,7 +2578,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-ellen-c-babbitt-jataka-tales-ch2.jpg"
+      "coverUrl": "covers/librivox-ellen-c-babbitt-jataka-tales-ch2.jpg",
+      "coverScene": "A small white elephant kneeling beside a lotus pond in a forest clearing, offering a lotus blossom to an old man in simple robes who sits beneath a banyan tree. Other animals watch respectfully from the edge of the clearing. Golden afternoon light filtering through enormous banyan leaves."
     },
     {
       "id": "librivox-erick-berry-black-folk-tales-ch1",
@@ -2554,7 +2619,8 @@
         "order": 1,
         "totalParts": 7
       },
-      "coverUrl": "covers/librivox-erick-berry-black-folk-tales-ch1.jpg"
+      "coverUrl": "covers/librivox-erick-berry-black-folk-tales-ch1.jpg",
+      "coverScene": "A spider the size of a man's hand sitting at the center of a magnificent golden web stretched between two baobab trees, telling a story to a circle of animals gathered below — a leopard, an elephant, a tortoise, and a hornbill. West African savanna at sunset, the sky blazing orange and red behind the silhouetted baobabs."
     },
     {
       "id": "librivox-ernest-thompson-seto-the-biography-of-a-grizzl-ch1",
@@ -2594,7 +2660,8 @@
         "order": 1,
         "totalParts": 4
       },
-      "coverUrl": "covers/librivox-ernest-thompson-seto-the-biography-of-a-grizzl-ch1.jpg"
+      "coverUrl": "covers/librivox-ernest-thompson-seto-the-biography-of-a-grizzl-ch1.jpg",
+      "coverScene": "A small grizzly bear cub sitting upright in a mountain meadow full of wildflowers, tilting its head curiously at a butterfly that has landed on its nose. The cub's mother — a massive grizzly — grazes in the background near a stand of pines. Snow-capped peaks behind them. Clear Rocky Mountain morning light."
     },
     {
       "id": "librivox-ernest-thompson-seto-wild-animals-i-have-known-ch1",
@@ -2634,7 +2701,8 @@
         "order": 1,
         "totalParts": 4
       },
-      "coverUrl": "covers/librivox-ernest-thompson-seto-wild-animals-i-have-known-ch1.jpg"
+      "coverUrl": "covers/librivox-ernest-thompson-seto-wild-animals-i-have-known-ch1.jpg",
+      "coverScene": "A large grey wolf standing on a rocky ridge above a western canyon, head raised in a howl, silhouetted against a vast sky streaked with sunset colors. Below the ridge, a cattle ranch spreads across the valley — tiny buildings, fences, and a winding river. The wolf's posture is proud and wild."
     },
     {
       "id": "librivox-ernest-thompson-seton-bannertail-ch1",
@@ -2668,7 +2736,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-ernest-thompson-seton-bannertail-ch1.jpg"
+      "coverUrl": "covers/librivox-ernest-thompson-seton-bannertail-ch1.jpg",
+      "coverScene": "A small grey squirrel with a conspicuously bushy tail sitting on a high oak branch, clutching an acorn and peering down at a red-tailed hawk circling below. Autumn leaves in gold and copper surround the squirrel. A vast forest stretches to the horizon. Crisp fall light, blue sky."
     },
     {
       "id": "librivox-florence-kingsley-titus-comrade-cross-ch1",
@@ -2710,7 +2779,8 @@
         "order": 1,
         "totalParts": 17
       },
-      "coverUrl": "covers/librivox-florence-kingsley-titus-comrade-cross-ch1.jpg"
+      "coverUrl": "covers/librivox-florence-kingsley-titus-comrade-cross-ch1.jpg",
+      "coverScene": "A young Roman man in a simple tunic and sandals standing at the edge of a dusty road outside Jerusalem, shielding his eyes against the sun as he looks toward the walled city on the hill. Three crosses stand dark on a distant ridge. A few pilgrims walk the road. Late afternoon light, solemn and golden."
     },
     {
       "id": "librivox-frances-hodgson-burnett-a-little-princess-ch1",
@@ -2750,7 +2820,8 @@
         "order": 1,
         "totalParts": 9
       },
-      "coverUrl": "covers/librivox-frances-hodgson-burnett-a-little-princess-ch1.jpg"
+      "coverUrl": "covers/librivox-frances-hodgson-burnett-a-little-princess-ch1.jpg",
+      "coverScene": "A small girl with dark curly hair in a green velvet coat stepping out of a hansom cab on a rainy London street, holding her father's hand. A grey stone building — a girls' seminary — looms behind iron gates. Gaslights glow yellow in the drizzle. Her expression is brave but her eyes are wide. Victorian London, grey and wet."
     },
     {
       "id": "librivox-frances-hodgson-burnett-the-secret-garden-ch1",
@@ -2795,7 +2866,8 @@
         "totalParts": 27,
         "nextTeaser": "Mary arrives at Misselthwaite Manor and meets the brisk Mrs Medlock — and on her first morning, hears a strange sound she's been told is only the wind."
       },
-      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch1.jpg"
+      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch1.jpg",
+      "coverScene": "A thin, sour-faced girl in a black mourning dress standing alone in the corridor of a vast, cold English manor house, one hand on a heavy door, listening. Dust motes float in a shaft of grey light from a high window. Closed doors stretch away in both directions. Empty, echoing, and forbidding."
     },
     {
       "id": "librivox-frances-hodgson-burnett-the-secret-garden-ch2",
@@ -2836,7 +2908,8 @@
         "order": 2,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch2.jpg"
+      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch2.jpg",
+      "coverScene": "A girl in a grey coat and bonnet standing on the Yorkshire moors in a bitter wind, staring at a huge, dark manor house half-hidden in mist across the heather. A servant in a shawl stands behind her with a lantern. Purple-grey moorland stretches to the horizon under heavy clouds."
     },
     {
       "id": "librivox-frances-hodgson-burnett-the-secret-garden-ch3",
@@ -2877,7 +2950,8 @@
         "order": 3,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch3.jpg"
+      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch3.jpg",
+      "coverScene": "A girl kneeling on the ground beside a high ivy-covered wall, brushing away dead leaves to reveal green shoots pushing through the dark earth. A robin perches on the wall above her, watching with its head tilted. Beyond the wall, bare branches of climbing roses hint at a garden long abandoned. Pale early-spring light."
     },
     {
       "id": "librivox-george-macdonald-baby",
@@ -2911,7 +2985,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-george-macdonald-baby.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-baby.jpg",
+      "coverScene": "A sleeping infant in a carved wooden cradle by a cottage window, moonlight falling across the blanket. A single candle burns on the windowsill. Outside, a garden of white roses glows under the moon. The room is simple — stone walls, a spinning wheel in the corner. Utterly peaceful, silver and blue light."
     },
     {
       "id": "librivox-george-macdonald-bedtime",
@@ -2945,7 +3020,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-george-macdonald-bedtime.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-bedtime.jpg",
+      "coverScene": "A small child in a white nightgown climbing into a high four-poster bed, one foot on a wooden step stool, arms reaching for the pillow. A grandmother in a shawl sits nearby in a rocking chair with a book. A single candle on the nightstand. Stars visible through the window. Warm amber candlelight."
     },
     {
       "id": "librivox-george-macdonald-day-boy-night-girl",
@@ -2979,7 +3055,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-george-macdonald-day-boy-night-girl.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-day-boy-night-girl.jpg",
+      "coverScene": "Two children meeting at the threshold of a cave at twilight — a boy in sun-bleached clothes stepping out of golden afternoon light, and a girl in a silver-white dress emerging from soft moonlit darkness inside the cave. Their hands almost touch across the boundary of light and shadow. A landscape half in day, half in night."
     },
     {
       "id": "librivox-george-macdonald-gifts-child-christ",
@@ -3015,7 +3092,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-george-macdonald-gifts-child-christ.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-gifts-child-christ.jpg",
+      "coverScene": "A small girl in a white dress standing before a wooden door in a stone wall, holding up a simple wildflower bouquet. The door is ajar, and warm golden light spills through the crack. Snow lies on the ground around her bare feet. A single star burns brightly directly overhead. Christmas Eve stillness."
     },
     {
       "id": "librivox-george-macdonald-light-princess-ch1",
@@ -3055,7 +3133,8 @@
         "order": 1,
         "totalParts": 7
       },
-      "coverUrl": "covers/librivox-george-macdonald-light-princess-ch1.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-light-princess-ch1.jpg",
+      "coverScene": "A baby princess floating near the ceiling of a grand castle nursery, her christening gown billowing around her, laughing as the nursemaids below reach up with outstretched arms trying to catch her. The king and queen watch from the doorway with expressions of bewildered delight. Tall arched windows, candles in sconces, everything light and airy."
     },
     {
       "id": "librivox-george-macdonald-light-princess-ch2",
@@ -3095,7 +3174,8 @@
         "order": 2,
         "totalParts": 7
       },
-      "coverUrl": "covers/librivox-george-macdonald-light-princess-ch2.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-light-princess-ch2.jpg",
+      "coverScene": "A princess in a flowing dress floating above the surface of a moonlit lake, trailing one hand in the water and laughing, while a young prince in a rowboat reaches up toward her with both hands. Water lilies dot the lake surface. The castle reflected in the still water. Silver moonlight on everything."
     },
     {
       "id": "librivox-george-macdonald-light-princess-other",
@@ -3129,7 +3209,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-george-macdonald-light-princess-other.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-light-princess-other.jpg",
+      "coverScene": "A collection of fairy-tale vignettes: a castle floating in clouds, a princess walking on air, a giant sunflower growing through a cottage roof, and a child talking to a shadow on the wall — all arranged as if they were illustrations peeking from the pages of an open book. Warm, dreamy, candlelit atmosphere."
     },
     {
       "id": "librivox-george-macdonald-lost-princess-ch1",
@@ -3169,7 +3250,8 @@
         "order": 1,
         "totalParts": 1
       },
-      "coverUrl": "covers/librivox-george-macdonald-lost-princess-ch1.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-lost-princess-ch1.jpg",
+      "coverScene": "A princess in a fine dress sitting on the floor of a forest clearing, mud on her hem, looking cross and confused. Opposite her, a peasant girl in patched clothes sits just as crossly. Between them, a wise old woman in a grey cloak watches both girls with patient, knowing eyes. Deep forest, filtered green light."
     },
     {
       "id": "librivox-george-macdonald-north-wind-ch1",
@@ -3210,7 +3292,8 @@
         "totalParts": 19,
         "nextTeaser": "Diamond rides with North Wind across London and begins to understand that she is not always gentle."
       },
-      "coverUrl": "covers/librivox-george-macdonald-north-wind-ch1.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-north-wind-ch1.jpg",
+      "coverScene": "A small boy in a nightshirt sitting up in a hayloft bed, his hair blown wild, staring in wonder at a beautiful woman made of wind and starlight who floats in the open loft door. Her hair streams behind her like a comet's tail. The hay swirls around her. Dark night sky full of stars beyond the stable door."
     },
     {
       "id": "librivox-george-macdonald-north-wind-ch2",
@@ -3249,7 +3332,8 @@
         "name": "At the Back of the North Wind",
         "order": 2,
         "totalParts": 19
-      }
+      },
+      "coverScene": "A small boy riding on the back of a beautiful woman made of wind, high above a moonlit city of chimneys and church steeples, her hair and cloak streaming behind them like a banner of starlight. Below, the city is tiny — rooftops, lampposts, a winding river. The boy clings to her with trust. Cold clear night sky."
     },
     {
       "id": "librivox-george-macdonald-princess-curdie-ch1",
@@ -3289,7 +3373,8 @@
         "order": 1,
         "totalParts": 1
       },
-      "coverUrl": "covers/librivox-george-macdonald-princess-curdie-ch1.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-princess-curdie-ch1.jpg",
+      "coverScene": "A boy in miner's clothes — leather cap, rough trousers, a pickaxe over his shoulder — walking through a dark mine tunnel toward a distant glow. His hands are strong and work-worn. Crystals glint in the rock walls around him. Ahead, a faint golden light suggests something magical beyond the next turn."
     },
     {
       "id": "librivox-george-macdonald-princess-goblin-ch1",
@@ -3332,7 +3417,8 @@
         "totalParts": 9,
         "nextTeaser": "Curdie the miner's boy hears the goblins singing beneath the mountain — and their words are not kind."
       },
-      "coverUrl": "covers/librivox-george-macdonald-princess-goblin-ch1.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-princess-goblin-ch1.jpg",
+      "coverScene": "A small princess with dark curly hair in a white dress standing at the bottom of a narrow tower staircase, holding a candle, looking up into the spiraling darkness above. Cobwebs hang from the stone walls. A faint golden light glows from somewhere far above, as if someone is spinning up there. The girl's face shows curiosity, not fear."
     },
     {
       "id": "librivox-george-macdonald-princess-goblin-ch2",
@@ -3374,7 +3460,8 @@
         "order": 2,
         "totalParts": 9,
         "nextTeaser": "Irene tries to show Curdie the thread her grandmother gave her, but he cannot see it."
-      }
+      },
+      "coverScene": "A small princess following a shining silver thread through a dark castle corridor, the thread leading from her finger around corners and up staircases. At the end of the corridor, a doorway glows with warm golden light. The princess walks confidently despite the darkness. Stone walls, tapestries, guttering torches."
     },
     {
       "id": "librivox-george-macdonald-princess-goblin-ch3",
@@ -3415,7 +3502,8 @@
         "name": "The Princess and the Goblin",
         "order": 3,
         "totalParts": 9
-      }
+      },
+      "coverScene": "A boy with a miner's lamp crouching in a low tunnel deep underground, peering through a crack in the rock at a cavern full of misshapen goblins — bulbous heads, long arms, no toes — hammering and chanting around a stone table. The boy's face is lit by the greenish glow of the cavern. Dark, eerie, but more strange than frightening."
     },
     {
       "id": "librivox-george-macdonald-ranald-bannerman-ch1",
@@ -3455,7 +3543,8 @@
         "order": 1,
         "totalParts": 1
       },
-      "coverUrl": "covers/librivox-george-macdonald-ranald-bannerman-ch1.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-ranald-bannerman-ch1.jpg",
+      "coverScene": "A Scottish boy in a kilt and rough jacket sitting on a stone wall overlooking a Highland glen, a collie dog at his side, watching the sun set behind purple mountains. A small stone cottage with a peat-smoke chimney sits below in the valley. Heather covers the hillside. Warm amber light on the boy's face."
     },
     {
       "id": "librivox-george-macdonald-the-shadows",
@@ -3489,7 +3578,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-george-macdonald-the-shadows.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-the-shadows.jpg",
+      "coverScene": "A man lying in bed watching shadows dance on the wall — but these shadows have lives of their own: one shadow bows gracefully, another holds out a shadow hand, a third peels away from the wall and floats across the room like a dark leaf. Candlelight flickers on the bedroom wall. The man watches with wonder, not fear. Blue-grey night tones."
     },
     {
       "id": "librivox-george-macdonald-the-wind-and-the-moon",
@@ -3523,7 +3613,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-george-macdonald-the-wind-and-the-moon.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-the-wind-and-the-moon.jpg",
+      "coverScene": "The wind — depicted as a wild-haired figure in a billowing cloak — blowing fiercely at a round, smiling moon who hangs serenely in the sky, unmoved. Trees bend, clouds race, leaves fly, but the moon just smiles. A landscape below of rolling hills and a single church steeple. The moon's glow is calm and golden, the wind's cloak is dark blue."
     },
     {
       "id": "librivox-george-macdonald-wise-woman-ch1",
@@ -3563,7 +3654,8 @@
         "order": 1,
         "totalParts": 1
       },
-      "coverUrl": "covers/librivox-george-macdonald-wise-woman-ch1.jpg"
+      "coverUrl": "covers/librivox-george-macdonald-wise-woman-ch1.jpg",
+      "coverScene": "A wise old woman in a grey hooded cloak standing at the door of a cottage buried in the roots of a massive oak tree, looking calmly at a spoiled little girl who stands before her with clenched fists and an angry face. The cottage door opens onto impossible starlight inside. Forest twilight, fireflies."
     },
     {
       "id": "librivox-gk-chesterton-father-brown-the-blue-cross",
@@ -3603,7 +3695,8 @@
         "order": 1,
         "totalParts": 6
       },
-      "coverUrl": "covers/librivox-gk-chesterton-father-brown-the-blue-cross.jpg"
+      "coverUrl": "covers/librivox-gk-chesterton-father-brown-the-blue-cross.jpg",
+      "coverScene": "A small, round priest in a black cassock and shovel hat walking along a London street, carrying a brown paper parcel under one arm, looking utterly harmless and absent-minded. Behind him at a distance, a tall, elegant man in a top hat follows, watching intently. Gaslights, wet cobblestones, a London evening turning to dusk."
     },
     {
       "id": "librivox-gk-chesterton-father-brown-the-hammer-of-god",
@@ -3642,7 +3735,8 @@
         "name": "The Innocence of Father Brown",
         "order": 3,
         "totalParts": 6
-      }
+      },
+      "coverScene": "A small, round priest in a black cassock standing in the shadow of a tall church steeple, looking up at the tower with a thoughtful frown, one hand on his umbrella. The church is a medieval English village church surrounded by gravestones. A single hammer lies on the grass near the church door. Overcast midday, grey stone against grey sky."
     },
     {
       "id": "librivox-gk-chesterton-father-brown-the-invisible-man",
@@ -3681,7 +3775,8 @@
         "name": "The Innocence of Father Brown",
         "order": 2,
         "totalParts": 6
-      }
+      },
+      "coverScene": "A small, round priest in a black cassock sitting in an armchair in a cozy study, looking at four other men who sit around him with puzzled expressions. On the table between them, a pile of letters and a stopped clock. Snow falls outside the window. The priest's face is mild but his eyes are sharp. Warm lamplight, cold night outside."
     },
     {
       "id": "librivox-gk-chesterton-greybeards-at-play",
@@ -3715,7 +3810,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-gk-chesterton-greybeards-at-play.jpg"
+      "coverUrl": "covers/librivox-gk-chesterton-greybeards-at-play.jpg",
+      "coverScene": "Three elderly gentlemen in Victorian morning coats and top hats playing leapfrog in a London park, their coattails flying, while a scandalized nanny pushes a pram past them. Pigeons scatter. A formal fountain splashes behind them. Bright, absurd, joyful afternoon light in a very proper setting."
     },
     {
       "id": "librivox-gk-chesterton-st-francis-ch1",
@@ -3758,7 +3854,8 @@
         "order": 1,
         "totalParts": 5
       },
-      "coverUrl": "covers/librivox-gk-chesterton-st-francis-ch1.jpg"
+      "coverUrl": "covers/librivox-gk-chesterton-st-francis-ch1.jpg",
+      "coverScene": "A young man in a rich merchant's clothing standing in the town square of a medieval Italian hill town, arms thrown wide, looking up at the sky with an expression of sudden, overwhelming joy. Townspeople in the market stalls stare at him. Behind the town, the Umbrian hills glow green and gold. Brilliant Italian noon light."
     },
     {
       "id": "librivox-gk-chesterton-st-francis-ch2",
@@ -3800,7 +3897,8 @@
         "name": "St. Francis of Assisi",
         "order": 2,
         "totalParts": 5
-      }
+      },
+      "coverScene": "A thin young man in a rough brown robe tied with a rope belt, barefoot, kneeling in a meadow with birds perched on his outstretched arms and shoulders — a sparrow, a dove, a finch. A wolf sits peacefully beside him like a tame dog. Rolling Umbrian hills in the background, wildflowers everywhere. Soft golden morning light."
     },
     {
       "id": "librivox-hans-christian-andersen-snow-queen-pt1",
@@ -3834,7 +3932,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-hans-christian-andersen-snow-queen-pt1.jpg"
+      "coverUrl": "covers/librivox-hans-christian-andersen-snow-queen-pt1.jpg",
+      "coverScene": "A boy and a girl sitting on a rooftop garden between two chimneys, tending a window box of roses, their faces close together and happy. Above them, unseen, a vast sleigh made of ice pulled by white reindeer glides through the winter sky, driven by a tall pale woman in a gown of frost and diamonds. Danish rooftops below, snowflakes beginning to fall."
     },
     {
       "id": "librivox-hans-christian-andersen-the-emperors-new-clothes",
@@ -3868,7 +3967,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-hans-christian-andersen-the-emperors-new-clothes.jpg"
+      "coverUrl": "covers/librivox-hans-christian-andersen-the-emperors-new-clothes.jpg",
+      "coverScene": "A pompous emperor in his underwear striding down a grand palace corridor, chin held high, while two sly tailors behind him mime holding up a nonexistent train. Courtiers line the walls, nodding and clapping enthusiastically. Through a window, a small boy in the crowd outside points and laughs. Marble floors, gold leaf, absurd grandeur."
     },
     {
       "id": "librivox-hans-christian-andersen-the-princess-and-the-pea",
@@ -3902,7 +4002,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-hans-christian-andersen-the-princess-and-the-pea.jpg"
+      "coverUrl": "covers/librivox-hans-christian-andersen-the-princess-and-the-pea.jpg",
+      "coverScene": "A girl standing at a castle door in a rainstorm, completely drenched — water dripping from her hair and clothes into puddles on the stone step — while a queen peers out at her with a suspicious expression. Behind the queen, servants carry an enormous stack of mattresses up a staircase. Lightning flashes. Heavy rain."
     },
     {
       "id": "librivox-hans-christian-andersen-the-ugly-duckling",
@@ -3936,7 +4037,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-hans-christian-andersen-the-ugly-duckling.jpg"
+      "coverUrl": "covers/librivox-hans-christian-andersen-the-ugly-duckling.jpg",
+      "coverScene": "A small, scruffy grey bird sitting alone at the edge of a farm pond, head tucked low, while a family of fluffy yellow ducklings paddles away from it. A mother duck herds the yellow ducklings toward the reeds. The grey bird's reflection in the water is sad. Overcast day, autumn reeds turning brown."
     },
     {
       "id": "librivox-hans-christian-andersen-thumbelina",
@@ -3970,7 +4072,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-hans-christian-andersen-thumbelina.jpg"
+      "coverUrl": "covers/librivox-hans-christian-andersen-thumbelina.jpg",
+      "coverScene": "A tiny girl the size of a thumb sitting inside an open tulip, her legs dangling over the petal edge, looking out at an enormous garden that stretches like a countryside around her. A bumblebee the size of her head hovers nearby. Dewdrops on the petals catch the morning light. Everything huge, everything magical."
     },
     {
       "id": "librivox-henry-sherman-childrens-bible-ch1",
@@ -4011,7 +4114,8 @@
         "order": 1,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-henry-sherman-childrens-bible-ch1.jpg"
+      "coverUrl": "covers/librivox-henry-sherman-childrens-bible-ch1.jpg",
+      "coverScene": "A bearded man in a long robe standing on a hilltop with arms spread wide, looking out over a newly created world — green valleys, a winding river, animals of every kind moving through meadows below. Light breaks through parting clouds in golden rays. The man's expression is one of wonder. Dawn of the first morning."
     },
     {
       "id": "librivox-henry-sherman-childrens-bible-ch2",
@@ -4051,7 +4155,8 @@
         "name": "The Children's Bible",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverScene": "A boy in a simple tunic kneeling beside a stream, filling a leather sling with a smooth stone, while across the stream a towering armored giant — seen only from the waist down, enormous greaves and sandals — casts a shadow over the boy. The boy looks up without fear. Rocky valley, bright harsh sunlight."
     },
     {
       "id": "librivox-jean-henri-fabre-story-book-science-ch2",
@@ -4092,7 +4197,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-jean-henri-fabre-story-book-science-ch2.jpg"
+      "coverUrl": "covers/librivox-jean-henri-fabre-story-book-science-ch2.jpg",
+      "coverScene": "Two children lying on their stomachs in tall grass, chins on hands, watching a spider spin a web between two stems of wild fennel. An old man in a straw hat crouches behind them, pointing out the spider's technique. Morning dew on the web catches the light like tiny diamonds. Southern French countryside."
     },
     {
       "id": "librivox-jean-henri-fabre-the-story-book-of-science-ch1",
@@ -4132,7 +4238,8 @@
         "order": 1,
         "totalParts": 40
       },
-      "coverUrl": "covers/librivox-jean-henri-fabre-the-story-book-of-science-ch1.jpg"
+      "coverUrl": "covers/librivox-jean-henri-fabre-the-story-book-of-science-ch1.jpg",
+      "coverScene": "An old man in a wide-brimmed straw hat sitting on a garden bench with two children, pointing with a magnifying glass at a caterpillar inching along a leaf held in the boy's hand. The girl leans in close, fascinated. A Provençal garden with lavender, stone walls, and cypress trees. Warm French afternoon light."
     },
     {
       "id": "librivox-jm-barrie-peter-and-wendy-ch1",
@@ -4172,7 +4279,8 @@
         "order": 1,
         "totalParts": 8
       },
-      "coverUrl": "covers/librivox-jm-barrie-peter-and-wendy-ch1.jpg"
+      "coverUrl": "covers/librivox-jm-barrie-peter-and-wendy-ch1.jpg",
+      "coverScene": "A boy in ragged green leaves crouching on a windowsill of a London nursery at night, silhouetted against a huge full moon, while three children sleep in white iron beds inside. A tiny light — a fairy — hovers by his shoulder. The nursery has a rocking horse, a dollhouse, and wallpaper with sailing ships. Cold moonlight outside, warm nightlight within."
     },
     {
       "id": "librivox-johanna-spyri-heidi-ch1",
@@ -4207,7 +4315,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-johanna-spyri-heidi-ch1.jpg"
+      "coverUrl": "covers/librivox-johanna-spyri-heidi-ch1.jpg",
+      "coverScene": "A small girl with curly hair and bare feet climbing a steep Alpine meadow path, leading an old woman by the hand. Above them, a small wooden chalet with a single chimney sits on a high pasture. White goats graze on the slope. The Alps rise snow-capped behind everything. Brilliant blue sky, wildflowers in the grass, clean mountain light."
     },
     {
       "id": "librivox-john-bunyan-pilgrims-progress-one-syllable-ch1",
@@ -4247,7 +4356,8 @@
         "order": 1,
         "totalParts": 9
       },
-      "coverUrl": "covers/librivox-john-bunyan-pilgrims-progress-one-syllable-ch1.jpg"
+      "coverUrl": "covers/librivox-john-bunyan-pilgrims-progress-one-syllable-ch1.jpg",
+      "coverScene": "A man in rough traveling clothes carrying an enormous pack on his back, standing at a fork in a dirt road, reading a worn book held in both hands. One road leads into a dark valley; the other climbs toward a distant hilltop city shining with golden light. The man's face shows fear and determination in equal measure. Dramatic sky, light breaking through clouds."
     },
     {
       "id": "librivox-john-gilmary-shea-saint-of-the-day",
@@ -4281,7 +4391,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-john-gilmary-shea-saint-of-the-day.jpg"
+      "coverUrl": "covers/librivox-john-gilmary-shea-saint-of-the-day.jpg",
+      "coverScene": "A row of small illustrated panels on a golden background, each showing a different saint — a woman holding a palm branch, a bishop in a mitre, a monk reading a book, a young girl with a lantern. The panels are framed like illuminated manuscript miniatures. Rich gold, deep blue, and crimson. Medieval devotional warmth."
     },
     {
       "id": "librivox-john-gilmary-shea-st-george",
@@ -4315,7 +4426,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-john-gilmary-shea-st-george.jpg"
+      "coverUrl": "covers/librivox-john-gilmary-shea-st-george.jpg",
+      "coverScene": "A knight in silver armor on a white horse, lance lowered, charging toward a green dragon that rears up with wings spread and fire curling from its jaws. A princess in a white dress watches from behind a rock. Rolling green English countryside behind them. Dramatic light, the knight's red cross banner flying."
     },
     {
       "id": "librivox-john-gilmary-shea-st-patrick",
@@ -4349,7 +4461,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-john-gilmary-shea-st-patrick.jpg"
+      "coverUrl": "covers/librivox-john-gilmary-shea-st-patrick.jpg",
+      "coverScene": "A man in bishop's robes standing on a green Irish hillside, holding a shamrock in one hand and a wooden staff in the other, teaching a small crowd of people in rough Celtic cloaks. Stone crosses and round towers dot the landscape behind him. Sheep on the hillside. Soft grey-green Irish light, rain just passed."
     },
     {
       "id": "librivox-john-ruskin-king-of-golden-river-ch2",
@@ -4389,7 +4502,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-john-ruskin-king-of-golden-river-ch2.jpg"
+      "coverUrl": "covers/librivox-john-ruskin-king-of-golden-river-ch2.jpg",
+      "coverScene": "A small boy climbing a steep, rocky mountain path beside a rushing stream, carrying a golden flask. Above him, the stream becomes a waterfall that pours down from peaks lost in clouds. A tiny golden figure sits cross-legged on a boulder mid-stream, watching the boy approach with ancient, knowing eyes. Late afternoon mountain light, mist from the falls."
     },
     {
       "id": "librivox-john-ruskin-king-of-the-golden-river-ch1",
@@ -4429,7 +4543,8 @@
         "order": 1,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-john-ruskin-king-of-the-golden-river-ch1.jpg"
+      "coverUrl": "covers/librivox-john-ruskin-king-of-the-golden-river-ch1.jpg",
+      "coverScene": "Two brutish-looking men sitting at a kitchen table in a mountain cottage, eating and drinking greedily, while a small, kind-faced boy sweeps the hearth behind them. Through the window, a magnificent Alpine valley stretches green and golden under a waterfall that catches the sunset light. The contrast between the brothers' gloom and the valley's beauty is stark."
     },
     {
       "id": "librivox-joseph-jacobs-celtic-fairy-tales-ch1",
@@ -4469,7 +4584,8 @@
         "order": 1,
         "totalParts": 13
       },
-      "coverUrl": "covers/librivox-joseph-jacobs-celtic-fairy-tales-ch1.jpg"
+      "coverUrl": "covers/librivox-joseph-jacobs-celtic-fairy-tales-ch1.jpg",
+      "coverScene": "A young man in a rough Irish cloak standing on a sea cliff, looking down at a seal woman sitting on the rocks below, her sealskin draped over a boulder beside her. Waves crash against the cliff base. The woman looks up at him with dark, liquid eyes. Wild Atlantic coast, grey-green sea, wind-torn clouds."
     },
     {
       "id": "librivox-joseph-jacobs-english-fairy-tales-ch1",
@@ -4509,7 +4625,8 @@
         "order": 1,
         "totalParts": 22
       },
-      "coverUrl": "covers/librivox-joseph-jacobs-english-fairy-tales-ch1.jpg"
+      "coverUrl": "covers/librivox-joseph-jacobs-english-fairy-tales-ch1.jpg",
+      "coverScene": "A boy in tattered clothes climbing an enormous beanstalk, one hand gripping a thick green stem, peering up through broad leaves at a castle floating among the clouds above. His cottage and a small cow are tiny specks far below. Bright sky, towering cumulus clouds, the beanstalk disappearing into mist."
     },
     {
       "id": "librivox-kenneth-grahame-the-wind-in-the-willows-ch1",
@@ -4555,7 +4672,8 @@
         "totalParts": 12,
         "nextTeaser": "Mole and Ratty pay a visit to the boastful Mr Toad, who has discovered an entirely new and very expensive enthusiasm: the gypsy caravan."
       },
-      "coverUrl": "covers/librivox-kenneth-grahame-the-wind-in-the-willows-ch1.jpg"
+      "coverUrl": "covers/librivox-kenneth-grahame-the-wind-in-the-willows-ch1.jpg",
+      "coverScene": "A small brown mole in a blue smock standing at the entrance of his burrow, blinking in the spring sunlight, a whitewash brush still in his paw. A river sparkles beyond the meadow. A water rat in a striped blazer waves to him from a rowboat tied at the bank. Wildflowers, willows, first warm day of spring."
     },
     {
       "id": "librivox-kenneth-grahame-the-wind-in-the-willows-ch2",
@@ -4595,7 +4713,8 @@
         "order": 2,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-kenneth-grahame-the-wind-in-the-willows-ch2.jpg"
+      "coverUrl": "covers/librivox-kenneth-grahame-the-wind-in-the-willows-ch2.jpg",
+      "coverScene": "A mole in a blue smock and a water rat in a striped blazer walking along a country road at twilight, approaching the open gate of a grand estate. Beyond the gate, a handsome red motorcar is parked on the gravel drive. A toad in a tweed jacket and driving goggles leans against the car, beaming. Warm evening light, English country house."
     },
     {
       "id": "librivox-kenneth-grahame-the-wind-in-the-willows-ch3",
@@ -4634,7 +4753,8 @@
         "name": "The Wind in the Willows",
         "order": 3,
         "totalParts": 3
-      }
+      },
+      "coverScene": "A mole in a blue smock lost in a dark, tangled forest at night, tree roots catching at his feet, eyes glinting from hollow trees around him. In the distance, a faint warm light glows through the trees — the badger's door. Snow beginning to fall. The mole looks small and frightened but presses on toward the light."
     },
     {
       "id": "librivox-kipling-rikki-tikki-tavi",
@@ -4668,7 +4788,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-kipling-rikki-tikki-tavi.jpg"
+      "coverUrl": "covers/librivox-kipling-rikki-tikki-tavi.jpg",
+      "coverScene": "A small brown mongoose with bristling fur and bright red eyes facing down a large black cobra in a moonlit garden, both animals tense and coiled. The cobra's hood is spread wide. Behind the mongoose, a bungalow with a lit veranda where a small boy watches through the screen door. Indian garden, jasmine vines, warm tropical night."
     },
     {
       "id": "librivox-lewis-carroll-a-mad-tea-party",
@@ -4707,7 +4828,8 @@
         "name": "Alice's Adventures in Wonderland",
         "order": 7,
         "totalParts": 6
-      }
+      },
+      "coverScene": "A girl in a blue dress sitting at a long outdoor table set for tea, squeezed between a man in an enormous top hat and a March hare, while a dormouse sleeps in the teapot between them. Stacked teacups, spilled sugar, bread and butter everywhere. The Hatter gestures wildly. A garden of painted roses behind them. Afternoon light, cheerful chaos."
     },
     {
       "id": "librivox-lewis-carroll-alice-in-wonderland-ch1",
@@ -4749,7 +4871,8 @@
         "totalParts": 12,
         "nextTeaser": "Alice has cried herself a great pool of tears, met a startled mouse, and finds herself at the start of 'a Caucus-race and a Long Tale.'"
       },
-      "coverUrl": "covers/librivox-lewis-carroll-alice-in-wonderland-ch1.jpg"
+      "coverUrl": "covers/librivox-lewis-carroll-alice-in-wonderland-ch1.jpg",
+      "coverScene": "A girl in a blue dress and white pinafore falling slowly down a very deep well shaft, her skirt billowing around her, passing shelves lined with marmalade jars, maps, and bookshelves. A white rabbit in a waistcoat clutching a pocket watch tumbles ahead of her. The shaft narrows into darkness below. Dreamlike, slow-motion light."
     },
     {
       "id": "librivox-lewis-carroll-the-pool-of-tears",
@@ -4789,7 +4912,8 @@
         "order": 2,
         "totalParts": 6
       },
-      "coverUrl": "covers/librivox-lewis-carroll-the-pool-of-tears.jpg"
+      "coverUrl": "covers/librivox-lewis-carroll-the-pool-of-tears.jpg",
+      "coverScene": "A very tall girl — her head brushing the ceiling — sitting on the floor of a tiny hallway, crying enormous tears that pool around her. A white rabbit in a waistcoat scurries past through the tears. A tiny golden key lies on a glass table high above. The tears are forming an actual pool. Absurd, melancholy, whimsical."
     },
     {
       "id": "librivox-lm-montgomery-anne-of-green-gables-ch1",
@@ -4829,7 +4953,8 @@
         "order": 1,
         "totalParts": 19
       },
-      "coverUrl": "covers/librivox-lm-montgomery-anne-of-green-gables-ch1.jpg"
+      "coverUrl": "covers/librivox-lm-montgomery-anne-of-green-gables-ch1.jpg",
+      "coverScene": "A thin, red-haired girl with freckles sitting on a worn suitcase at a rural train station platform, looking eagerly down the road. She wears a faded dress and a straw hat. Behind her, a Prince Edward Island landscape of red dirt roads, green fields, and white-blossomed apple orchards stretches to the sea. Late spring afternoon, warm light on the red hair."
     },
     {
       "id": "librivox-lm-montgomery-anne-of-green-gables-ch2",
@@ -4869,7 +4994,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-lm-montgomery-anne-of-green-gables-ch2.jpg"
+      "coverUrl": "covers/librivox-lm-montgomery-anne-of-green-gables-ch2.jpg",
+      "coverScene": "A thin, red-haired girl sitting in the back of a horse-drawn buggy beside a stern, quiet man in a straw hat, her face alight with wonder as they drive along a road canopied by blooming apple trees — the petals drifting down like snow. Red dirt road, white farmhouses, the sparkle of the sea in the distance. Prince Edward Island in full spring bloom."
     },
     {
       "id": "librivox-logan-marshall-the-wonder-book-of-bible-stori-ch1",
@@ -4910,7 +5036,8 @@
         "order": 1,
         "totalParts": 14
       },
-      "coverUrl": "covers/librivox-logan-marshall-the-wonder-book-of-bible-stori-ch1.jpg"
+      "coverUrl": "covers/librivox-logan-marshall-the-wonder-book-of-bible-stori-ch1.jpg",
+      "coverScene": "A boy in a simple tunic standing in a field of golden wheat, arms raised toward the sky, where the sun, moon, and eleven stars appear to bow down toward him. His older brothers — rough, bearded men — watch from the edge of the field with jealous, angry expressions. Wide biblical landscape, dramatic sky."
     },
     {
       "id": "librivox-logan-marshall-the-wonder-book-of-bible-stori-ch2",
@@ -4950,7 +5077,8 @@
         "name": "The Wonder Book of Bible Stories",
         "order": 2,
         "totalParts": 14
-      }
+      },
+      "coverScene": "A baby in a woven reed basket floating among tall papyrus reeds at the edge of a great river, the basket gently rocking on the water. A young woman in Egyptian linen — a princess — wades toward the basket, her handmaidens watching from the bank. Warm Egyptian sunlight, the river golden and slow."
     },
     {
       "id": "librivox-louisa-may-alcott-little-women-ch1",
@@ -4990,7 +5118,8 @@
         "order": 1,
         "totalParts": 23
       },
-      "coverUrl": "covers/librivox-louisa-may-alcott-little-women-ch1.jpg"
+      "coverUrl": "covers/librivox-louisa-may-alcott-little-women-ch1.jpg",
+      "coverScene": "Four sisters sitting around a small fireplace in a modest parlor — the eldest knitting, the second reading with her feet up, the third sketching on a pad, and the youngest sprawled on the rug playing with a cat. A framed photograph of a man in a Union Army uniform hangs on the wall. Warm but spare room. Christmas Eve, lamplight, gentle snowfall visible through the window."
     },
     {
       "id": "librivox-margaret-gatty-parables-from-nature-ch1",
@@ -5031,7 +5160,8 @@
         "order": 1,
         "totalParts": 15
       },
-      "coverUrl": "covers/librivox-margaret-gatty-parables-from-nature-ch1.jpg"
+      "coverUrl": "covers/librivox-margaret-gatty-parables-from-nature-ch1.jpg",
+      "coverScene": "A caterpillar and a butterfly having a conversation on a leaf at the edge of a pond — the caterpillar looking up skeptically at the butterfly, which has alighted on a reed above. Lily pads, dragonflies, water reflections. The butterfly's wings are iridescent blue. Soft morning light on the water."
     },
     {
       "id": "librivox-margaret-gatty-parables-from-nature-ch2",
@@ -5072,7 +5202,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-margaret-gatty-parables-from-nature-ch2.jpg"
+      "coverUrl": "covers/librivox-margaret-gatty-parables-from-nature-ch2.jpg",
+      "coverScene": "A small seedling pushing up through dark earth, its first two leaves unfolding toward a beam of sunlight that breaks through forest canopy above. Earthworms curl around roots below the soil line — the scene is split to show both above and below ground. Rich dark earth, pale green shoot, golden light from above."
     },
     {
       "id": "librivox-mark-twain-tom-sawyer-ch1",
@@ -5106,7 +5237,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-mark-twain-tom-sawyer-ch1.jpg"
+      "coverUrl": "covers/librivox-mark-twain-tom-sawyer-ch1.jpg",
+      "coverScene": "A barefoot boy in overalls and a straw hat holding a paintbrush loaded with whitewash, grinning slyly at another boy who approaches along a wooden fence carrying an apple. The fence stretches along a dusty Missouri street. The first boy has already painted a small section white. Hot summer afternoon, cicada weather."
     },
     {
       "id": "librivox-milne-pooh-corner-ch10",
@@ -5145,7 +5277,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverScene": "A boy in shorts and a sun hat and a small round bear in a red shirt sitting side by side on the top of a grassy hill, looking out over the Hundred Acre Wood spread below them. The boy's arm rests on the bear. Neither speaks. The light is golden and autumnal, the trees turning. A bittersweet, beautiful stillness."
     },
     {
       "id": "librivox-milne-pooh-corner-ch2",
@@ -5185,7 +5318,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-milne-pooh-corner-ch2.jpg"
+      "coverUrl": "covers/librivox-milne-pooh-corner-ch2.jpg",
+      "coverScene": "A bouncy orange-and-black striped tiger sitting at a table in a cozy tree-house kitchen, turning up his nose at a pot of honey while a tiny kangaroo offers him a spoonful of something from a jar. A small round bear in a red shirt watches from the doorway. Warm kitchen light, jars and pots on shelves."
     },
     {
       "id": "librivox-milne-winnie-the-pooh-ch1",
@@ -5226,7 +5360,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-milne-winnie-the-pooh-ch1.jpg"
+      "coverUrl": "covers/librivox-milne-winnie-the-pooh-ch1.jpg",
+      "coverScene": "A small, round bear in a red shirt dangling from a blue balloon high above a tall oak tree, one paw reaching toward a hole in the trunk where bees buzz in and out. A boy in shorts and a sun hat watches from the ground below, shielding his eyes. The Hundred Acre Wood stretches behind them — gentle green hills and silver birches. Warm summer afternoon."
     },
     {
       "id": "librivox-milne-winnie-the-pooh-ch2",
@@ -5266,7 +5401,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverScene": "A small, round bear in a red shirt wedged tight in the round front door of an underground house, his bottom sticking out on one side and his head and arms on the other. A rabbit inside the burrow pushes against the bear's head. A boy in shorts reads a book to the bear's protruding backside. Sunny day, wildflowers around the door hole."
     },
     {
       "id": "librivox-milne-winnie-the-pooh-ch6",
@@ -5306,7 +5442,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverScene": "A grey donkey sitting alone by a stream, looking at two wrapped presents — an empty honey pot and a burst red balloon — with an expression of quiet, unexpected happiness. A small bear in a red shirt and a tiny pink piglet watch hopefully. Thistles growing by the stream. Soft, golden late-afternoon light in the Hundred Acre Wood."
     },
     {
       "id": "librivox-moore-night-before-christmas",
@@ -5340,7 +5477,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-moore-night-before-christmas.jpg"
+      "coverUrl": "covers/librivox-moore-night-before-christmas.jpg",
+      "coverScene": "A round, jolly man in a red fur-trimmed suit standing in front of a fireplace, a sack of toys slung over his shoulder, one finger laid aside of his nose, about to disappear up the chimney. Stockings hang from the mantel. A Christmas tree glows in the corner. Through the window, a tiny sleigh and eight reindeer silhouetted against the full moon. Warm firelight, Christmas Eve magic."
     },
     {
       "id": "librivox-oscar-wilde-the-canterville-ghost-ch1",
@@ -5380,7 +5518,8 @@
         "order": 1,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-oscar-wilde-the-canterville-ghost-ch1.jpg"
+      "coverUrl": "covers/librivox-oscar-wilde-the-canterville-ghost-ch1.jpg",
+      "coverScene": "An American family — a father in a top hat, a mother in a bustle dress, and their children — standing in the entrance hall of a gloomy English manor, staring at a dark red stain on the stone floor. A faint ghostly figure in chains hovers behind a suit of armor in the shadows. Cobwebs, dusty portraits, candlelight. The family looks more annoyed than frightened."
     },
     {
       "id": "librivox-oscar-wilde-the-devoted-friend",
@@ -5414,7 +5553,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-oscar-wilde-the-devoted-friend.jpg"
+      "coverUrl": "covers/librivox-oscar-wilde-the-devoted-friend.jpg",
+      "coverScene": "A small, round-faced man in a patched coat digging in a garden on a cold morning, looking up with a trusting smile at a large, well-dressed man leaning on the garden gate who waves cheerfully but makes no move to help. A wheelbarrow full of flowers between them. The gardener's cottage is tiny and bare; the other man's house looms large behind the hedge. Frosty morning light."
     },
     {
       "id": "librivox-oscar-wilde-the-happy-prince",
@@ -5450,7 +5590,8 @@
           "sad-opening"
         ]
       },
-      "coverUrl": "covers/librivox-oscar-wilde-the-happy-prince.jpg"
+      "coverUrl": "covers/librivox-oscar-wilde-the-happy-prince.jpg",
+      "coverScene": "A golden statue of a prince on a tall column in a city square at night, a small brown swallow perched on his shoulder. The prince's sapphire eyes are weeping. Below, narrow streets of a poor city — a seamstress sewing by candlelight in a garret window, a match girl shivering in a doorway. The statue gleams in moonlight while the city below is dark."
     },
     {
       "id": "librivox-oscar-wilde-the-nightingale-and-the-rose",
@@ -5486,7 +5627,8 @@
           "sad-opening"
         ]
       },
-      "coverUrl": "covers/librivox-oscar-wilde-the-nightingale-and-the-rose.jpg"
+      "coverUrl": "covers/librivox-oscar-wilde-the-nightingale-and-the-rose.jpg",
+      "coverScene": "A small brown nightingale pressing her breast against the thorn of a white rose bush in a moonlit garden, singing. A single drop of red spreads from the thorn into the rose, turning its petals crimson. In the background, a young student reads at a desk by candlelight in a window. Intense moonlight, the garden silent except for the song."
     },
     {
       "id": "librivox-oscar-wilde-the-remarkable-rocket",
@@ -5520,7 +5662,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-oscar-wilde-the-remarkable-rocket.jpg"
+      "coverUrl": "covers/librivox-oscar-wilde-the-remarkable-rocket.jpg",
+      "coverScene": "A tall, ornate firework rocket standing upright in a garden shed, its painted surface gleaming with gold and red stars, looking down its nose at a collection of smaller, humbler fireworks — a Catherine wheel, a Roman candle, and a squib — arranged around it. A garden party is visible through the shed door. Warm afternoon light, festive bunting."
     },
     {
       "id": "librivox-oscar-wilde-the-selfish-giant",
@@ -5554,7 +5697,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-oscar-wilde-the-selfish-giant.jpg"
+      "coverUrl": "covers/librivox-oscar-wilde-the-selfish-giant.jpg",
+      "coverScene": "A giant in a fur cloak standing in a walled garden that is frozen in perpetual winter — bare trees, snow on the ground, frost on the wall — while outside the wall, spring blooms in every other garden. A small child has climbed through a crack in the wall and stands beneath a bare tree that is beginning to blossom where the child touches it. The giant watches, his hard face softening."
     },
     {
       "id": "librivox-oscar-wilde-the-star-child",
@@ -5590,7 +5734,8 @@
           "older-language"
         ]
       },
-      "coverUrl": "covers/librivox-oscar-wilde-the-star-child.jpg"
+      "coverUrl": "covers/librivox-oscar-wilde-the-star-child.jpg",
+      "coverScene": "A beautiful boy with golden hair standing in a forest clearing, looking at his own reflection in a pool. His face is perfect but his expression is cruel. Behind him, an old beggar woman in rags reaches toward him with a pleading hand. The pool reflects the boy's beauty but also, faintly, the shape of a toad. Cold, bright, fairytale light."
     },
     {
       "id": "librivox-oscar-wilde-the-young-king",
@@ -5626,7 +5771,8 @@
           "older-language"
         ]
       },
-      "coverUrl": "covers/librivox-oscar-wilde-the-young-king.jpg"
+      "coverUrl": "covers/librivox-oscar-wilde-the-young-king.jpg",
+      "coverScene": "A boy in a rough shepherd's tunic standing before a throne in a cathedral, refusing a golden crown held out to him by a bishop. Sunlight streams through a stained-glass window and falls on the boy, who wears a crown of thorns made of briar and holds a rough wooden staff instead of a scepter. The court looks scandalized. The boy is radiant."
     },
     {
       "id": "librivox-robert-louis-stevenson-childs-garden-of-verses",
@@ -5660,7 +5806,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-robert-louis-stevenson-childs-garden-of-verses.jpg"
+      "coverUrl": "covers/librivox-robert-louis-stevenson-childs-garden-of-verses.jpg",
+      "coverScene": "A small child in a nightgown standing on tiptoe at a bedroom window, looking out at a lamplighter making his way down a cobblestone street, touching his long pole to each gas lamp, which blooms into golden light one by one. The child's room is warm with a fire; the street outside is blue dusk. Rooftops and chimneys against a fading sky."
     },
     {
       "id": "librivox-robert-louis-stevenson-treasure-island-ch1",
@@ -5700,7 +5847,8 @@
         "order": 1,
         "totalParts": 13
       },
-      "coverUrl": "covers/librivox-robert-louis-stevenson-treasure-island-ch1.jpg"
+      "coverUrl": "covers/librivox-robert-louis-stevenson-treasure-island-ch1.jpg",
+      "coverScene": "A boy in a rough coat standing behind the bar of a seaside inn, staring at a tall, weather-beaten man with a saber scar across his cheek who has just pushed through the door, a sea chest dragged behind him. Rain lashes the windows. A fire crackles in the hearth. The man's coat drips salt water. The boy grips the counter nervously. Grey coastal storm light."
     },
     {
       "id": "librivox-rudyard-kipling-how-the-camel-got-his-hump",
@@ -5739,7 +5887,8 @@
         "name": "Just So Stories",
         "order": 2,
         "totalParts": 6
-      }
+      },
+      "coverScene": "A camel sitting stubbornly in the middle of a flat desert, refusing to move, while a horse, a dog, and an ox stand around it looking exasperated. A djinn made of swirling golden sand hovers behind the camel, one finger pointed at the camel's back. The desert stretches flat to the horizon. Blazing noon sun, shimmering heat."
     },
     {
       "id": "librivox-rudyard-kipling-how-the-rhinoceros-got-his-ski",
@@ -5778,7 +5927,8 @@
         "name": "Just So Stories",
         "order": 3,
         "totalParts": 6
-      }
+      },
+      "coverScene": "A man in a pith helmet and white suit standing on a tropical beach beside a cooking stove, holding up a cake while a rhinoceros — smooth-skinned, without wrinkles — watches hungrily from behind a palm tree. A red volcanic island rises from the sea behind them. Bright tropical light, turquoise water."
     },
     {
       "id": "librivox-rudyard-kipling-how-the-whale-got-his-throat",
@@ -5819,7 +5969,8 @@
         "totalParts": 12,
         "nextTeaser": "How the Camel Got His Hump — and what happens to creatures who say 'Humph!' when they should be working."
       },
-      "coverUrl": "covers/librivox-rudyard-kipling-how-the-whale-got-his-throat.jpg"
+      "coverUrl": "covers/librivox-rudyard-kipling-how-the-whale-got-his-throat.jpg",
+      "coverScene": "An enormous whale with its mouth wide open in a grey-green sea, and inside its mouth a tiny man sitting on a raft made of his own suspenders and a jackknife, looking remarkably calm. The whale's eye is enormous and startled. Waves and seabirds around them. Cold northern ocean light, vast and humorous scale."
     },
     {
       "id": "librivox-rudyard-kipling-the-elephants-child",
@@ -5859,7 +6010,8 @@
         "name": "Just So Stories",
         "order": 4,
         "totalParts": 6
-      }
+      },
+      "coverScene": "A young elephant with a short, bulgy nose leaning over the edge of a grey-green river, nose-to-nose with a crocodile whose jaws are clamped around the elephant's nose and pulling it longer. The elephant braces its hind legs in the mud. A snake watches from a tree branch. African riverside, warm golden light, dramatic tug-of-war."
     },
     {
       "id": "librivox-rudyard-kipling-the-jungle-book-kaas-hunting",
@@ -5899,7 +6051,8 @@
         "order": 3,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-rudyard-kipling-the-jungle-book-kaas-hunting.jpg"
+      "coverUrl": "covers/librivox-rudyard-kipling-the-jungle-book-kaas-hunting.jpg",
+      "coverScene": "A brown boy in a loincloth carried high above the jungle canopy by a troop of grey monkeys swinging through the treetops, their arms linked in a chain. Below, a great black panther races along a jungle trail, and an enormous python coils through the branches in pursuit. Dense Indian jungle, vines, and filtered green light."
     },
     {
       "id": "librivox-rudyard-kipling-the-jungle-book-mowglis-brothers",
@@ -5943,7 +6096,8 @@
         "totalParts": 7,
         "nextTeaser": "Baloo the bear and Bagheera the panther begin teaching Mowgli the Law of the Jungle — and Mowgli is kidnapped by the Bandar-log."
       },
-      "coverUrl": "covers/librivox-rudyard-kipling-the-jungle-book-mowglis-brothers.jpg"
+      "coverUrl": "covers/librivox-rudyard-kipling-the-jungle-book-mowglis-brothers.jpg",
+      "coverScene": "A small brown boy standing barefoot among a circle of wolves in a moonlit jungle clearing, one hand resting on the head of a great grey wolf. A black panther watches from a low branch. Yellow eyes gleam from the darkness at the edges of the clearing. The boy is small but unafraid. Full moon, silver light on dark jungle."
     },
     {
       "id": "librivox-steel-english-fairy-tales-ch1",
@@ -5977,7 +6131,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-steel-english-fairy-tales-ch1.jpg"
+      "coverUrl": "covers/librivox-steel-english-fairy-tales-ch1.jpg",
+      "coverScene": "Three bears — a great big bear, a middle-sized bear, and a tiny wee bear — standing in their cottage kitchen, staring at three bowls of porridge on the table. The biggest bowl is untouched, the middle bowl has a spoon in it, and the smallest bowl is empty. Through the doorway, golden curls are just visible disappearing up the stairs. Cozy cottage interior, morning light."
     },
     {
       "id": "librivox-steel-english-fairy-tales-jack-beanstalk",
@@ -6011,7 +6166,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-steel-english-fairy-tales-jack-beanstalk.jpg"
+      "coverUrl": "covers/librivox-steel-english-fairy-tales-jack-beanstalk.jpg",
+      "coverScene": "A boy in patched trousers standing at the base of an enormous beanstalk, craning his neck to look up. The beanstalk is thick as an oak, its broad leaves spiraling upward into the clouds. In his hand he holds a small leather pouch that jingles with gold coins. His expression is triumphant but breathless. Morning mist, the beanstalk vanishing into bright cloud."
     },
     {
       "id": "librivox-thornton-burgess-old-mother-west-wind-ch2",
@@ -6053,7 +6209,8 @@
         "order": 2,
         "totalParts": 2
       },
-      "coverUrl": "covers/librivox-thornton-burgess-old-mother-west-wind-ch2.jpg"
+      "coverUrl": "covers/librivox-thornton-burgess-old-mother-west-wind-ch2.jpg",
+      "coverScene": "A mischievous young rabbit sitting at the edge of the Smiling Pool, dangling his feet in the water and chatting with a round green frog on a lily pad. A kingfisher perches on a cattail nearby. The Green Meadows stretch behind them, dotted with daisies. Warm mid-morning light, everything green and cheerful."
     },
     {
       "id": "librivox-thornton-w-burgess-old-mother-west-wind-ch1",
@@ -6095,7 +6252,8 @@
         "order": 1,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-thornton-w-burgess-old-mother-west-wind-ch1.jpg"
+      "coverUrl": "covers/librivox-thornton-w-burgess-old-mother-west-wind-ch1.jpg",
+      "coverScene": "A plump, kindly woman made of wind and cloud descending from the sky into a green meadow at dawn, opening a large bag from which tumble dozens of tiny, laughing breeze-children who scatter in every direction through the wildflowers. A rabbit and a chipmunk watch from a stone wall. Pink sunrise sky, dew on every blade of grass."
     },
     {
       "id": "librivox-thornton-w-burgess-the-adventures-of-buster-ch1",
@@ -6135,7 +6293,8 @@
         "order": 1,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-thornton-w-burgess-the-adventures-of-buster-ch1.jpg"
+      "coverUrl": "covers/librivox-thornton-w-burgess-the-adventures-of-buster-ch1.jpg",
+      "coverScene": "A large brown bear cub standing on his hind legs at the edge of a blueberry patch, paws purple with juice, looking guiltily over his shoulder at his mother who approaches through the underbrush. A chipmunk on a nearby rock chatters at the cub. Summer forest, dappled light, ripe berries everywhere."
     },
     {
       "id": "librivox-thornton-w-burgess-the-adventures-of-reddy-f-ch1",
@@ -6175,7 +6334,8 @@
         "order": 1,
         "totalParts": 3
       },
-      "coverUrl": "covers/librivox-thornton-w-burgess-the-adventures-of-reddy-f-ch1.jpg"
+      "coverUrl": "covers/librivox-thornton-w-burgess-the-adventures-of-reddy-f-ch1.jpg",
+      "coverScene": "A young red fox with a bushy tail trotting along a stone wall at the edge of a farm, pausing to sniff the air, ears pricked forward. In the farmyard beyond, a plump hen scratches in the dirt, unaware. A farmer's scarecrow stands in the garden. Early morning, ground mist, golden light on the fox's red fur."
     },
     {
       "id": "librivox-warner-boxcar-children-ch1",
@@ -6216,7 +6376,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-warner-boxcar-children-ch1.jpg"
+      "coverUrl": "covers/librivox-warner-boxcar-children-ch1.jpg",
+      "coverScene": "Four children walking single-file along a railroad track at dusk — the oldest boy carrying the youngest child on his back, the oldest girl with dark hair carrying a bundle, and a younger girl holding a cracked teacup. An empty red boxcar sits on a siding in the distance. Warm fading light, tall grass on either side of the tracks."
     },
     {
       "id": "librivox-warner-boxcar-children-ch10",
@@ -6256,7 +6417,8 @@
         "order": 10,
         "totalParts": 17,
         "nextTeaser": "Next: More Education."
-      }
+      },
+      "coverScene": "A teenage boy in a running vest sprinting along a dusty race course toward a finish-line ribbon, arms pumping. In the spectator area, three children — two girls and a small boy — lean forward and cheer, the smallest boy standing on a wooden crate to see. An American flag flutters from a pole. Fourth of July, bright midday light."
     },
     {
       "id": "librivox-warner-boxcar-children-ch11",
@@ -6296,7 +6458,8 @@
         "order": 11,
         "totalParts": 17,
         "nextTeaser": "Next: Ginseng."
-      }
+      },
+      "coverScene": "Four children sitting in a circle inside their red boxcar, each focused on a lesson — the oldest boy reading aloud from a newspaper, the oldest girl with dark hair writing numbers on a slate, the younger girl tracing letters, and the smallest boy counting on his fingers. A brown dog sleeps across the doorway. Quiet afternoon study session, sunlight on the boxcar floor."
     },
     {
       "id": "librivox-warner-boxcar-children-ch12",
@@ -6336,7 +6499,8 @@
         "order": 12,
         "totalParts": 17,
         "nextTeaser": "Next: Trouble."
-      }
+      },
+      "coverScene": "Two children crouching in a forest clearing, carefully digging up a plant with forked roots from the dark earth. The oldest boy holds the plant up while the younger girl examines the roots closely. Dappled green light, ferns and mossy logs around them, a sense of quiet discovery in the deep woods."
     },
     {
       "id": "librivox-warner-boxcar-children-ch13",
@@ -6376,7 +6540,8 @@
         "order": 13,
         "totalParts": 17,
         "nextTeaser": "Next: Caught."
-      }
+      },
+      "coverScene": "The oldest boy with a worried face running down a forest trail at full speed, glancing back at a red boxcar where the oldest girl with dark hair sits on the doorstep holding a limp, feverish younger girl wrapped in a blanket. The smallest boy stands nearby looking frightened. Overcast sky, urgency in the boy's stride."
     },
     {
       "id": "librivox-warner-boxcar-children-ch14",
@@ -6416,7 +6581,8 @@
         "order": 14,
         "totalParts": 17,
         "nextTeaser": "Next: A New Grandfather."
-      }
+      },
+      "coverScene": "A kind-looking man in a white coat kneeling inside a red boxcar, taking the pulse of a pale girl who lies on a pine-needle bed. The other three children watch anxiously from the doorway. The man's face is gentle and reassuring. Afternoon light slanting through the boxcar door, the stethoscope around his neck catching the light."
     },
     {
       "id": "librivox-warner-boxcar-children-ch15",
@@ -6456,7 +6622,8 @@
         "order": 15,
         "totalParts": 17,
         "nextTeaser": "Next: A United Family."
-      }
+      },
+      "coverScene": "Four children standing in a grand entrance hall, mouths open in astonishment, as a white-haired gentleman in a fine suit smiles warmly at them with outstretched hands. The hall has a marble floor, a crystal chandelier, and a wide staircase. The children's clothes are patched and dusty. The contrast between the man's elegance and their poverty. Warm afternoon light through tall windows."
     },
     {
       "id": "librivox-warner-boxcar-children-ch16",
@@ -6496,7 +6663,8 @@
         "order": 16,
         "totalParts": 17,
         "nextTeaser": "Next: Safe."
-      }
+      },
+      "coverScene": "Four children exploring a beautiful bedroom in a grand house — each child touching something in wonder: a real bed, a bookshelf, a window seat, a toy chest. Through the window, a familiar red boxcar sits in the backyard garden on the grass. The smallest boy presses his face to the window, pointing at the boxcar and laughing. Golden light, new home, old home visible outside."
     },
     {
       "id": "librivox-warner-boxcar-children-ch17",
@@ -6535,7 +6703,8 @@
         "name": "The Boxcar Children",
         "order": 17,
         "totalParts": 17
-      }
+      },
+      "coverScene": "Four children and a white-haired gentleman sitting together on a porch swing in the evening, a brown dog at their feet. The smallest boy sleeps against the old man's arm. The oldest girl with dark hair leans on the railing, looking at the stars. Fireflies in the garden. The red boxcar just visible in moonlight at the edge of the lawn. Peace, safety, home at last."
     },
     {
       "id": "librivox-warner-boxcar-children-ch2",
@@ -6575,7 +6744,8 @@
         "order": 2,
         "totalParts": 17,
         "nextTeaser": "Next: Shelter."
-      }
+      },
+      "coverScene": "Four children huddled together in the doorway of a closed bakery on a dark street, the oldest girl with dark hair wrapping her shawl around the youngest boy who sleeps against her shoulder. The oldest boy stands watch, peering into the darkness. A streetlamp casts a pale circle of light. Cold night, the children press close for warmth."
     },
     {
       "id": "librivox-warner-boxcar-children-ch3",
@@ -6615,7 +6785,8 @@
         "order": 3,
         "totalParts": 17,
         "nextTeaser": "Next: The children discover an abandoned boxcar in the woods and turn it into their home."
-      }
+      },
+      "coverScene": "Four children in simple 1920s clothes pushing through thick underbrush in a forest, the oldest boy holding back branches for the others. The younger girl looks tired; the smallest boy rides on his brother's back. Shafts of light break through the canopy ahead, suggesting a clearing. Late afternoon, forest shadows."
     },
     {
       "id": "librivox-warner-boxcar-children-ch4",
@@ -6655,7 +6826,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverScene": "Four children peering inside an old red boxcar with its sliding door half open, their faces lit with excitement and relief. The oldest girl with dark hair steps up onto the boxcar floor. Inside, a wooden crate serves as a table. The boxcar sits in a clearing among pines. Golden afternoon light flooding the interior through the open door."
     },
     {
       "id": "librivox-warner-boxcar-children-ch5",
@@ -6695,7 +6867,8 @@
         "order": 5,
         "totalParts": 17,
         "nextTeaser": "Next: Earning a Living."
-      }
+      },
+      "coverScene": "Four children inside a red boxcar turned into a cozy home — the oldest girl sweeping the floor with a branch broom, the younger girl arranging wildflowers in a cracked cup on a crate-table, the smallest boy setting out mismatched dishes, the oldest boy carrying an armload of pine branches for bedding. Warm light through the open door, a sense of pride and order."
     },
     {
       "id": "librivox-warner-boxcar-children-ch6",
@@ -6735,7 +6908,8 @@
         "order": 6,
         "totalParts": 17,
         "nextTeaser": "Next: At Home."
-      }
+      },
+      "coverScene": "A teenage boy pushing a lawn mower across a tidy suburban lawn while a kind-looking man in a white coat watches from a porch. The boy wipes sweat from his forehead. In his pocket, folded dollar bills are just visible. In the distance, a forest hides a red boxcar among the pines. Bright summer day, hard work."
     },
     {
       "id": "librivox-warner-boxcar-children-ch7",
@@ -6775,7 +6949,8 @@
         "order": 7,
         "totalParts": 17,
         "nextTeaser": "Next: Building the Dam."
-      }
+      },
+      "coverScene": "Four children sitting around a small campfire beside a red boxcar at twilight, the oldest girl stirring a pot while the smallest boy feeds sticks to the fire and a dog — a brown mutt — lies beside him. The younger girl reads from a book. A brook glistens nearby. Firelight on their faces, contentment, the forest settling into evening."
     },
     {
       "id": "librivox-warner-boxcar-children-ch8",
@@ -6815,7 +6990,8 @@
         "order": 8,
         "totalParts": 17,
         "nextTeaser": "Next: Cherry Picking."
-      }
+      },
+      "coverScene": "Four children in rolled-up trousers and bare feet building a dam of stones across a shallow brook, water splashing around their legs. The oldest boy places a large rock while the smallest boy carries one half his size. Dappled forest light, the brook pooling behind the growing dam, summer heat."
     },
     {
       "id": "librivox-warner-boxcar-children-ch9",
@@ -6855,7 +7031,8 @@
         "order": 9,
         "totalParts": 17,
         "nextTeaser": "Next: The Race."
-      }
+      },
+      "coverScene": "Four children standing in a cherry orchard, the trees heavy with bright red fruit. The oldest boy picks from a high branch, the oldest girl with dark hair fills a basket, the younger girl reaches for a low cluster, and the smallest boy has cherry juice smeared across his grinning face. A farmer watches approvingly from a ladder. Bright summer morning."
     },
     {
       "id": "librivox-william-h-barker-west-african-folk-tales-ch1",
@@ -6895,7 +7072,8 @@
         "order": 1,
         "totalParts": 17
       },
-      "coverUrl": "covers/librivox-william-h-barker-west-african-folk-tales-ch1.jpg"
+      "coverUrl": "covers/librivox-william-h-barker-west-african-folk-tales-ch1.jpg",
+      "coverScene": "Anansi the Spider — a large, clever-looking spider with bright eyes — sitting at the center of a web strung between two palm trees, gesturing with several legs as he speaks to a crowd of forest animals gathered below: a tortoise, a leopard, a parrot, and a hornbill. West African forest clearing, warm golden light through tropical canopy."
     },
     {
       "id": "librivox-william-trowbridge-l-american-indian-fairy-tal-ch1",
@@ -6935,7 +7113,8 @@
         "order": 1,
         "totalParts": 4
       },
-      "coverUrl": "covers/librivox-william-trowbridge-l-american-indian-fairy-tal-ch1.jpg"
+      "coverUrl": "covers/librivox-william-trowbridge-l-american-indian-fairy-tal-ch1.jpg",
+      "coverScene": "A young Native American girl sitting cross-legged by a campfire under a vast star-filled sky, listening to an elder who gestures toward the stars as he tells a story. Teepees stand behind them on a grassy plain. The Milky Way blazes overhead. The fire casts warm orange light on their faces. Wide prairie, enormous sky."
     },
     {
       "id": "librivox-williams-velveteen-rabbit",
@@ -6969,7 +7148,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-williams-velveteen-rabbit.jpg"
+      "coverUrl": "covers/librivox-williams-velveteen-rabbit.jpg",
+      "coverScene": "A small stuffed rabbit made of brown velveteen sitting in a nursery beside a sleeping boy, its button eyes gazing out the window at a garden where two real rabbits play in the moonlight. The stuffed rabbit's fur is worn thin, one ear droops, but its expression is full of longing. Warm nightlight inside, silver moonlight outside."
     },
     {
       "id": "librivox-yei-theodora-ozaki-japanese-fairy-tales-ch1",
@@ -7009,7 +7189,8 @@
         "order": 1,
         "totalParts": 11
       },
-      "coverUrl": "covers/librivox-yei-theodora-ozaki-japanese-fairy-tales-ch1.jpg"
+      "coverUrl": "covers/librivox-yei-theodora-ozaki-japanese-fairy-tales-ch1.jpg",
+      "coverScene": "A fisherman in a straw hat kneeling on the shore beside a golden turtle, gently untangling it from a net. Behind him, a fishing village with curved-roof houses. A distant palace shimmers beneath the waves — visible through the translucent water like a dream. Japanese coastal scene, mist, pine trees on the cliff, soft morning light."
     },
     {
       "id": "librivox-yei-theodora-ozaki-tongue-cut-sparrow",
@@ -7044,7 +7225,8 @@
         "reviewer": "perplexity-curator-v1",
         "flags": []
       },
-      "coverUrl": "covers/librivox-yei-theodora-ozaki-tongue-cut-sparrow.jpg"
+      "coverUrl": "covers/librivox-yei-theodora-ozaki-tongue-cut-sparrow.jpg",
+      "coverScene": "An old man in a kimono kneeling before a tiny sparrow perched on a branch, bowing to it respectfully. The sparrow wears a tiny bandage around its beak. Behind the man, a small Japanese garden with a stone lantern, raked gravel, and a gnarled pine. Soft overcast light, cherry blossoms drifting."
     },
     {
       "id": "librivox-zitkala-sa-old-indian-legends-ch1",
@@ -7084,7 +7266,8 @@
         "order": 1,
         "totalParts": 7
       },
-      "coverUrl": "covers/librivox-zitkala-sa-old-indian-legends-ch1.jpg"
+      "coverUrl": "covers/librivox-zitkala-sa-old-indian-legends-ch1.jpg",
+      "coverScene": "Iktomi the Trickster — a wiry man in a fringed deerskin shirt with a coyote-like grin — sitting cross-legged on a rock by a river, weaving a web of grass between his fingers while a group of prairie animals — a rabbit, a turtle, and a meadowlark — listen skeptically. Great Plains landscape, cottonwood trees along the river, wide golden light."
     }
   ]
 }
