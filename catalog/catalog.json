@@ -37,7 +37,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-big-jon-sparkie-ep1.jpg"
     },
     {
       "id": "archive-big-jon-sparkie-ep2",
@@ -74,7 +75,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-big-jon-sparkie-ep2.jpg"
     },
     {
       "id": "archive-big-jon-sparkie-ep3",
@@ -111,7 +113,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-big-jon-sparkie-ep3.jpg"
     },
     {
       "id": "archive-cinnamon-bear-ep1",
@@ -155,7 +158,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/archive-cinnamon-bear-ep1.jpg"
     },
     {
       "id": "archive-cinnamon-bear-ep2",
@@ -199,7 +203,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/archive-cinnamon-bear-ep2.jpg"
     },
     {
       "id": "archive-greatest-story-the-good-samaritan",
@@ -236,7 +241,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-greatest-story-the-good-samaritan.jpg"
     },
     {
       "id": "archive-greatest-story-the-lost-sheep",
@@ -273,7 +279,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-greatest-story-the-lost-sheep.jpg"
     },
     {
       "id": "archive-greatest-story-the-second-mile",
@@ -310,7 +317,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-greatest-story-the-second-mile.jpg"
     },
     {
       "id": "archive-lets-pretend-beauty-and-the-beast",
@@ -347,7 +355,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-beauty-and-the-beast.jpg"
     },
     {
       "id": "archive-lets-pretend-bluebeard",
@@ -384,7 +393,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-bluebeard.jpg"
     },
     {
       "id": "archive-lets-pretend-brother-and-sister",
@@ -421,7 +431,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-brother-and-sister.jpg"
     },
     {
       "id": "archive-lets-pretend-cinderella",
@@ -458,7 +469,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-cinderella.jpg"
     },
     {
       "id": "archive-lets-pretend-jack-and-the-beanstalk",
@@ -495,7 +507,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-jack-and-the-beanstalk.jpg"
     },
     {
       "id": "archive-lets-pretend-snow-queen",
@@ -532,7 +545,8 @@
       "restoration": {
         "hissLevel": "high",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-snow-queen.jpg"
     },
     {
       "id": "archive-lets-pretend-the-enchanted-frog",
@@ -569,7 +583,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lets-pretend-the-enchanted-frog.jpg"
     },
     {
       "id": "archive-lone-ranger-ep1",
@@ -612,7 +627,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lone-ranger-ep1.jpg"
     },
     {
       "id": "archive-lone-ranger-ep2",
@@ -655,7 +671,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lone-ranger-ep2.jpg"
     },
     {
       "id": "archive-lone-ranger-ep3",
@@ -698,7 +715,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-lone-ranger-ep3.jpg"
     },
     {
       "id": "archive-sgt-preston-ep1",
@@ -741,7 +759,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-sgt-preston-ep1.jpg"
     },
     {
       "id": "archive-sgt-preston-ep2",
@@ -784,7 +803,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-sgt-preston-ep2.jpg"
     },
     {
       "id": "archive-sgt-preston-ep3",
@@ -827,7 +847,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-sgt-preston-ep3.jpg"
     },
     {
       "id": "archive-superman-ep1",
@@ -870,7 +891,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-superman-ep1.jpg"
     },
     {
       "id": "archive-superman-ep2",
@@ -913,7 +935,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-superman-ep2.jpg"
     },
     {
       "id": "archive-superman-ep3",
@@ -956,7 +979,8 @@
       "restoration": {
         "hissLevel": "low",
         "suggestDenoise": true
-      }
+      },
+      "coverUrl": "covers/archive-superman-ep3.jpg"
     },
     {
       "id": "librivox-aesop-the-ant-and-the-grasshopper",
@@ -989,7 +1013,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-ant-and-the-grasshopper.jpg"
     },
     {
       "id": "librivox-aesop-the-boy-who-cried-wolf",
@@ -1022,7 +1047,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-boy-who-cried-wolf.jpg"
     },
     {
       "id": "librivox-aesop-the-fox-and-the-grapes",
@@ -1055,7 +1081,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-fox-and-the-grapes.jpg"
     },
     {
       "id": "librivox-aesop-the-north-wind-and-the-sun",
@@ -1089,7 +1116,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-north-wind-and-the-sun.jpg"
     },
     {
       "id": "librivox-aesop-the-tortoise-and-the-hare",
@@ -1122,7 +1150,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-tortoise-and-the-hare.jpg"
     },
     {
       "id": "librivox-aesop-the-town-mouse-and-the-country-mouse",
@@ -1155,7 +1184,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-aesop-the-town-mouse-and-the-country-mouse.jpg"
     },
     {
       "id": "librivox-andrew-lang-blue-fairy-book-ch1",
@@ -1194,7 +1224,8 @@
         "name": "The Blue Fairy Book",
         "order": 1,
         "totalParts": 18
-      }
+      },
+      "coverUrl": "covers/librivox-andrew-lang-blue-fairy-book-ch1.jpg"
     },
     {
       "id": "librivox-andrew-lang-joan-of-arc-ch1",
@@ -1236,7 +1267,8 @@
         "name": "The Story of Joan of Arc",
         "order": 1,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-andrew-lang-joan-of-arc-ch1.jpg"
     },
     {
       "id": "librivox-andrew-lang-joan-of-arc-ch2",
@@ -1276,7 +1308,8 @@
         "name": "The Story of Joan of Arc",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-andrew-lang-joan-of-arc-ch2.jpg"
     },
     {
       "id": "librivox-anna-sewell-black-beauty-ch1",
@@ -1316,7 +1349,8 @@
         "name": "Black Beauty",
         "order": 1,
         "totalParts": 24
-      }
+      },
+      "coverUrl": "covers/librivox-anna-sewell-black-beauty-ch1.jpg"
     },
     {
       "id": "librivox-anonymous-wee-ones-bible-stories-ch1",
@@ -1356,7 +1390,8 @@
         "name": "Wee Ones' Bible Stories",
         "order": 1,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-anonymous-wee-ones-bible-stories-ch1.jpg"
     },
     {
       "id": "librivox-anonymous-wee-ones-bible-stories-ch2",
@@ -1396,7 +1431,8 @@
         "name": "Wee Ones' Bible Stories",
         "order": 2,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-anonymous-wee-ones-bible-stories-ch2.jpg"
     },
     {
       "id": "librivox-arthur-ransome-old-peters-russian-tales-ch1",
@@ -1435,7 +1471,8 @@
         "name": "Old Peter's Russian Tales",
         "order": 1,
         "totalParts": 10
-      }
+      },
+      "coverUrl": "covers/librivox-arthur-ransome-old-peters-russian-tales-ch1.jpg"
     },
     {
       "id": "librivox-arthur-ransome-old-peters-russian-tales-ch2",
@@ -1474,7 +1511,8 @@
         "name": "Old Peter's Russian Tales",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-arthur-ransome-old-peters-russian-tales-ch2.jpg"
     },
     {
       "id": "librivox-asbjornsen-east-of-the-sun-ch1",
@@ -1514,7 +1552,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-asbjornsen-east-of-the-sun-ch1.jpg"
     },
     {
       "id": "librivox-baum-wizard-of-oz-ch1",
@@ -1554,7 +1593,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-baum-wizard-of-oz-ch1.jpg"
     },
     {
       "id": "librivox-baum-wizard-of-oz-ch6",
@@ -1594,7 +1634,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-baum-wizard-of-oz-ch6.jpg"
     },
     {
       "id": "librivox-beatrix-potter-benjamin-bunny",
@@ -1628,7 +1669,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-beatrix-potter-benjamin-bunny.jpg"
     },
     {
       "id": "librivox-beatrix-potter-jemima-puddle-duck",
@@ -1662,7 +1704,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-beatrix-potter-jemima-puddle-duck.jpg"
     },
     {
       "id": "librivox-beatrix-potter-mrs-tiggy-winkle",
@@ -1696,7 +1739,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-beatrix-potter-mrs-tiggy-winkle.jpg"
     },
     {
       "id": "librivox-beatrix-potter-peter-rabbit",
@@ -1730,7 +1774,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-beatrix-potter-peter-rabbit.jpg"
     },
     {
       "id": "librivox-brothers-grimm-cinderella",
@@ -1765,7 +1810,8 @@
         "flags": [
           "mild-peril"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-brothers-grimm-cinderella.jpg"
     },
     {
       "id": "librivox-brothers-grimm-hansel-and-gretel",
@@ -1800,7 +1846,8 @@
         "flags": [
           "mild-peril"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-brothers-grimm-hansel-and-gretel.jpg"
     },
     {
       "id": "librivox-brothers-grimm-rapunzel",
@@ -1835,7 +1882,8 @@
         "flags": [
           "mild-peril"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-brothers-grimm-rapunzel.jpg"
     },
     {
       "id": "librivox-brothers-grimm-snow-white",
@@ -1870,7 +1918,8 @@
         "flags": [
           "mild-peril"
         ]
-      }
+      },
+      "coverUrl": "covers/librivox-brothers-grimm-snow-white.jpg"
     },
     {
       "id": "librivox-carlo-collodi-the-adventures-of-pinocchio-ch1",
@@ -1909,7 +1958,8 @@
         "name": "The Adventures of Pinocchio",
         "order": 1,
         "totalParts": 18
-      }
+      },
+      "coverUrl": "covers/librivox-carlo-collodi-the-adventures-of-pinocchio-ch1.jpg"
     },
     {
       "id": "librivox-carlo-collodi-the-adventures-of-pinocchio-ch2",
@@ -1948,7 +1998,8 @@
         "name": "The Adventures of Pinocchio",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-carlo-collodi-the-adventures-of-pinocchio-ch2.jpg"
     },
     {
       "id": "librivox-charles-kingsley-the-heroes-ch1",
@@ -1987,7 +2038,8 @@
         "name": "The Heroes",
         "order": 1,
         "totalParts": 8
-      }
+      },
+      "coverUrl": "covers/librivox-charles-kingsley-the-heroes-ch1.jpg"
     },
     {
       "id": "librivox-charles-kingsley-the-water-babies-ch1",
@@ -2028,7 +2080,8 @@
         "name": "The Water-Babies",
         "order": 1,
         "totalParts": 8
-      }
+      },
+      "coverUrl": "covers/librivox-charles-kingsley-the-water-babies-ch1.jpg"
     },
     {
       "id": "librivox-charles-perrault-cinderella",
@@ -2061,7 +2114,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-charles-perrault-cinderella.jpg"
     },
     {
       "id": "librivox-charles-perrault-puss-in-boots",
@@ -2094,7 +2148,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-charles-perrault-puss-in-boots.jpg"
     },
     {
       "id": "librivox-charles-perrault-sleeping-beauty",
@@ -2127,7 +2182,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-charles-perrault-sleeping-beauty.jpg"
     },
     {
       "id": "librivox-christina-rossetti-sing-song-pt1",
@@ -2160,7 +2216,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt1.jpg"
     },
     {
       "id": "librivox-christina-rossetti-sing-song-pt2",
@@ -2193,7 +2250,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-christina-rossetti-sing-song-pt2.jpg"
     },
     {
       "id": "librivox-dickens-christmas-carol-stave1",
@@ -2233,7 +2291,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-dickens-christmas-carol-stave1.jpg"
     },
     {
       "id": "librivox-e-nesbit-five-children-and-it-ch1",
@@ -2272,7 +2331,8 @@
         "name": "Five Children and It",
         "order": 1,
         "totalParts": 5
-      }
+      },
+      "coverUrl": "covers/librivox-e-nesbit-five-children-and-it-ch1.jpg"
     },
     {
       "id": "librivox-e-nesbit-five-children-and-it-ch2",
@@ -2311,7 +2371,8 @@
         "name": "Five Children and It",
         "order": 2,
         "totalParts": 2
-      }
+      },
+      "coverUrl": "covers/librivox-e-nesbit-five-children-and-it-ch2.jpg"
     },
     {
       "id": "librivox-e-nesbit-railway-children-ch1",
@@ -2344,7 +2405,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-e-nesbit-railway-children-ch1.jpg"
     },
     {
       "id": "librivox-edward-lear-nonsense-verses",
@@ -2377,7 +2439,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-edward-lear-nonsense-verses.jpg"
     },
     {
       "id": "librivox-ellen-c-babbitt-jataka-tales-ch1",
@@ -2416,7 +2479,8 @@
         "name": "Jataka Tales",
         "order": 1,
         "totalParts": 9
-      }
+      },
+      "coverUrl": "covers/librivox-ellen-c-babbitt-jataka-tales-ch1.jpg"
     },
     {
       "id": "librivox-ellen-c-babbitt-jataka-tales-ch2",
@@ -2449,7 +2513,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-ellen-c-babbitt-jataka-tales-ch2.jpg"
     },
     {
       "id": "librivox-erick-berry-black-folk-tales-ch1",
@@ -2488,7 +2553,8 @@
         "name": "Black Folk Tales",
         "order": 1,
         "totalParts": 7
-      }
+      },
+      "coverUrl": "covers/librivox-erick-berry-black-folk-tales-ch1.jpg"
     },
     {
       "id": "librivox-ernest-thompson-seto-the-biography-of-a-grizzl-ch1",
@@ -2527,7 +2593,8 @@
         "name": "The Biography of a Grizzly",
         "order": 1,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-ernest-thompson-seto-the-biography-of-a-grizzl-ch1.jpg"
     },
     {
       "id": "librivox-ernest-thompson-seto-wild-animals-i-have-known-ch1",
@@ -2566,7 +2633,8 @@
         "name": "Wild Animals I Have Known",
         "order": 1,
         "totalParts": 4
-      }
+      },
+      "coverUrl": "covers/librivox-ernest-thompson-seto-wild-animals-i-have-known-ch1.jpg"
     },
     {
       "id": "librivox-ernest-thompson-seton-bannertail-ch1",
@@ -2599,7 +2667,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-ernest-thompson-seton-bannertail-ch1.jpg"
     },
     {
       "id": "librivox-florence-kingsley-titus-comrade-cross-ch1",
@@ -2640,7 +2709,8 @@
         "name": "Titus: A Comrade of the Cross",
         "order": 1,
         "totalParts": 17
-      }
+      },
+      "coverUrl": "covers/librivox-florence-kingsley-titus-comrade-cross-ch1.jpg"
     },
     {
       "id": "librivox-frances-hodgson-burnett-a-little-princess-ch1",
@@ -2679,7 +2749,8 @@
         "name": "A Little Princess",
         "order": 1,
         "totalParts": 9
-      }
+      },
+      "coverUrl": "covers/librivox-frances-hodgson-burnett-a-little-princess-ch1.jpg"
     },
     {
       "id": "librivox-frances-hodgson-burnett-the-secret-garden-ch1",
@@ -2723,7 +2794,8 @@
         "order": 1,
         "totalParts": 27,
         "nextTeaser": "Mary arrives at Misselthwaite Manor and meets the brisk Mrs Medlock — and on her first morning, hears a strange sound she's been told is only the wind."
-      }
+      },
+      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch1.jpg"
     },
     {
       "id": "librivox-frances-hodgson-burnett-the-secret-garden-ch2",
@@ -2763,7 +2835,8 @@
         "name": "The Secret Garden",
         "order": 2,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch2.jpg"
     },
     {
       "id": "librivox-frances-hodgson-burnett-the-secret-garden-ch3",
@@ -2803,7 +2876,8 @@
         "name": "The Secret Garden",
         "order": 3,
         "totalParts": 3
-      }
+      },
+      "coverUrl": "covers/librivox-frances-hodgson-burnett-the-secret-garden-ch3.jpg"
     },
     {
       "id": "librivox-george-macdonald-baby",
@@ -2836,7 +2910,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-baby.jpg"
     },
     {
       "id": "librivox-george-macdonald-bedtime",
@@ -2869,7 +2944,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-bedtime.jpg"
     },
     {
       "id": "librivox-george-macdonald-day-boy-night-girl",
@@ -2902,7 +2978,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-day-boy-night-girl.jpg"
     },
     {
       "id": "librivox-george-macdonald-gifts-child-christ",
@@ -2937,7 +3014,8 @@
         "reviewed": true,
         "reviewer": "perplexity-curator-v1",
         "flags": []
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-gifts-child-christ.jpg"
     },
     {
       "id": "librivox-george-macdonald-light-princess-ch1",
@@ -2976,7 +3054,8 @@
         "name": "The Light Princess",
         "order": 1,
         "totalParts": 7
-      }
+      },
+      "coverUrl": "covers/librivox-george-macdonald-light-princess-ch1.jpg"
     },
     {
       "id": "librivox-george-macdonald-light-princess-ch2",
