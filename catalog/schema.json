@@ -73,6 +73,10 @@
           "type": "string",
           "format": "uri-reference"
         },
+        "coverScene": {
+          "type": "string",
+          "description": "Rich visual scene description for AI cover generation. Describes specific characters, setting, action, objects, and lighting — NOT a plot summary. Used by scripts/fetch-covers.mjs to build the Recraft prompt."
+        },
         "source": {
           "type": "object",
           "required": [

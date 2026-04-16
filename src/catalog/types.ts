@@ -92,6 +92,11 @@ export interface Story {
    *  the archive.org identifier in source.audioUrl, then falls back to a
    *  generated SVG. See src/components/BookCover.tsx. */
   coverUrl?: string;
+  /** Rich visual scene description for AI cover generation. Describes
+   *  specific characters, setting, action, objects, and lighting — NOT a
+   *  plot summary. Used by scripts/fetch-covers.mjs to build the Recraft
+   *  prompt. See prompts/perplexity-cover-scenes.md for how to write these. */
+  coverScene?: string;
   source: StorySource;
   durationSec: number;
   lengthBucket: LengthBucket;
