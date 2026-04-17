@@ -33,7 +33,14 @@ export function deriveCoverUrl(story: Story): string | null {
  *
  * Relative paths are resolved against Vite's BASE_URL — this is `/` in
  * dev and `/quondam/` in the production GitHub Pages build.
+ *
+ * A cache-busting `?v=` parameter is appended to relative paths so that
+ * when cover images are regenerated (same filename, new content), the
+ * CDN doesn't serve stale versions. The version is derived from
+ * BUILD_TIME which changes on every Vite build.
  */
+const BUILD_TIME = Date.now().toString(36);
+
 export function resolveCoverUrl(raw: string | null): string | null {
   if (!raw) return null;
   if (/^(?:https?:|data:)/i.test(raw)) return raw;
@@ -42,7 +49,7 @@ export function resolveCoverUrl(raw: string | null): string | null {
       ? import.meta.env.BASE_URL.replace(/\/$/, "")
       : "";
   const cleaned = raw.replace(/^\//, "");
-  return `${base}/${cleaned}`;
+  return `${base}/${cleaned}?v=${BUILD_TIME}`;
 }
 
 /**
