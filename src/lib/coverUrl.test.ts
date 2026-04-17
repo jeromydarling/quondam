@@ -72,16 +72,14 @@ describe("resolveCoverUrl", () => {
     );
   });
 
-  it("prepends Vite BASE_URL to relative paths", () => {
-    // In the vitest jsdom environment, import.meta.env.BASE_URL is "/" by
-    // default. The helper strips any trailing slash and joins with "/".
+  it("prepends Vite BASE_URL to relative paths with a cache-buster", () => {
     const r = resolveCoverUrl("covers/foo.jpg");
-    expect(r).toBe("/covers/foo.jpg");
+    expect(r).toMatch(/^\/covers\/foo\.jpg\?v=[a-z0-9]+$/);
   });
 
   it("strips a leading slash from the relative path before joining", () => {
     const r = resolveCoverUrl("/covers/foo.jpg");
-    expect(r).toBe("/covers/foo.jpg");
+    expect(r).toMatch(/^\/covers\/foo\.jpg\?v=[a-z0-9]+$/);
   });
 });
 
