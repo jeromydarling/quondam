@@ -12,16 +12,17 @@ on:
         type: string
         default: "s3"
       id:
-        description: "Single story id to process (leave blank to run over the whole catalog)"
+        description: "Single story id to process (leave blank for regen list or full catalog)"
         type: string
         default: ""
       series:
-        description: "Process only entries matching this series.id (e.g. boxcar-children). Leave blank for all."
+        description: "Process only entries matching this series.id. Leave blank for all."
         type: string
         default: ""
-  push:
-    branches: [main]
-    paths: ['.github/workflows/regen-covers']
+      use_regen_list:
+        description: "Only regenerate IDs in .github/regen-covers.txt (default: true)"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -37,7 +38,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # Full history so we can push a new branch from this ref.
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
@@ -50,37 +50,37 @@ jobs:
 
       - name: Run cover pipeline
         env:
-          # Stage 3 (AI generation) uses whichever of these is set.
-          # Recraft is preferred when both are present.
           RECRAFT_API_KEY: ${{ secrets.RECRAFT_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           set -euo pipefail
-          ARGS=(--force --only s3)
+          BASE_ARGS=()
+          if [ "${{ inputs.force }}" = "true" ]; then
+            BASE_ARGS+=(--force)
+          fi
+          if [ -n "${{ inputs.only }}" ]; then
+            BASE_ARGS+=(--only "${{ inputs.only }}")
+          fi
+
+          # If a single ID or series is specified, use that directly
           if [ -n "${{ inputs.id }}" ]; then
-            ARGS+=(--id "${{ inputs.id }}")
+            echo "Running single ID: ${{ inputs.id }}"
+            npm run covers -- "${BASE_ARGS[@]}" --id "${{ inputs.id }}"
+          elif [ -n "${{ inputs.series }}" ]; then
+            echo "Running series: ${{ inputs.series }}"
+            npm run covers -- "${BASE_ARGS[@]}" --series "${{ inputs.series }}"
+          elif [ "${{ inputs.use_regen_list }}" = "true" ] && [ -f .github/regen-covers.txt ]; then
+            echo "Reading IDs from .github/regen-covers.txt"
+            while IFS= read -r line; do
+              line=$(echo "$line" | sed 's/#.*//' | xargs)
+              [ -z "$line" ] && continue
+              echo "  → Regenerating: $line"
+              npm run covers -- "${BASE_ARGS[@]}" --id "$line"
+            done < .github/regen-covers.txt
+          else
+            echo "Running full catalog"
+            npm run covers -- "${BASE_ARGS[@]}"
           fi
-          if [ -n "${{ inputs.series }}" ]; then
-            ARGS+=(--series "${{ inputs.series }}")
-          fi
-          # workflow_dispatch can override force/only
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            ARGS=()
-            if [ "${{ inputs.force }}" = "true" ]; then
-              ARGS+=(--force)
-            fi
-            if [ -n "${{ inputs.only }}" ]; then
-              ARGS+=(--only "${{ inputs.only }}")
-            fi
-            if [ -n "${{ inputs.id }}" ]; then
-              ARGS+=(--id "${{ inputs.id }}")
-            fi
-            if [ -n "${{ inputs.series }}" ]; then
-              ARGS+=(--series "${{ inputs.series }}")
-            fi
-          fi
-          echo "Running: npm run covers -- ${ARGS[*]}"
-          npm run covers -- "${ARGS[@]}"
 
       - name: Validate catalog after run
         run: npm run validate:catalog
@@ -115,15 +115,8 @@ jobs:
           Automated run of `scripts/fetch-covers.mjs` via the
           `fetch-covers` workflow.
 
-          Three stages were attempted per entry, in order:
-            1. archive.org item metadata
-            2. Wikipedia REST API
-            3. Gemini 2.5 Flash Image (only if `GEMINI_API_KEY` is set)
-
           **Before merging, please spot-check `public/covers/*.jpg`** in an
-          image viewer. Any cover that came out wrong can be fixed by
-          deleting the file from this PR and either re-running the workflow
-          with `--force` or setting `coverUrl` on the entry by hand.
+          image viewer.
 
           See `scripts/README.md` for details.
           BODY_EOF

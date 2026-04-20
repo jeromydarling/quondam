@@ -1,0 +1,42 @@
+# Covers to regenerate — updated coverScene descriptions
+# Lone Ranger (mask missing)
+archive-lone-ranger-ep1
+archive-lone-ranger-ep2
+archive-lone-ranger-ep3
+# Superman (inconsistent appearance)
+archive-superman-ep1
+archive-superman-ep2
+archive-superman-ep3
+# Sleeping Beauty (princess missing)
+librivox-charles-perrault-sleeping-beauty
+# Five Children and It (inconsistent kids)
+librivox-e-nesbit-five-children-and-it-ch1
+librivox-e-nesbit-five-children-and-it-ch2
+# St Francis (kid in raincoat)
+librivox-gk-chesterton-st-francis-ch1
+# Peter Pan (generic kid)
+librivox-jm-barrie-peter-and-wendy-ch1
+# Heidi (two-headed goat)
+librivox-johanna-spyri-heidi-ch1
+# Golden River (inconsistent boys)
+librivox-john-ruskin-king-of-the-golden-river-ch1
+librivox-john-ruskin-king-of-golden-river-ch2
+# Wind in the Willows (inconsistent animals)
+librivox-kenneth-grahame-the-wind-in-the-willows-ch1
+librivox-kenneth-grahame-the-wind-in-the-willows-ch2
+librivox-kenneth-grahame-the-wind-in-the-willows-ch3
+# Alice (inconsistent Alice)
+librivox-lewis-carroll-alice-in-wonderland-ch1
+librivox-lewis-carroll-a-mad-tea-party
+librivox-lewis-carroll-the-pool-of-tears
+# Baby Moses (Indian girl instead of Egyptian princess)
+librivox-logan-marshall-the-wonder-book-of-bible-stori-ch2
+# Treasure Island (little girl instead of teenage boy)
+librivox-robert-louis-stevenson-treasure-island-ch1
+# Jack and the Beanstalk (tree instead of vine)
+librivox-steel-english-fairy-tales-jack-beanstalk
+# Old Indian Legends (girl at window instead of Iktomi)
+librivox-zitkala-sa-old-indian-legends-ch1
+# Text leakage redraws (scenes are fine, just bad luck)
+librivox-henry-sherman-childrens-bible-ch1
+librivox-john-bunyan-pilgrims-progress-one-syllable-ch1
