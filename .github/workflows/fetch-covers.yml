@@ -1,9 +1,5 @@
 name: fetch-covers
 
-# Manual-only. Runs scripts/fetch-covers.mjs in GitHub's infrastructure
-# (which has network access to archive.org and Wikipedia, unlike the
-# egress-restricted sandbox Claude Code runs in) and opens a PR with the
-# results for review.
 on:
   workflow_dispatch:
     inputs:
@@ -23,6 +19,9 @@ on:
         description: "Process only entries matching this series.id (e.g. boxcar-children). Leave blank for all."
         type: string
         default: ""
+  push:
+    branches: [main]
+    paths: ['.github/workflows/regen-covers']
 
 permissions:
   contents: write
@@ -57,18 +56,28 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           set -euo pipefail
-          ARGS=()
-          if [ "${{ inputs.force }}" = "true" ]; then
-            ARGS+=(--force)
-          fi
-          if [ -n "${{ inputs.only }}" ]; then
-            ARGS+=(--only "${{ inputs.only }}")
-          fi
+          ARGS=(--force --only s3)
           if [ -n "${{ inputs.id }}" ]; then
             ARGS+=(--id "${{ inputs.id }}")
           fi
           if [ -n "${{ inputs.series }}" ]; then
             ARGS+=(--series "${{ inputs.series }}")
+          fi
+          # workflow_dispatch can override force/only
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            ARGS=()
+            if [ "${{ inputs.force }}" = "true" ]; then
+              ARGS+=(--force)
+            fi
+            if [ -n "${{ inputs.only }}" ]; then
+              ARGS+=(--only "${{ inputs.only }}")
+            fi
+            if [ -n "${{ inputs.id }}" ]; then
+              ARGS+=(--id "${{ inputs.id }}")
+            fi
+            if [ -n "${{ inputs.series }}" ]; then
+              ARGS+=(--series "${{ inputs.series }}")
+            fi
           fi
           echo "Running: npm run covers -- ${ARGS[*]}"
           npm run covers -- "${ARGS[@]}"
