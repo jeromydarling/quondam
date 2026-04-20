@@ -10,7 +10,7 @@ on:
       force:
         description: "Re-fetch even entries that already have a coverUrl"
         type: boolean
-        default: false
+        default: true
       only:
         description: "Pipeline stages: s3=AI only (default, recommended), s1=archive.org, s2=Wikipedia. Comma-separate for multiple."
         type: string
