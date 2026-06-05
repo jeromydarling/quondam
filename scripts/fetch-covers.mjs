@@ -130,6 +130,12 @@ async function main() {
   const seriesStyleMap = new Map(); // series.id → recraft style UUID
   const seriesCharRefMap = new Map(); // series.id → Buffer (first cover for Ideogram character ref)
 
+  let styleRefBuffer = null;
+  if (args.styleRef) {
+    styleRefBuffer = await readFile(args.styleRef);
+    console.log(`Loaded style reference from ${args.styleRef} (${styleRefBuffer.length} bytes)\n`);
+  }
+
   const stats = { updated: 0, skipped: 0, failed: 0, dedup: 0, stage: {} };
 
   for (const story of stories) {
@@ -170,7 +176,7 @@ async function main() {
 
       if (IDEOGRAM_API_KEY) {
         const charRef = seriesId ? seriesCharRefMap.get(seriesId) : undefined;
-        result = await tryIdeogramCover(story, charRef);
+        result = await tryIdeogramCover(story, charRef, styleRefBuffer);
         if (result) {
           result.stage = charRef ? "ideogram (char-ref)" : "ideogram";
           if (seriesId && !charRef && !args.dryRun) {
@@ -437,7 +443,7 @@ function buildCoverPrompt(story) {
 
 // Ideogram 4.0 — uses multipart/form-data for character_reference_images
 
-async function tryIdeogramCover(story, charRefBuffer) {
+async function tryIdeogramCover(story, charRefBuffer, styleRefBuffer) {
   const prompt = buildCoverPrompt(story);
   try {
     const formData = new FormData();
@@ -447,9 +453,14 @@ async function tryIdeogramCover(story, charRefBuffer) {
     formData.append("aspect_ratio", "ASPECT_2_3");
     formData.append("negative_prompt", NEGATIVE_PROMPT);
 
+    if (styleRefBuffer) {
+      const blob = new Blob([styleRefBuffer], { type: "image/jpeg" });
+      formData.append("style_reference_images", blob, "style.jpg");
+      console.log(`  ideogram: using style reference image`);
+    }
     if (charRefBuffer) {
       const blob = new Blob([charRefBuffer], { type: "image/jpeg" });
-      formData.append("character_reference_images", blob, "ref.jpg");
+      formData.append("character_reference_images", blob, "char.jpg");
       console.log(`  ideogram: using character reference image`);
     }
 
@@ -772,6 +783,7 @@ function parseArgs(argv) {
     else if (a === "--audit") out.audit = true;
     else if (a === "--id") out.id = argv[++i];
     else if (a === "--ids-file") out.idsFile = argv[++i];
+    else if (a === "--style-ref") out.styleRef = argv[++i];
     else if (a === "--series") out.series = argv[++i];
     else if (a === "--only") out.stages = argv[++i].split(",");
     else if (a === "-h" || a === "--help") {
