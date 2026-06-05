@@ -175,13 +175,17 @@ async function main() {
       const styleId = seriesId ? seriesStyleMap.get(seriesId) : undefined;
 
       if (IDEOGRAM_API_KEY) {
-        const charRef = seriesId ? seriesCharRefMap.get(seriesId) : undefined;
-        result = await tryIdeogramCover(story, charRef, styleRefBuffer);
+        // For series: ep1 generates with the global style ref (if any).
+        // Ep1's output then becomes the style ref for ep2, ep3, etc. —
+        // this carries both the visual style AND the character designs.
+        const seriesRef = seriesId ? seriesCharRefMap.get(seriesId) : undefined;
+        const effectiveStyleRef = seriesRef || styleRefBuffer;
+        result = await tryIdeogramCover(story, effectiveStyleRef);
         if (result) {
-          result.stage = charRef ? "ideogram (char-ref)" : "ideogram";
-          if (seriesId && !charRef && !args.dryRun) {
+          result.stage = seriesRef ? "ideogram (series-ref)" : "ideogram";
+          if (seriesId && !seriesRef && !args.dryRun) {
             seriesCharRefMap.set(seriesId, result.buffer);
-            console.log(`  ⬆ saved character reference for series "${seriesId}"`);
+            console.log(`  ⬆ ep1 saved as style+character ref for series "${seriesId}"`);
           }
         }
       }
@@ -436,9 +440,9 @@ function buildCoverPrompt(story) {
   ].join(" ");
 }
 
-// Ideogram 4.0 — uses multipart/form-data for character_reference_images
+// Ideogram 4.0 — uses style_reference_images to carry both style and characters
 
-async function tryIdeogramCover(story, charRefBuffer, styleRefBuffer) {
+async function tryIdeogramCover(story, styleRefBuffer) {
   const prompt = buildCoverPrompt(story);
   try {
     const formData = new FormData();
@@ -451,12 +455,7 @@ async function tryIdeogramCover(story, charRefBuffer, styleRefBuffer) {
     if (styleRefBuffer) {
       const blob = new Blob([styleRefBuffer], { type: "image/jpeg" });
       formData.append("style_reference_images", blob, "style.jpg");
-      console.log(`  ideogram: using style reference image`);
-    }
-    if (charRefBuffer) {
-      const blob = new Blob([charRefBuffer], { type: "image/jpeg" });
-      formData.append("character_reference_images", blob, "char.jpg");
-      console.log(`  ideogram: using character reference image`);
+      console.log(`  ideogram: using style reference (${styleRefBuffer.length} bytes)`);
     }
 
     const res = await fetch("https://api.ideogram.ai/v1/ideogram-v4/generate", {
