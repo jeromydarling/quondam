@@ -63,19 +63,25 @@ jobs:
             BASE_ARGS+=(--only "${{ inputs.only }}")
           fi
 
+          # Use an existing Recraft cover as Ideogram style reference
+          STYLE_ARGS=()
+          if [ -f public/covers/librivox-gk-chesterton-st-francis-ch1.jpg ]; then
+            STYLE_ARGS+=(--style-ref public/covers/librivox-gk-chesterton-st-francis-ch1.jpg)
+          fi
+
           # If a single ID or series is specified, use that directly
           if [ -n "${{ inputs.id }}" ]; then
             echo "Running single ID: ${{ inputs.id }}"
-            npm run covers -- "${BASE_ARGS[@]}" --id "${{ inputs.id }}"
+            npm run covers -- "${BASE_ARGS[@]}" "${STYLE_ARGS[@]}" --id "${{ inputs.id }}"
           elif [ -n "${{ inputs.series }}" ]; then
             echo "Running series: ${{ inputs.series }}"
-            npm run covers -- "${BASE_ARGS[@]}" --series "${{ inputs.series }}"
+            npm run covers -- "${BASE_ARGS[@]}" "${STYLE_ARGS[@]}" --series "${{ inputs.series }}"
           elif [ "${{ inputs.use_regen_list }}" = "true" ] && [ -f .github/regen-covers.txt ]; then
             echo "Running from .github/regen-covers.txt (single process)"
-            npm run covers -- "${BASE_ARGS[@]}" --ids-file .github/regen-covers.txt
+            npm run covers -- "${BASE_ARGS[@]}" "${STYLE_ARGS[@]}" --ids-file .github/regen-covers.txt
           else
             echo "Running full catalog"
-            npm run covers -- "${BASE_ARGS[@]}"
+            npm run covers -- "${BASE_ARGS[@]}" "${STYLE_ARGS[@]}"
           fi
 
       - name: Validate catalog after run
