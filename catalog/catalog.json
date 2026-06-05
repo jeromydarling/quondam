@@ -39,7 +39,13 @@
         "suggestDenoise": true
       },
       "coverUrl": "covers/archive-big-jon-sparkie-ep1.jpg",
-      "coverScene": "A tall, gentle-looking man sitting on a wooden fence under a spreading oak tree, holding a tiny elf on his knee. The elf has pointed ears, a green cap, and a mischievous grin. Fireflies glow in the meadow behind them. Warm twilight sky fading from gold to violet."
+      "coverScene": "A tall, gentle-looking man sitting on a wooden fence under a spreading oak tree, holding a tiny elf on his knee. The elf has pointed ears, a green cap, and a mischievous grin. Fireflies glow in the meadow behind them. Warm twilight sky fading from gold to violet.",
+      "series": {
+        "id": "big-jon-and-sparkie",
+        "name": "Big Jon and Sparkie",
+        "order": 1,
+        "totalParts": 3
+      }
     },
     {
       "id": "archive-big-jon-sparkie-ep2",
@@ -78,7 +84,13 @@
         "suggestDenoise": true
       },
       "coverUrl": "covers/archive-big-jon-sparkie-ep2.jpg",
-      "coverScene": "A tall man in a plaid shirt leaning against a barn door, laughing, while a tiny elf in a green cap dances on the fence rail beside him, arms outstretched for balance. A tabby cat watches from a hay bale. Late-afternoon sun casting long golden shadows across the farmyard."
+      "coverScene": "A tall man in a plaid shirt leaning against a barn door, laughing, while a tiny elf in a green cap dances on the fence rail beside him, arms outstretched for balance. A tabby cat watches from a hay bale. Late-afternoon sun casting long golden shadows across the farmyard.",
+      "series": {
+        "id": "big-jon-and-sparkie",
+        "name": "Big Jon and Sparkie",
+        "order": 2,
+        "totalParts": 3
+      }
     },
     {
       "id": "archive-big-jon-sparkie-ep3",
@@ -117,7 +129,13 @@
         "suggestDenoise": true
       },
       "coverUrl": "covers/archive-big-jon-sparkie-ep3.jpg",
-      "coverScene": "A tall man and a tiny green-capped elf sitting together on a porch swing at dusk, the man strumming a guitar while the elf swings his legs off the edge. A crescent moon hangs low over a quiet meadow. Lightning bugs drift in the warm evening air."
+      "coverScene": "A tall man and a tiny green-capped elf sitting together on a porch swing at dusk, the man strumming a guitar while the elf swings his legs off the edge. A crescent moon hangs low over a quiet meadow. Lightning bugs drift in the warm evening air.",
+      "series": {
+        "id": "big-jon-and-sparkie",
+        "name": "Big Jon and Sparkie",
+        "order": 3,
+        "totalParts": 3
+      }
     },
     {
       "id": "archive-cinnamon-bear-ep1",
