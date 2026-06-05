@@ -121,6 +121,7 @@ async function main() {
   // Track Recraft style references per series so episodes share a
   // consistent character design.
   const seriesStyleMap = new Map(); // series.id → recraft style UUID
+  const seriesCharRefMap = new Map(); // series.id → Buffer (first cover for Ideogram character ref)
 
   const stats = { updated: 0, skipped: 0, failed: 0, dedup: 0, stage: {} };
 
@@ -161,8 +162,15 @@ async function main() {
       const styleId = seriesId ? seriesStyleMap.get(seriesId) : undefined;
 
       if (IDEOGRAM_API_KEY) {
-        result = await tryIdeogramCover(story);
-        if (result) result.stage = "ideogram";
+        const charRef = seriesId ? seriesCharRefMap.get(seriesId) : undefined;
+        result = await tryIdeogramCover(story, charRef);
+        if (result) {
+          result.stage = charRef ? "ideogram (char-ref)" : "ideogram";
+          if (seriesId && !charRef && !args.dryRun) {
+            seriesCharRefMap.set(seriesId, result.buffer);
+            console.log(`  ⬆ saved character reference for series "${seriesId}"`);
+          }
+        }
       }
       if (!result && RECRAFT_API_KEY) {
         result = await tryRecraftCover(story, styleId);
@@ -420,24 +428,30 @@ function buildCoverPrompt(story) {
   ].join(" ");
 }
 
-// Ideogram 4.0
+// Ideogram 4.0 — uses multipart/form-data for character_reference_images
 
-async function tryIdeogramCover(story) {
+async function tryIdeogramCover(story, charRefBuffer) {
   const prompt = buildCoverPrompt(story);
   try {
-    const res = await fetch("https://api.ideogram.ai/v1/ideogram/generate", {
+    const formData = new FormData();
+    formData.append("prompt", prompt);
+    formData.append("model", "V_4");
+    formData.append("rendering_speed", "DEFAULT");
+    formData.append("aspect_ratio", "ASPECT_2_3");
+    formData.append("negative_prompt", NEGATIVE_PROMPT);
+
+    if (charRefBuffer) {
+      const blob = new Blob([charRefBuffer], { type: "image/jpeg" });
+      formData.append("character_reference_images", blob, "ref.jpg");
+      console.log(`  ideogram: using character reference image`);
+    }
+
+    const res = await fetch("https://api.ideogram.ai/v1/ideogram-v4/generate", {
       method: "POST",
       headers: {
-        "content-type": "application/json",
         "Api-Key": IDEOGRAM_API_KEY,
       },
-      body: JSON.stringify({
-        prompt,
-        model: "V_4",
-        rendering_speed: "DEFAULT",
-        aspect_ratio: "ASPECT_2_3",
-        negative_prompt: NEGATIVE_PROMPT,
-      }),
+      body: formData,
     });
     if (!res.ok) {
       const errBody = await res.text();
