@@ -71,13 +71,8 @@ jobs:
             echo "Running series: ${{ inputs.series }}"
             npm run covers -- "${BASE_ARGS[@]}" --series "${{ inputs.series }}"
           elif [ "${{ inputs.use_regen_list }}" = "true" ] && [ -f .github/regen-covers.txt ]; then
-            echo "Reading IDs from .github/regen-covers.txt"
-            while IFS= read -r line; do
-              line=$(echo "$line" | sed 's/#.*//' | xargs)
-              [ -z "$line" ] && continue
-              echo "  → Regenerating: $line"
-              npm run covers -- "${BASE_ARGS[@]}" --id "$line"
-            done < .github/regen-covers.txt
+            echo "Running from .github/regen-covers.txt (single process)"
+            npm run covers -- "${BASE_ARGS[@]}" --ids-file .github/regen-covers.txt
           else
             echo "Running full catalog"
             npm run covers -- "${BASE_ARGS[@]}"
