@@ -447,7 +447,7 @@ async function tryIdeogramCover(story, styleRefBuffer) {
   try {
     const formData = new FormData();
     formData.append("prompt", prompt);
-    formData.append("aspect_ratio", "ASPECT_2_3");
+    formData.append("aspect_ratio", "2x3");
     formData.append("negative_prompt", NEGATIVE_PROMPT);
 
     if (styleRefBuffer) {
