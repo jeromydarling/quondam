@@ -97,12 +97,19 @@ async function main() {
   let stories = catalog.stories;
   if (args.id) {
     stories = stories.filter((s) => s.id === args.id);
+  } else if (args.idsFile) {
+    const idsRaw = await readFile(args.idsFile, "utf-8");
+    const ids = new Set(
+      idsRaw.split("\n").map((l) => l.replace(/#.*/, "").trim()).filter(Boolean),
+    );
+    stories = stories.filter((s) => ids.has(s.id));
+    console.log(`Loaded ${ids.size} IDs from ${args.idsFile}, matched ${stories.length} stories`);
   } else if (args.series) {
     stories = stories.filter((s) => s.series?.id === args.series);
   }
 
-  if ((args.id || args.series) && stories.length === 0) {
-    console.error(`No stories found for ${args.id ? "id " + args.id : "series " + args.series}`);
+  if ((args.id || args.idsFile || args.series) && stories.length === 0) {
+    console.error(`No stories found for filter`);
     process.exit(1);
   }
 
@@ -434,7 +441,7 @@ async function tryIdeogramCover(story, charRefBuffer) {
   const prompt = buildCoverPrompt(story);
   try {
     const formData = new FormData();
-    formData.append("prompt", prompt);
+    formData.append("text_prompt", prompt);
     formData.append("model", "V_4");
     formData.append("rendering_speed", "DEFAULT");
     formData.append("aspect_ratio", "ASPECT_2_3");
@@ -753,6 +760,7 @@ function parseArgs(argv) {
     dryRun: false,
     force: false,
     id: null,
+    idsFile: null,
     series: null,
     audit: false,
     stages: ["s1", "s2", "s3"],
@@ -763,6 +771,7 @@ function parseArgs(argv) {
     else if (a === "--force") out.force = true;
     else if (a === "--audit") out.audit = true;
     else if (a === "--id") out.id = argv[++i];
+    else if (a === "--ids-file") out.idsFile = argv[++i];
     else if (a === "--series") out.series = argv[++i];
     else if (a === "--only") out.stages = argv[++i].split(",");
     else if (a === "-h" || a === "--help") {
