@@ -418,10 +418,6 @@ const NEGATIVE_PROMPT =
  * came from the same artist's hand.
  */
 function buildCoverPrompt(story) {
-  // If the curator (or Perplexity) wrote a rich visual scene description,
-  // use it verbatim — it's already art-directed for the image generator.
-  // Otherwise fall back to the title + summary which is less visual but
-  // better than nothing.
   const scene = story.coverScene
     ? story.coverScene
     : story.summary
@@ -429,13 +425,12 @@ function buildCoverPrompt(story) {
       : story.title;
 
   return [
-    `A gentle pen-and-ink illustration with delicate watercolor wash,`,
-    `inspired by classic 1920s English children's book illustration.`,
-    `Simple composition with a single focal scene, warm honey-gold and`,
-    `cream tones with touches of soft sage green and dusty rose.`,
-    `Expressive loose ink line work that carries the story; the`,
-    `watercolor is light, translucent, and supplementary. Generous`,
-    `white space and breathing room around the subject.`,
+    `Bold, flat children's book illustration with textured crayon and`,
+    `chalk strokes. Limited color palette of 3-4 bold colors per scene`,
+    `(warm oranges, deep navy, cream white, sage green). Simple rounded`,
+    `shapes with heavy black outlines. Figures are stylized and`,
+    `geometric, not realistic. Large areas of flat color with visible`,
+    `hand-drawn texture. Minimal detail, maximum expression.`,
     `The scene depicts: ${scene}.`,
     `Vertical book-cover composition.`,
   ].join(" ");
