@@ -440,25 +440,23 @@ function buildCoverPrompt(story) {
   ].join(" ");
 }
 
-// Ideogram 4.0 — uses style_reference_images to carry both style and characters
+// Ideogram 3.0 — V3 supports style_reference_images (V4 does not)
 
 async function tryIdeogramCover(story, styleRefBuffer) {
   const prompt = buildCoverPrompt(story);
   try {
     const formData = new FormData();
-    formData.append("text_prompt", prompt);
-    formData.append("model", "V_4");
-    formData.append("rendering_speed", "DEFAULT");
+    formData.append("prompt", prompt);
     formData.append("aspect_ratio", "ASPECT_2_3");
     formData.append("negative_prompt", NEGATIVE_PROMPT);
 
     if (styleRefBuffer) {
       const blob = new Blob([styleRefBuffer], { type: "image/jpeg" });
       formData.append("style_reference_images", blob, "style.jpg");
-      console.log(`  ideogram: using style reference (${styleRefBuffer.length} bytes)`);
+      console.log(`  ideogram v3: using style reference (${styleRefBuffer.length} bytes)`);
     }
 
-    const res = await fetch("https://api.ideogram.ai/v1/ideogram-v4/generate", {
+    const res = await fetch("https://api.ideogram.ai/v1/ideogram-v3/generate", {
       method: "POST",
       headers: {
         "Api-Key": IDEOGRAM_API_KEY,
