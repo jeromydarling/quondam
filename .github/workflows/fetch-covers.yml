@@ -50,6 +50,7 @@ jobs:
 
       - name: Run cover pipeline
         env:
+          IDEOGRAM_API_KEY: ${{ secrets.IDEOGRAM_API_KEY }}
           RECRAFT_API_KEY: ${{ secrets.RECRAFT_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |

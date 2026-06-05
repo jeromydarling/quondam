@@ -55,9 +55,10 @@ const REPO_ROOT = path.resolve(__dirname, "..");
 const CATALOG_PATH = path.join(REPO_ROOT, "catalog/catalog.json");
 const COVERS_DIR = path.join(REPO_ROOT, "public/covers");
 
+const IDEOGRAM_API_KEY = process.env.IDEOGRAM_API_KEY;
 const RECRAFT_API_KEY = process.env.RECRAFT_API_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const AI_PROVIDER_AVAILABLE = Boolean(RECRAFT_API_KEY || GEMINI_API_KEY);
+const AI_PROVIDER_AVAILABLE = Boolean(IDEOGRAM_API_KEY || RECRAFT_API_KEY || GEMINI_API_KEY);
 const USER_AGENT =
   "quondam-cover-pipeline/1.0 (+https://github.com/jeromydarling/quondam)";
 
@@ -159,12 +160,14 @@ async function main() {
       const seriesId = story.series?.id;
       const styleId = seriesId ? seriesStyleMap.get(seriesId) : undefined;
 
-      if (RECRAFT_API_KEY) {
+      if (IDEOGRAM_API_KEY) {
+        result = await tryIdeogramCover(story);
+        if (result) result.stage = "ideogram";
+      }
+      if (!result && RECRAFT_API_KEY) {
         result = await tryRecraftCover(story, styleId);
         if (result) {
           result.stage = styleId ? "recraft (styled)" : "recraft";
-          // If this is the first cover in a series, upload it as a
-          // style reference so later episodes match.
           if (seriesId && !styleId && !args.dryRun) {
             const newStyleId = await uploadStyleReference(result.buffer);
             if (newStyleId) {
@@ -241,14 +244,14 @@ async function main() {
   if (args.dryRun) console.log("(dry run — no files written)");
   if (!AI_PROVIDER_AVAILABLE && args.stages.includes("s3")) {
     console.log(
-      "\nStage 3 (AI generation) was requested but neither RECRAFT_API_KEY nor GEMINI_API_KEY is set — it was skipped.",
+      "\nStage 3 (AI generation) was requested but no AI provider key is set (IDEOGRAM_API_KEY / RECRAFT_API_KEY / GEMINI_API_KEY) — it was skipped.",
     );
   } else if (args.stages.includes("s3")) {
-    const provider = RECRAFT_API_KEY
-      ? GEMINI_API_KEY
-        ? "recraft (primary) + gemini (fallback)"
-        : "recraft"
-      : "gemini";
+    const providers = [];
+    if (IDEOGRAM_API_KEY) providers.push("ideogram");
+    if (RECRAFT_API_KEY) providers.push("recraft");
+    if (GEMINI_API_KEY) providers.push("gemini");
+    const provider = providers.join(" → ");
     console.log(`\nAI provider in use: ${provider}`);
   }
 }
@@ -415,6 +418,55 @@ function buildCoverPrompt(story) {
     `The scene depicts: ${scene}.`,
     `Vertical book-cover composition.`,
   ].join(" ");
+}
+
+// Ideogram 4.0
+
+async function tryIdeogramCover(story) {
+  const prompt = buildCoverPrompt(story);
+  try {
+    const res = await fetch("https://api.ideogram.ai/v1/ideogram/generate", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "Api-Key": IDEOGRAM_API_KEY,
+      },
+      body: JSON.stringify({
+        prompt,
+        model: "V_4",
+        rendering_speed: "DEFAULT",
+        aspect_ratio: "ASPECT_2_3",
+        negative_prompt: NEGATIVE_PROMPT,
+      }),
+    });
+    if (!res.ok) {
+      const errBody = await res.text();
+      console.log(
+        `  ideogram http ${res.status}: ${errBody.slice(0, 200).replace(/\n/g, " ")}`,
+      );
+      return null;
+    }
+    const data = await res.json();
+    const imageUrl = data.data?.[0]?.url;
+    if (!imageUrl) {
+      console.log(`  ideogram: no image url in response`);
+      return null;
+    }
+    const imgRes = await fetch(imageUrl);
+    if (!imgRes.ok) {
+      console.log(`  ideogram download failed: ${imgRes.status}`);
+      return null;
+    }
+    const buffer = Buffer.from(await imgRes.arrayBuffer());
+    if (buffer.length < MIN_COVER_BYTES) {
+      console.log(`  ideogram returned a suspiciously tiny file, skipping`);
+      return null;
+    }
+    return { buffer };
+  } catch (e) {
+    console.log(`  ideogram error: ${e.message}`);
+    return null;
+  }
 }
 
 // Recraft (V3 for style_id + negative_prompt support)
